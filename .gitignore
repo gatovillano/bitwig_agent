@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+python/build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+python/.venv/
+.venv/
+venv/
+env/
+
+# Testing & Cache
+.pytest_cache/
+python/.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables & local secrets
+.env
+*.local
+
+# Java build artifacts
+java-extension/build/classes/
+# Ensure precompiled extension is tracked:
+!java-extension/build/BitwigAgentBridge.bwextension
+
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS generated
+Thumbs.db

@@ -1,0 +1,37 @@
+[project]
+name = "bitwig-agent"
+version = "0.1.0"
+description = "AI Agent and Music Engine for Bitwig Studio with LiteLLM and MCP support"
+authors = [{ name = "Bitwig Agent" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "httpx>=0.27.0",
+    "pydantic>=2.7.0",
+    "litellm>=1.40.0",
+    "python-dotenv>=1.0.1",
+    "rich>=13.7.1",
+    "prompt-toolkit>=3.0.40",
+    "mcp>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]
+
+[project.scripts]
+bitwig-agent = "bitwig_agent.cli:main"
+bitwig-agent-mcp = "bitwig_agent.mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bitwig_agent"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
