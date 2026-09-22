@@ -1,0 +1,1064 @@
+2026-09-20 01:21:36,997 - kogniterm.core.multi_provider_manager - INFO - MultiProviderManager inicializado con 11 proveedores
+2026-09-20 01:21:39,618 - kogniterm.stderr - ERROR - Downloading bytes:           |  0.00B            
+2026-09-20 01:21:39,618 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...): |          |  0.00B /  0.00B            
+2026-09-20 01:21:39,618 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:39,619 - kogniterm.stderr - ERROR - Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]
+2026-09-20 01:21:39,619 - kogniterm.stderr - ERROR - [A[A
+2026-09-20 01:21:39,897 - kogniterm.stderr - ERROR - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-20 01:21:39,897 - huggingface_hub.utils._http - WARNING - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-20 01:21:39,940 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...):   0%|          |  0.00B /   706B            
+2026-09-20 01:21:39,940 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:39,940 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...): 100%|##########|   706B /   706B            
+2026-09-20 01:21:39,941 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:39,941 - kogniterm.stderr - ERROR - Downloading bytes: ##########|   706B            
+2026-09-20 01:21:39,942 - kogniterm.stderr - ERROR - Fetching 5 files:  20%|##        | 1/5 [00:00<00:01,  3.10it/s]
+2026-09-20 01:21:39,942 - kogniterm.stderr - ERROR - [A[A
+2026-09-20 01:21:39,981 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...):  50%|#####     |   706B / 1.40kB            
+2026-09-20 01:21:39,981 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:39,982 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...):   0%|          |   706B /  713kB            
+2026-09-20 01:21:39,983 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:41,329 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...): 100%|#########9|  713kB /  714kB            
+2026-09-20 01:21:41,330 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:41,330 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...): 100%|##########|  714kB /  714kB            
+2026-09-20 01:21:41,330 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:41,330 - kogniterm.stderr - ERROR - Downloading bytes: ##########|  714kB            
+2026-09-20 01:21:41,331 - kogniterm.stderr - ERROR - Fetching 5 files:  80%|########  | 4/5 [00:01<00:00,  2.29it/s]
+2026-09-20 01:21:41,331 - kogniterm.stderr - ERROR - [A[A
+2026-09-20 01:21:41,982 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...):   1%|1         |  714kB / 67.2MB            
+2026-09-20 01:21:41,982 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:45,722 - kogniterm.stderr - ERROR - Downloading bytes: 1         |  796kB,  442kB/s  
+2026-09-20 01:21:45,822 - kogniterm.stderr - ERROR - Downloading bytes: 1         |  829kB,  105kB/s  
+2026-09-20 01:21:46,023 - kogniterm.stderr - ERROR - Downloading bytes: 1         |  878kB,  111kB/s  
+2026-09-20 01:21:46,124 - kogniterm.stderr - ERROR - Downloading bytes: 1         |  960kB,  120kB/s  
+2026-09-20 01:21:46,325 - kogniterm.stderr - ERROR - Downloading bytes: 1         | 1.07MB,  152kB/s  
+2026-09-20 01:21:46,426 - kogniterm.stderr - ERROR - Downloading bytes: 1         | 1.16MB,  198kB/s  
+2026-09-20 01:21:46,527 - kogniterm.stderr - ERROR - Downloading bytes: 1         | 1.34MB,  249kB/s  
+2026-09-20 01:21:46,728 - kogniterm.stderr - ERROR - Downloading bytes: 2         | 1.69MB,  401kB/s  
+2026-09-20 01:21:46,933 - kogniterm.stderr - ERROR - Downloading bytes: 3         | 2.10MB,  696kB/s  
+2026-09-20 01:21:47,034 - kogniterm.stderr - ERROR - Downloading bytes: 3         | 2.34MB, 1.01MB/s  
+2026-09-20 01:21:47,235 - kogniterm.stderr - ERROR - Downloading bytes: 3         | 2.69MB, 1.22MB/s  
+2026-09-20 01:21:47,436 - kogniterm.stderr - ERROR - Downloading bytes: 6         | 4.28MB, 1.36MB/s  
+2026-09-20 01:21:47,838 - kogniterm.stderr - ERROR - Downloading bytes: 7         | 5.18MB, 3.29MB/s  
+2026-09-20 01:21:47,938 - kogniterm.stderr - ERROR - Downloading bytes: #         | 6.73MB, 2.81MB/s  
+2026-09-20 01:21:48,240 - kogniterm.stderr - ERROR - Downloading bytes: #3        | 9.32MB, 4.59MB/s  
+2026-09-20 01:21:48,542 - kogniterm.stderr - ERROR - Downloading bytes: #9        | 13.0MB, 6.09MB/s  
+2026-09-20 01:21:48,643 - kogniterm.stderr - ERROR - Downloading bytes: ##1       | 14.3MB, 8.19MB/s  
+2026-09-20 01:21:48,744 - kogniterm.stderr - ERROR - Downloading bytes: ##2       | 15.4MB, 8.90MB/s  
+2026-09-20 01:21:48,844 - kogniterm.stderr - ERROR - Downloading bytes: ##6       | 17.6MB, 9.18MB/s  
+2026-09-20 01:21:49,145 - kogniterm.stderr - ERROR - Downloading bytes: ##9       | 20.0MB, 11.7MB/s  
+2026-09-20 01:21:49,346 - kogniterm.stderr - ERROR - Downloading bytes: ###3      | 22.3MB, 9.99MB/s  
+2026-09-20 01:21:49,547 - kogniterm.stderr - ERROR - Downloading bytes: ###5      | 23.9MB, 10.4MB/s  
+2026-09-20 01:21:49,748 - kogniterm.stderr - ERROR - Downloading bytes: ###8      | 26.0MB, 9.74MB/s  
+2026-09-20 01:21:49,949 - kogniterm.stderr - ERROR - Downloading bytes: ####1     | 28.1MB, 10.0MB/s  
+2026-09-20 01:21:50,050 - kogniterm.stderr - ERROR - Downloading bytes: ####3     | 29.4MB, 10.1MB/s  
+2026-09-20 01:21:50,251 - kogniterm.stderr - ERROR - Downloading bytes: ####6     | 31.4MB, 10.5MB/s  
+2026-09-20 01:21:50,454 - kogniterm.stderr - ERROR - Downloading bytes: ####9     | 33.5MB, 10.4MB/s  
+2026-09-20 01:21:50,555 - kogniterm.stderr - ERROR - Downloading bytes: #####1    | 34.6MB, 10.4MB/s  
+2026-09-20 01:21:50,655 - kogniterm.stderr - ERROR - Downloading bytes: #####4    | 36.3MB, 10.5MB/s  
+2026-09-20 01:21:50,856 - kogniterm.stderr - ERROR - Downloading bytes: #####6    | 38.2MB, 11.7MB/s  
+2026-09-20 01:21:51,060 - kogniterm.stderr - ERROR - Downloading bytes: #####9    | 39.9MB, 10.9MB/s  
+2026-09-20 01:21:51,160 - kogniterm.stderr - ERROR - Downloading bytes: ######1   | 41.1MB, 10.1MB/s  
+2026-09-20 01:21:51,261 - kogniterm.stderr - ERROR - Downloading bytes: ######4   | 43.2MB, 10.5MB/s  
+2026-09-20 01:21:51,562 - kogniterm.stderr - ERROR - Downloading bytes: ######7   | 45.7MB, 12.6MB/s  
+2026-09-20 01:21:51,763 - kogniterm.stderr - ERROR - Downloading bytes: #######4  | 50.1MB, 10.5MB/s  
+2026-09-20 01:21:52,164 - kogniterm.stderr - ERROR - Downloading bytes: #######7  | 52.2MB, 14.2MB/s  
+2026-09-20 01:21:52,365 - kogniterm.stderr - ERROR - Downloading bytes: ########1 | 54.7MB, 9.95MB/s  
+2026-09-20 01:21:52,566 - kogniterm.stderr - ERROR - Downloading bytes: ########4 | 56.7MB, 10.6MB/s  
+2026-09-20 01:21:52,767 - kogniterm.stderr - ERROR - Downloading bytes: ########7 | 58.6MB, 10.4MB/s  
+2026-09-20 01:21:52,969 - kogniterm.stderr - ERROR - Downloading bytes: ######### | 60.7MB, 10.2MB/s  
+2026-09-20 01:21:53,170 - kogniterm.stderr - ERROR - Downloading bytes: #########3| 63.1MB, 10.2MB/s  
+2026-09-20 01:21:53,371 - kogniterm.stderr - ERROR - Downloading bytes: #########6| 64.9MB, 10.6MB/s  
+2026-09-20 01:21:53,472 - kogniterm.stderr - ERROR - Downloading bytes: #########8| 66.0MB, 10.2MB/s  
+2026-09-20 01:21:53,572 - kogniterm.stderr - ERROR - Downloading bytes: #########9| 67.1MB, 10.3MB/s  
+2026-09-20 01:21:53,759 - kogniterm.stderr - ERROR - Reconstructing (incomplete total...): 100%|##########| 67.2MB / 67.2MB            
+2026-09-20 01:21:53,759 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:53,760 - kogniterm.stderr - ERROR - Fetching 5 files: 100%|##########| 5/5 [00:14<00:00,  3.78s/it]
+2026-09-20 01:21:53,760 - kogniterm.stderr - ERROR - [A[A
+2026-09-20 01:21:53,761 - kogniterm.stderr - ERROR - Fetching 5 files: 100%|##########| 5/5 [00:14<00:00,  2.83s/it]
+2026-09-20 01:21:53,761 - kogniterm.stderr - ERROR - Downloading bytes: ##########| 67.2MB, 10.5MB/s  
+2026-09-20 01:21:53,762 - kogniterm.stderr - ERROR - Download complete: : ##########| 67.2MB, 10.5MB/s  
+2026-09-20 01:21:53,762 - kogniterm.stderr - ERROR - Reconstruction complete: 100%|##########| 67.2MB / 67.2MB, 4.94MB/s               
+2026-09-20 01:21:53,762 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:21:54,398 - kogniterm.core.delegation.heartbeat_monitor - INFO - HeartbeatMonitor iniciado.
+2026-09-20 01:21:54,404 - kogniterm.core.skills.skill_manager - INFO - SkillManager inicializado. Bases: bundled=/home/gato/.kogniterm/repo/kogniterm/skills/bundled, global=/home/gato/.agents/skills, managed=/home/gato/.kogniterm/skills/managed, workspace=/home/gato/.kogniterm/repo/kogniterm/skills/workspace
+2026-09-20 01:21:54,404 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en bundled: /home/gato/.kogniterm/repo/kogniterm/skills/bundled
+2026-09-20 01:21:54,518 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en global: /home/gato/.agents/skills
+2026-09-20 01:21:54,695 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en managed: /home/gato/.kogniterm/skills/managed
+2026-09-20 01:21:54,702 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en workspace: /home/gato/.kogniterm/repo/kogniterm/skills/workspace
+2026-09-20 01:21:54,742 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en external: /home/gato/.kogniterm/repo/kogniterm/skills/external
+2026-09-20 01:21:54,749 - kogniterm.core.skills.skill_manager - INFO - Discovery completado: 115 skills encontradas
+2026-09-20 01:21:54,752 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'plan-creation' cargada (1 herramientas)
+2026-09-20 01:21:54,934 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'web-tools' cargada (4 herramientas)
+2026-09-20 01:21:54,937 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'pc-interaction' cargada (1 herramientas)
+2026-09-20 01:21:54,938 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-append' cargada (1 herramientas)
+2026-09-20 01:21:54,942 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'call-agent' cargada (1 herramientas)
+2026-09-20 01:21:54,943 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'skill-factory' cargada (1 herramientas)
+2026-09-20 01:21:54,963 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'browser-navigation' cargada (1 herramientas)
+2026-09-20 01:21:54,964 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'execute-command' cargada (1 herramientas)
+2026-09-20 01:21:54,965 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-read' cargada (1 herramientas)
+2026-09-20 01:21:54,965 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-init' cargada (1 herramientas)
+2026-09-20 01:21:55,064 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'python-executor' cargada (1 herramientas)
+2026-09-20 01:21:55,065 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'task-tracker' cargada (1 herramientas)
+2026-09-20 01:21:55,067 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'code-tools' cargada (2 herramientas)
+2026-09-20 01:21:55,071 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'advanced-file-editor' cargada (1 herramientas)
+2026-09-20 01:21:55,080 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'file-operations' cargada (14 herramientas)
+2026-09-20 01:21:55,081 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-summarize' cargada (1 herramientas)
+2026-09-20 01:21:55,082 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'call-agents-parallel' cargada (1 herramientas)
+2026-09-20 01:21:55,083 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'refresh-tools' cargada (1 herramientas)
+2026-09-20 01:21:55,087 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'file-update' cargada (1 herramientas)
+2026-09-20 01:21:55,089 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'agent-skills-adapter' cargada (1 herramientas)
+2026-09-20 01:21:55,090 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ask_question' cargada (1 herramientas)
+2026-09-20 01:21:55,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'set-llm-instructions' cargada (1 herramientas)
+2026-09-20 01:21:55,093 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'manage-background-task' cargada (1 herramientas)
+2026-09-20 01:21:55,093 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'file-read-directory' cargada (1 herramientas)
+2026-09-20 01:21:55,094 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'search-memory' cargada (1 herramientas)
+2026-09-20 01:21:55,097 - kogniterm.core.skills.skill_manager - INFO - Skill 'GRC & Compliance' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,097 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'GRC & Compliance' cargada (0 herramientas)
+2026-09-20 01:21:55,098 - kogniterm.core.skills.skill_manager - INFO - Skill 'onboarding' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,098 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'onboarding' cargada (0 herramientas)
+2026-09-20 01:21:55,098 - kogniterm.core.skills.skill_manager - INFO - Skill 'free-tools' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,098 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'free-tools' cargada (0 herramientas)
+2026-09-20 01:21:55,098 - kogniterm.core.skills.skill_manager - INFO - Skill 'site-architecture' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'site-architecture' cargada (0 herramientas)
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - Skill 'attribution' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'attribution' cargada (0 herramientas)
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - Skill 'prospecting' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'prospecting' cargada (0 herramientas)
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - Skill 'pricing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'pricing' cargada (0 herramientas)
+2026-09-20 01:21:55,099 - kogniterm.core.skills.skill_manager - INFO - Skill 'aso' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'aso' cargada (0 herramientas)
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - Skill 'analytics' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'analytics' cargada (0 herramientas)
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - Skill 'customer-research' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'customer-research' cargada (0 herramientas)
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - Skill 'directory-submissions' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,100 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'directory-submissions' cargada (0 herramientas)
+2026-09-20 01:21:55,104 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Cloud Security & Container Hardening' cargada (3 herramientas)
+2026-09-20 01:21:55,104 - kogniterm.core.skills.skill_manager - INFO - Skill 'Red Team Operations & Engagement Planning' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,105 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Red Team Operations & Engagement Planning' cargada (0 herramientas)
+2026-09-20 01:21:55,106 - kogniterm_dynamic_skills.Network_Security___Traffic_Analysis.scripts.pcap_analyzer - WARNING - scapy not available. Install: pip install scapy
+2026-09-20 01:21:55,106 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta PCAPAnalyzer: PCAPAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-20 01:21:55,106 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase PCAPAnalyzer: PCAPAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-20 01:21:55,106 - kogniterm.core.skills.skill_manager - INFO - Skill 'Network Security & Traffic Analysis' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,106 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Network Security & Traffic Analysis' cargada (0 herramientas)
+2026-09-20 01:21:55,106 - kogniterm.core.skills.skill_manager - INFO - Skill 'seo-audit' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,107 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'seo-audit' cargada (0 herramientas)
+2026-09-20 01:21:55,107 - kogniterm.core.skills.skill_manager - INFO - Skill 'Cryptographic Analysis & Assessment' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Cryptographic Analysis & Assessment' cargada (0 herramientas)
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - Skill 'co-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'co-marketing' cargada (0 herramientas)
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - Skill 'find-skills' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'find-skills' cargada (0 herramientas)
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - Skill 'content-strategy' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'content-strategy' cargada (0 herramientas)
+2026-09-20 01:21:55,109 - kogniterm.core.skills.skill_manager - INFO - Skill 'ads' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,109 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ads' cargada (0 herramientas)
+2026-09-20 01:21:55,109 - kogniterm.core.skills.skill_manager - INFO - Skill 'cro' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,109 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'cro' cargada (0 herramientas)
+2026-09-20 01:21:55,109 - kogniterm.core.skills.skill_manager - INFO - Skill 'competitors' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,109 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'competitors' cargada (0 herramientas)
+2026-09-20 01:21:55,111 - kogniterm.core.skills.skill_manager - INFO - Skill 'CSOC Operations & Playbook Automation' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,111 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'CSOC Operations & Playbook Automation' cargada (0 herramientas)
+2026-09-20 01:21:55,111 - kogniterm.core.skills.skill_manager - INFO - Skill 'schema' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,111 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'schema' cargada (0 herramientas)
+2026-09-20 01:21:55,111 - kogniterm.core.skills.skill_manager - INFO - Skill 'offers' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'offers' cargada (0 herramientas)
+2026-09-20 01:21:55,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'paywalls' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'paywalls' cargada (0 herramientas)
+2026-09-20 01:21:55,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'community-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'community-marketing' cargada (0 herramientas)
+2026-09-20 01:21:55,113 - kogniterm.core.skills.skill_manager - INFO - Skill 'Exploit Development & Payload Engineering' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,113 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Exploit Development & Payload Engineering' cargada (0 herramientas)
+2026-09-20 01:21:55,118 - kogniterm.core.skills.skill_manager - INFO - Skill 'Threat Hunting & IOC Analysis' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,118 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Threat Hunting & IOC Analysis' cargada (0 herramientas)
+2026-09-20 01:21:55,118 - kogniterm.core.skills.skill_manager - INFO - Skill 'copywriting' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,118 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'copywriting' cargada (0 herramientas)
+2026-09-20 01:21:55,118 - kogniterm.core.skills.skill_manager - INFO - Skill 'referrals' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,118 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'referrals' cargada (0 herramientas)
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - Skill 'lead-magnets' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'lead-magnets' cargada (0 herramientas)
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - Skill 'influencer-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'influencer-marketing' cargada (0 herramientas)
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - Skill 'churn-prevention' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'churn-prevention' cargada (0 herramientas)
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - Skill 'video' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'video' cargada (0 herramientas)
+2026-09-20 01:21:55,119 - kogniterm.core.skills.skill_manager - INFO - Skill 'jest-react-testing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,120 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'jest-react-testing' cargada (0 herramientas)
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - Skill 'AI & LLM Security' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'AI & LLM Security' cargada (0 herramientas)
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - Skill 'copy-editing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'copy-editing' cargada (0 herramientas)
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - Skill 'proactive-agent' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'proactive-agent' cargada (0 herramientas)
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - Skill 'competitor-profiling' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,122 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'competitor-profiling' cargada (0 herramientas)
+2026-09-20 01:21:55,123 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta APISecurityTester: APISecurityTester.__init__() missing 1 required positional argument: 'base_url'
+2026-09-20 01:21:55,123 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase APISecurityTester: APISecurityTester.__init__() missing 1 required positional argument: 'base_url'
+2026-09-20 01:21:55,124 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta OWASPScanner: OWASPScanner.__init__() missing 1 required positional argument: 'base_url'
+2026-09-20 01:21:55,124 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase OWASPScanner: OWASPScanner.__init__() missing 1 required positional argument: 'base_url'
+2026-09-20 01:21:55,124 - kogniterm.core.skills.skill_manager - INFO - Skill 'Web Application Security Testing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,124 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Web Application Security Testing' cargada (0 herramientas)
+2026-09-20 01:21:55,124 - kogniterm.core.skills.skill_manager - INFO - Skill 'agent-browser' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,124 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'agent-browser' cargada (0 herramientas)
+2026-09-20 01:21:55,125 - kogniterm.core.skills.skill_manager - INFO - Skill 'Vulnerability Scanning & Assessment' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,125 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Vulnerability Scanning & Assessment' cargada (0 herramientas)
+2026-09-20 01:21:55,126 - kogniterm.core.skills.skill_manager - INFO - Skill 'popups' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,126 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'popups' cargada (0 herramientas)
+2026-09-20 01:21:55,126 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta StaticAnalyzer: StaticAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-20 01:21:55,126 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase StaticAnalyzer: StaticAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-20 01:21:55,127 - kogniterm.core.skills.skill_manager - INFO - Skill 'Malware Analysis & Sandboxing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,127 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Malware Analysis & Sandboxing' cargada (0 herramientas)
+2026-09-20 01:21:55,127 - kogniterm.core.skills.skill_manager - INFO - Skill 'launch' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,127 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'launch' cargada (0 herramientas)
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - Skill 'emails' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'emails' cargada (0 herramientas)
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - Skill 'code-review' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'code-review' cargada (0 herramientas)
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - Skill 'social' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'social' cargada (0 herramientas)
+2026-09-20 01:21:55,128 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-loops' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-loops' cargada (0 herramientas)
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - Skill 'ab-testing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ab-testing' cargada (0 herramientas)
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - Skill 'product-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'product-marketing' cargada (0 herramientas)
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - Skill 'cold-email' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,129 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'cold-email' cargada (0 herramientas)
+2026-09-20 01:21:55,138 - kogniterm.core.skills.skill_manager - INFO - Skill 'email-imap-fetch' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,138 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'email-imap-fetch' cargada (0 herramientas)
+2026-09-20 01:21:55,139 - kogniterm.core.skills.skill_manager - INFO - Skill 'OT / ICS / SCADA Security' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,139 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'OT / ICS / SCADA Security' cargada (0 herramientas)
+2026-09-20 01:21:55,141 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta BinaryAnalyzer: BinaryAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-20 01:21:55,141 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase BinaryAnalyzer: BinaryAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-20 01:21:55,141 - kogniterm.core.skills.skill_manager - INFO - Skill 'Reverse Engineering & Binary Analysis' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,141 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Reverse Engineering & Binary Analysis' cargada (0 herramientas)
+2026-09-20 01:21:55,146 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Log Analysis & SIEM Integration' cargada (1 herramientas)
+2026-09-20 01:21:55,146 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-ideas' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,147 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-ideas' cargada (0 herramientas)
+2026-09-20 01:21:55,147 - kogniterm.core.skills.skill_manager - INFO - Skill 'docker-manager' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,147 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'docker-manager' cargada (0 herramientas)
+2026-09-20 01:21:55,147 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-psychology' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,147 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-psychology' cargada (0 herramientas)
+2026-09-20 01:21:55,148 - kogniterm.print - INFO - [!] 'dnspython' module required: pip install dnspython
+2026-09-20 01:21:55,148 - kogniterm.core.skills.skill_manager - ERROR - Error cargando módulo /home/gato/.agents/skills/reconnaissance-osint-automation/scripts/dns_recon.py: 1
+Traceback (most recent call last):
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/dns_recon.py", line 17, in <module>
+    import dns.resolver
+ModuleNotFoundError: No module named 'dns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 252, in load_tools_from_skill
+    module_tools = self._load_module_tools(script_file, skill.name)
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 277, in _load_module_tools
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/dns_recon.py", line 23, in <module>
+    sys.exit(1)
+    ~~~~~~~~^^^
+SystemExit: 1
+2026-09-20 01:21:55,151 - kogniterm.print - INFO - [!] 'dnspython' module required: pip install dnspython
+2026-09-20 01:21:55,152 - kogniterm.core.skills.skill_manager - ERROR - Error cargando módulo /home/gato/.agents/skills/reconnaissance-osint-automation/scripts/subdomain_enum.py: 1
+Traceback (most recent call last):
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/subdomain_enum.py", line 26, in <module>
+    import dns.resolver
+ModuleNotFoundError: No module named 'dns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 252, in load_tools_from_skill
+    module_tools = self._load_module_tools(script_file, skill.name)
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 277, in _load_module_tools
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/subdomain_enum.py", line 31, in <module>
+    sys.exit(1)
+    ~~~~~~~~^^^
+SystemExit: 1
+2026-09-20 01:21:55,154 - kogniterm.core.skills.skill_manager - INFO - Skill 'Reconnaissance & OSINT Automation' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,154 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Reconnaissance & OSINT Automation' cargada (0 herramientas)
+2026-09-20 01:21:55,154 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-plan' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,154 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-plan' cargada (0 herramientas)
+2026-09-20 01:21:55,155 - kogniterm.core.skills.skill_manager - INFO - Skill 'public-relations' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,155 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'public-relations' cargada (0 herramientas)
+2026-09-20 01:21:55,155 - kogniterm.core.skills.skill_manager - INFO - Skill 'ad-creative' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,155 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ad-creative' cargada (0 herramientas)
+2026-09-20 01:21:55,155 - kogniterm.core.skills.skill_manager - INFO - Skill 'sms' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,155 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'sms' cargada (0 herramientas)
+2026-09-20 01:21:55,156 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Blue Team Defense & Hardening' cargada (1 herramientas)
+2026-09-20 01:21:55,157 - kogniterm.core.skills.skill_manager - INFO - Skill 'Mobile Application Security' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,157 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Mobile Application Security' cargada (0 herramientas)
+2026-09-20 01:21:55,157 - kogniterm.core.skills.skill_manager - INFO - Skill 'sales-enablement' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,157 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'sales-enablement' cargada (0 herramientas)
+2026-09-20 01:21:55,158 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta EvidenceCollector: EvidenceCollector.__init__() missing 1 required positional argument: 'output_dir'
+2026-09-20 01:21:55,158 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase EvidenceCollector: EvidenceCollector.__init__() missing 1 required positional argument: 'output_dir'
+2026-09-20 01:21:55,160 - kogniterm.core.skills.skill_manager - INFO - Skill 'Incident Response & Digital Forensics' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,160 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Incident Response & Digital Forensics' cargada (0 herramientas)
+2026-09-20 01:21:55,160 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-council' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,160 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-council' cargada (0 herramientas)
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - Skill 'frontend-design' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'frontend-design' cargada (0 herramientas)
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - Skill 'revops' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'revops' cargada (0 herramientas)
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - Skill 'programmatic-seo' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'programmatic-seo' cargada (0 herramientas)
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - Skill 'docker-audit' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,161 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'docker-audit' cargada (0 herramientas)
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - Skill 'security-review' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'security-review' cargada (0 herramientas)
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - Skill 'image' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'image' cargada (0 herramientas)
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - Skill 'signup' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'signup' cargada (0 herramientas)
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - Skill 'ai-seo' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,162 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ai-seo' cargada (0 herramientas)
+2026-09-20 01:21:55,164 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'brave_search' cargada (1 herramientas)
+2026-09-20 01:21:55,165 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'project-analyzer' cargada (1 herramientas)
+2026-09-20 01:21:55,165 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'native-photo-organizer' cargada (1 herramientas)
+2026-09-20 01:21:55,172 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'email-manager' cargada (1 herramientas)
+2026-09-20 01:21:55,172 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'photo-organizer' cargada (1 herramientas)
+2026-09-20 01:21:55,173 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'evolution-test-skill' cargada (1 herramientas)
+2026-09-20 01:21:55,174 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'safe-cleanup' cargada (1 herramientas)
+2026-09-20 01:21:55,175 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'photo-organizer-tool' cargada (1 herramientas)
+2026-09-20 01:21:55,175 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'parse-iso-mirrors-from-html' cargada (1 herramientas)
+2026-09-20 01:21:55,176 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'docker_auditor' cargada (1 herramientas)
+2026-09-20 01:21:55,176 - kogniterm.core.skills.skill_manager - INFO - Skill 'integrate-whatsapp' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-20 01:21:55,176 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'integrate-whatsapp' cargada (0 herramientas)
+2026-09-20 01:21:55,195 - kogniterm.core.multi_provider_manager - INFO - Métricas reiniciadas para kilocode
+2026-09-20 01:21:55,195 - kogniterm.core.llm_service - INFO - 🤖 Cambiado a KiloCode: kilocode/stepfun/step-3.7-flash:free
+2026-09-20 01:21:55,196 - kogniterm.core.llm_service - INFO - ✅ Estado de LiteLLM actualizado satisfactoriamente.
+2026-09-20 01:21:55,214 - kogniterm.core.thread_manager - INFO - ThreadManager inicializado en /home/gato/Proyectos/bitwig_agent/.kogniterm/threads
+2026-09-20 01:21:55,358 - kogniterm.terminal.agent_interaction_manager - INFO - AgentInteractionManager init: terminal_ui class=<class 'kogniterm.terminal.tui.tui_app.TextualTerminalUI'>
+2026-09-20 01:21:55,408 - kogniterm.terminal.agent_interaction_manager - INFO - AgentInteractionManager: Usando SuperAgent como agente principal.
+2026-09-20 01:21:55,735 - kogniterm.terminal.tui.tui_app - INFO - [Híbrido] Servidor no disponible. Usando modo local.
+2026-09-20 01:21:55,866 - kogniterm.core.context.vector_db_manager - INFO - ChromaDB connection closed.
+2026-09-20 01:22:08,272 - kogniterm.core.llm_service - INFO - Sincronizando herramientas en LLMService...
+2026-09-20 01:22:09,618 - kogniterm.stderr - ERROR - Download complete: : ##########| 67.2MB, 10.5MB/s  
+2026-09-20 01:22:09,618 - kogniterm.stderr - ERROR - Reconstruction complete: 100%|##########| 67.2MB / 67.2MB, 4.94MB/s  
+2026-09-20 01:22:09,618 - kogniterm.stderr - ERROR - [A
+2026-09-20 01:24:18,906 - kogniterm.core.skills.skill_manager - WARNING - Skill 'file_operations' no encontrada en registry
+2026-09-20 01:24:18,911 - kogniterm.core.skills.skill_manager - WARNING - Skill 'codebase_search' no encontrada en registry
+2026-09-20 01:24:18,914 - kogniterm.core.skills.skill_manager - WARNING - Skill 'task_tracker' no encontrada en registry
+2026-09-20 01:24:19,309 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:24:19,467 - kogniterm.stderr - ERROR - Download complete: : ##########| 67.2MB, 10.5MB/s  
+2026-09-20 01:24:19,473 - kogniterm.stderr - ERROR - Reconstruction complete: 100%|##########| 67.2MB / 67.2MB, 4.94MB/s  
+2026-09-20 01:24:27,781 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:24:34,354 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:24:43,422 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:24:50,603 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:24:56,824 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:24:59,483 - kogniterm.core.context.vector_db_manager - INFO - Added 271 chunks to ChromaDB (Batch 1).
+2026-09-20 01:24:59,484 - kogniterm.core.context.vector_db_manager - INFO - ChromaDB connection closed.
+2026-09-20 01:25:10,978 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:25:18,946 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:25:27,825 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:25:37,458 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:25:47,440 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:26:30,808 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:26:40,523 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:27:38,929 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:27:38,930 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:27:41,576 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:27:41,579 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (2650.30ms)
+2026-09-20 01:28:30,460 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:28:39,199 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:28:46,805 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:28:58,406 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:29:11,832 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:29:20,641 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:29:28,946 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:29:28,947 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:29:28,952 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:29:28,952 - kogniterm.terminal.agent_interaction_manager - INFO - Ejecutando el grafo de aprendizaje posterior en segundo plano...
+2026-09-20 01:29:28,952 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:29:28,953 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:29:28,952 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm', 'completed', 'result'], file_diff=None, tool_pend=None
+2026-09-20 01:29:28,956 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:29:31,937 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:29:31,939 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (2986.75ms)
+2026-09-20 01:29:38,242 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:29:38,243 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (9297.26ms)
+2026-09-20 01:29:54,766 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:30:26,028 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:30:37,783 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:30:49,552 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:05,919 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:14,593 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:21,941 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:31,040 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:39,387 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:31:39,387 - kogniterm.terminal.agent_interaction_manager - INFO - Ejecutando el grafo de aprendizaje posterior en segundo plano...
+2026-09-20 01:31:39,387 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:31:39,389 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:39,388 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:31:39,396 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:31:39,392 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm', 'completed', 'result'], file_diff=None, tool_pend=None
+2026-09-20 01:31:39,398 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:31:42,169 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:31:42,170 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (2782.48ms)
+2026-09-20 01:31:44,015 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:31:44,016 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (4623.68ms)
+2026-09-20 01:33:32,399 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:33:47,763 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:33:47,763 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-20 01:33:47,763 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:33:48,174 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (240 bytes)
+2026-09-20 01:33:48,293 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1077 bytes)
+2026-09-20 01:33:48,775 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:33:58,044 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:33:58,045 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-20 01:33:58,045 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:33:58,051 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (9 bytes)
+2026-09-20 01:33:58,140 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (292 bytes)
+2026-09-20 01:33:58,552 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:34:08,997 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:34:08,997 - kogniterm.terminal.agent_interaction_manager - INFO - Ejecutando el grafo de aprendizaje posterior en segundo plano...
+2026-09-20 01:34:08,997 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm', 'completed', 'result'], file_diff=None, tool_pend=None
+2026-09-20 01:34:08,997 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:34:08,999 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:34:09,000 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:34:09,002 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: kilocode
+2026-09-20 01:34:09,003 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-20 01:34:12,740 - kogniterm.terminal.tui.command_processor - WARNING - Error conectando con servidor para actualizar proveedor: All connection attempts failed
+2026-09-20 01:34:12,742 - kogniterm.core.multi_provider_manager - INFO - Métricas reiniciadas para antigravity
+2026-09-20 01:34:12,742 - kogniterm.core.llm_service - INFO - 🚀 Cambiado a Antigravity: antigravity/gemini-3-flash
+2026-09-20 01:34:12,742 - kogniterm.core.llm_service - INFO - ✅ Estado de LiteLLM actualizado satisfactoriamente.
+2026-09-20 01:34:16,833 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:34:16,834 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (7834.46ms)
+2026-09-20 01:34:17,046 - LiteLLM - INFO - Wrapper: Completed Call, calling success_handler
+2026-09-20 01:34:17,770 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con kilocode (8767.50ms)
+2026-09-20 01:34:39,654 - kogniterm.core.antigravity_client - INFO - Token de Antigravity refrescado correctamente.
+2026-09-20 01:34:41,210 - kogniterm.core.antigravity_client - INFO - Project ID de Antigravity resuelto: aicode-consumers
+2026-09-20 01:34:41,217 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('quiero una heRRAMIENTA PA')"]
+  1: role=model parts=['functionCall(task_tracker)']
+  2: role=user parts=['functionResponse(task_tracker)']
+  3: role=model parts=['functionCall(codebase_search)']
+  4: role=user parts=['functionResponse(codebase_search)']
+  5: role=model parts=['functionCall(codebase_search)']
+  6: role=user parts=['functionResponse(codebase_search)']
+  7: role=model parts=['functionCall(task_tracker)']
+  8: role=user parts=['functionResponse(task_tracker)']
+  9: role=model parts=['functionCall(codebase_search)']
+  10: role=user parts=['functionResponse(codebase_search)']
+  11: role=model parts=['functionCall(codebase_search)']
+  12: role=user parts=['functionResponse(codebase_search)']
+  13: role=model parts=['functionCall(read_file)']
+  14: role=user parts=['functionResponse(read_file)']
+  15: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  16: role=user parts=['functionResponse(task_tracker)']
+  17: role=model parts=['functionCall(task_tracker)']
+  18: role=user parts=['functionResponse(task_tracker)']
+  19: role=model parts=['functionCall(read_file)']
+  20: role=user parts=['functionResponse(read_file)']
+  21: role=model parts=['functionCall(read_file)']
+  22: role=user parts=['functionResponse(read_file)']
+  23: role=model parts=['functionCall(read_file)']
+  24: role=user parts=['functionResponse(read_file)']
+  25: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  26: role=user parts=['functionResponse(task_tracker)']
+  27: role=model parts=['functionCall(task_tracker)']
+  28: role=user parts=['functionResponse(task_tracker)']
+  29: role=model parts=['functionCall(read_file)']
+  30: role=user parts=['functionResponse(read_file)']
+  31: role=model parts=['functionCall(read_file)']
+  32: role=user parts=['functionResponse(read_file)']
+  33: role=model parts=["text('Acciones completadas (tas')"]
+  34: role=user parts=["text('continua')"]
+  35: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  36: role=user parts=['functionResponse(task_tracker)']
+  37: role=model parts=['functionCall(task_tracker)']
+  38: role=user parts=['functionResponse(task_tracker)']
+  39: role=model parts=['functionCall(task_tracker)']
+  40: role=user parts=['functionResponse(task_tracker)']
+  41: role=model parts=['functionCall(edit_file)']
+  42: role=user parts=['functionResponse(edit_file)']
+  43: role=model parts=['functionCall(edit_file)']
+  44: role=user parts=['functionResponse(edit_file)']
+  45: role=model parts=['functionCall(edit_file)']
+  46: role=user parts=['functionResponse(edit_file)']
+  47: role=model parts=['functionCall(edit_file)']
+  48: role=user parts=['functionResponse(edit_file)']
+  49: role=model parts=['functionCall(edit_file)']
+  50: role=user parts=['functionResponse(edit_file)']
+  51: role=model parts=['functionCall(edit_file)']
+  52: role=user parts=['functionResponse(edit_file)']
+  53: role=model parts=['functionCall(task_tracker)']
+  54: role=user parts=['functionResponse(task_tracker)']
+  55: role=model parts=['functionCall(code_analysis)']
+  56: role=user parts=['functionResponse(code_analysis)']
+  57: role=model parts=["text('Listo. Añadí una herramie')"]
+  58: role=user parts=["text('da error al itnentar cone')"]
+  59: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)', 'functionCall(execute_command)']
+  60: role=user parts=['functionResponse(execute_command)']
+  61: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)']
+  62: role=user parts=['functionResponse(execute_command)']
+  63: role=model parts=["text('El bridge está corriendo,')"]
+  64: role=user parts=["text('es que al poner conectar ')"]
+2026-09-20 01:34:41,220 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:34:45,100 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:34:45,101 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-20 01:34:45,101 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:34:45,108 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (5 bytes)
+2026-09-20 01:34:45,196 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (251 bytes)
+2026-09-20 01:34:45,744 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (371 bytes)
+2026-09-20 01:34:45,993 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (172 bytes)
+2026-09-20 01:34:46,220 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4041 bytes)
+2026-09-20 01:34:46,542 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (3246 bytes)
+2026-09-20 01:34:47,073 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('quiero una heRRAMIENTA PA')"]
+  1: role=model parts=['functionCall(task_tracker)']
+  2: role=user parts=['functionResponse(task_tracker)']
+  3: role=model parts=['functionCall(codebase_search)']
+  4: role=user parts=['functionResponse(codebase_search)']
+  5: role=model parts=['functionCall(codebase_search)']
+  6: role=user parts=['functionResponse(codebase_search)']
+  7: role=model parts=['functionCall(task_tracker)']
+  8: role=user parts=['functionResponse(task_tracker)']
+  9: role=model parts=['functionCall(codebase_search)']
+  10: role=user parts=['functionResponse(codebase_search)']
+  11: role=model parts=['functionCall(codebase_search)']
+  12: role=user parts=['functionResponse(codebase_search)']
+  13: role=model parts=['functionCall(read_file)']
+  14: role=user parts=['functionResponse(read_file)']
+  15: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  16: role=user parts=['functionResponse(task_tracker)']
+  17: role=model parts=['functionCall(task_tracker)']
+  18: role=user parts=['functionResponse(task_tracker)']
+  19: role=model parts=['functionCall(read_file)']
+  20: role=user parts=['functionResponse(read_file)']
+  21: role=model parts=['functionCall(read_file)']
+  22: role=user parts=['functionResponse(read_file)']
+  23: role=model parts=['functionCall(read_file)']
+  24: role=user parts=['functionResponse(read_file)']
+  25: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  26: role=user parts=['functionResponse(task_tracker)']
+  27: role=model parts=['functionCall(task_tracker)']
+  28: role=user parts=['functionResponse(task_tracker)']
+  29: role=model parts=['functionCall(read_file)']
+  30: role=user parts=['functionResponse(read_file)']
+  31: role=model parts=['functionCall(read_file)']
+  32: role=user parts=['functionResponse(read_file)']
+  33: role=model parts=["text('Acciones completadas (tas')"]
+  34: role=user parts=["text('continua')"]
+  35: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  36: role=user parts=['functionResponse(task_tracker)']
+  37: role=model parts=['functionCall(task_tracker)']
+  38: role=user parts=['functionResponse(task_tracker)']
+  39: role=model parts=['functionCall(task_tracker)']
+  40: role=user parts=['functionResponse(task_tracker)']
+  41: role=model parts=['functionCall(edit_file)']
+  42: role=user parts=['functionResponse(edit_file)']
+  43: role=model parts=['functionCall(edit_file)']
+  44: role=user parts=['functionResponse(edit_file)']
+  45: role=model parts=['functionCall(edit_file)']
+  46: role=user parts=['functionResponse(edit_file)']
+  47: role=model parts=['functionCall(edit_file)']
+  48: role=user parts=['functionResponse(edit_file)']
+  49: role=model parts=['functionCall(edit_file)']
+  50: role=user parts=['functionResponse(edit_file)']
+  51: role=model parts=['functionCall(edit_file)']
+  52: role=user parts=['functionResponse(edit_file)']
+  53: role=model parts=['functionCall(task_tracker)']
+  54: role=user parts=['functionResponse(task_tracker)']
+  55: role=model parts=['functionCall(code_analysis)']
+  56: role=user parts=['functionResponse(code_analysis)']
+  57: role=model parts=["text('Listo. Añadí una herramie')"]
+  58: role=user parts=["text('da error al itnentar cone')"]
+  59: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)', 'functionCall(execute_command)']
+  60: role=user parts=['functionResponse(execute_command)']
+  61: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)']
+  62: role=user parts=['functionResponse(execute_command)']
+  63: role=model parts=["text('El bridge está corriendo,')"]
+  64: role=user parts=["text('es que al poner conectar ')"]
+  65: role=model parts=['functionCall(execute_command)']
+  66: role=user parts=['functionResponse(execute_command)']
+2026-09-20 01:34:47,081 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:34:49,796 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:34:49,797 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-20 01:34:49,797 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:34:49,802 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (5 bytes)
+2026-09-20 01:34:49,883 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (251 bytes)
+2026-09-20 01:34:51,077 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (87 bytes)
+2026-09-20 01:34:57,508 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (45 bytes)
+2026-09-20 01:34:57,708 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (58 bytes)
+2026-09-20 01:34:58,399 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (43 bytes)
+2026-09-20 01:35:02,029 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4 bytes)
+2026-09-20 01:35:02,727 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4 bytes)
+2026-09-20 01:35:03,387 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4 bytes)
+2026-09-20 01:35:05,834 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4 bytes)
+2026-09-20 01:35:06,234 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (8 bytes)
+2026-09-20 01:35:06,405 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4 bytes)
+2026-09-20 01:35:07,005 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (147 bytes)
+2026-09-20 01:35:07,456 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (51 bytes)
+2026-09-20 01:35:07,667 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4 bytes)
+2026-09-20 01:35:07,832 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (8 bytes)
+2026-09-20 01:35:08,128 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (189 bytes)
+2026-09-20 01:35:08,371 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (139 bytes)
+2026-09-20 01:35:08,669 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (242 bytes)
+2026-09-20 01:35:08,811 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (248 bytes)
+2026-09-20 01:35:09,148 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (611 bytes)
+2026-09-20 01:35:09,310 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (324 bytes)
+2026-09-20 01:35:09,472 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (140 bytes)
+2026-09-20 01:35:09,759 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (324 bytes)
+2026-09-20 01:35:09,942 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (460 bytes)
+2026-09-20 01:35:10,602 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (76 bytes)
+2026-09-20 01:35:10,761 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (436 bytes)
+2026-09-20 01:35:11,173 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (137 bytes)
+2026-09-20 01:35:11,380 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (488 bytes)
+2026-09-20 01:35:11,600 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (221 bytes)
+2026-09-20 01:35:11,987 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (449 bytes)
+2026-09-20 01:35:12,360 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (221 bytes)
+2026-09-20 01:35:12,917 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (101 bytes)
+2026-09-20 01:35:13,232 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1385 bytes)
+2026-09-20 01:35:13,485 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (168 bytes)
+2026-09-20 01:35:13,726 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (95 bytes)
+2026-09-20 01:35:13,962 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (267 bytes)
+2026-09-20 01:35:14,518 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (825 bytes)
+2026-09-20 01:35:15,320 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (77 bytes)
+2026-09-20 01:35:15,721 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (472 bytes)
+2026-09-20 01:35:16,378 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (212 bytes)
+2026-09-20 01:35:16,723 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (714 bytes)
+2026-09-20 01:35:17,023 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (674 bytes)
+2026-09-20 01:35:17,426 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1553 bytes)
+2026-09-20 01:35:17,935 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (718 bytes)
+2026-09-20 01:35:18,317 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1112 bytes)
+2026-09-20 01:35:18,594 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1637 bytes)
+2026-09-20 01:35:19,350 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (3433 bytes)
+2026-09-20 01:35:19,716 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1380 bytes)
+2026-09-20 01:35:19,933 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (125 bytes)
+2026-09-20 01:35:20,174 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (130 bytes)
+2026-09-20 01:35:20,381 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (124 bytes)
+2026-09-20 01:35:20,833 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (378 bytes)
+2026-09-20 01:35:21,303 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (386 bytes)
+2026-09-20 01:35:21,646 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (258 bytes)
+2026-09-20 01:35:22,130 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (387 bytes)
+2026-09-20 01:35:22,636 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (394 bytes)
+2026-09-20 01:35:23,118 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (264 bytes)
+2026-09-20 01:35:23,879 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (641 bytes)
+2026-09-20 01:35:24,277 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (244 bytes)
+2026-09-20 01:35:24,484 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (126 bytes)
+2026-09-20 01:35:24,753 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (250 bytes)
+2026-09-20 01:35:24,985 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (130 bytes)
+2026-09-20 01:35:25,472 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:25,881 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (266 bytes)
+2026-09-20 01:35:26,297 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (378 bytes)
+2026-09-20 01:35:26,619 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (248 bytes)
+2026-09-20 01:35:27,160 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (372 bytes)
+2026-09-20 01:35:27,820 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (496 bytes)
+2026-09-20 01:35:28,246 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (252 bytes)
+2026-09-20 01:35:28,463 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (140 bytes)
+2026-09-20 01:35:28,668 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (140 bytes)
+2026-09-20 01:35:28,905 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (140 bytes)
+2026-09-20 01:35:29,395 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (388 bytes)
+2026-09-20 01:35:29,854 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:30,136 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (264 bytes)
+2026-09-20 01:35:30,605 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (264 bytes)
+2026-09-20 01:35:31,130 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (528 bytes)
+2026-09-20 01:35:31,664 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:32,455 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (528 bytes)
+2026-09-20 01:35:33,062 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (528 bytes)
+2026-09-20 01:35:33,324 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (132 bytes)
+2026-09-20 01:35:33,871 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:34,363 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:34,936 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:35,398 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:35,883 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (264 bytes)
+2026-09-20 01:35:36,442 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (264 bytes)
+2026-09-20 01:35:36,985 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (396 bytes)
+2026-09-20 01:35:37,859 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1946 bytes)
+2026-09-20 01:35:39,621 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (51 bytes)
+2026-09-20 01:35:40,238 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('quiero una heRRAMIENTA PA')"]
+  1: role=model parts=['functionCall(task_tracker)']
+  2: role=user parts=['functionResponse(task_tracker)']
+  3: role=model parts=['functionCall(codebase_search)']
+  4: role=user parts=['functionResponse(codebase_search)']
+  5: role=model parts=['functionCall(codebase_search)']
+  6: role=user parts=['functionResponse(codebase_search)']
+  7: role=model parts=['functionCall(task_tracker)']
+  8: role=user parts=['functionResponse(task_tracker)']
+  9: role=model parts=['functionCall(codebase_search)']
+  10: role=user parts=['functionResponse(codebase_search)']
+  11: role=model parts=['functionCall(codebase_search)']
+  12: role=user parts=['functionResponse(codebase_search)']
+  13: role=model parts=['functionCall(read_file)']
+  14: role=user parts=['functionResponse(read_file)']
+  15: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  16: role=user parts=['functionResponse(task_tracker)']
+  17: role=model parts=['functionCall(task_tracker)']
+  18: role=user parts=['functionResponse(task_tracker)']
+  19: role=model parts=['functionCall(read_file)']
+  20: role=user parts=['functionResponse(read_file)']
+  21: role=model parts=['functionCall(read_file)']
+  22: role=user parts=['functionResponse(read_file)']
+  23: role=model parts=['functionCall(read_file)']
+  24: role=user parts=['functionResponse(read_file)']
+  25: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  26: role=user parts=['functionResponse(task_tracker)']
+  27: role=model parts=['functionCall(task_tracker)']
+  28: role=user parts=['functionResponse(task_tracker)']
+  29: role=model parts=['functionCall(read_file)']
+  30: role=user parts=['functionResponse(read_file)']
+  31: role=model parts=['functionCall(read_file)']
+  32: role=user parts=['functionResponse(read_file)']
+  33: role=model parts=["text('Acciones completadas (tas')"]
+  34: role=user parts=["text('continua')"]
+  35: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  36: role=user parts=['functionResponse(task_tracker)']
+  37: role=model parts=['functionCall(task_tracker)']
+  38: role=user parts=['functionResponse(task_tracker)']
+  39: role=model parts=['functionCall(task_tracker)']
+  40: role=user parts=['functionResponse(task_tracker)']
+  41: role=model parts=['functionCall(edit_file)']
+  42: role=user parts=['functionResponse(edit_file)']
+  43: role=model parts=['functionCall(edit_file)']
+  44: role=user parts=['functionResponse(edit_file)']
+  45: role=model parts=['functionCall(edit_file)']
+  46: role=user parts=['functionResponse(edit_file)']
+  47: role=model parts=['functionCall(edit_file)']
+  48: role=user parts=['functionResponse(edit_file)']
+  49: role=model parts=['functionCall(edit_file)']
+  50: role=user parts=['functionResponse(edit_file)']
+  51: role=model parts=['functionCall(edit_file)']
+  52: role=user parts=['functionResponse(edit_file)']
+  53: role=model parts=['functionCall(task_tracker)']
+  54: role=user parts=['functionResponse(task_tracker)']
+  55: role=model parts=['functionCall(code_analysis)']
+  56: role=user parts=['functionResponse(code_analysis)']
+  57: role=model parts=["text('Listo. Añadí una herramie')"]
+  58: role=user parts=["text('da error al itnentar cone')"]
+  59: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)', 'functionCall(execute_command)']
+  60: role=user parts=['functionResponse(execute_command)']
+  61: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)']
+  62: role=user parts=['functionResponse(execute_command)']
+  63: role=model parts=["text('El bridge está corriendo,')"]
+  64: role=user parts=["text('es que al poner conectar ')"]
+  65: role=model parts=['functionCall(execute_command)']
+  66: role=user parts=['functionResponse(execute_command)']
+  67: role=model parts=['functionCall(execute_command)']
+  68: role=user parts=['functionResponse(execute_command)']
+2026-09-20 01:35:40,240 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:36:07,991 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:36:07,991 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-20 01:36:07,991 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:36:08,000 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (9 bytes)
+2026-09-20 01:36:08,109 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (242 bytes)
+2026-09-20 01:36:08,567 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (45 bytes)
+2026-09-20 01:36:08,744 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (664 bytes)
+2026-09-20 01:36:09,059 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (63 bytes)
+2026-09-20 01:36:09,364 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (170 bytes)
+2026-09-20 01:36:09,576 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (170 bytes)
+2026-09-20 01:36:09,965 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (210 bytes)
+2026-09-20 01:36:10,135 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (125 bytes)
+2026-09-20 01:36:10,632 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (375 bytes)
+2026-09-20 01:36:11,110 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (375 bytes)
+2026-09-20 01:36:11,305 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (125 bytes)
+2026-09-20 01:36:11,730 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (250 bytes)
+2026-09-20 01:36:12,345 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (512 bytes)
+2026-09-20 01:36:12,642 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (258 bytes)
+2026-09-20 01:36:13,057 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (173 bytes)
+2026-09-20 01:36:13,383 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (232 bytes)
+2026-09-20 01:36:13,604 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (122 bytes)
+2026-09-20 01:36:13,998 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (171 bytes)
+2026-09-20 01:36:14,486 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (171 bytes)
+2026-09-20 01:36:14,705 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4030 bytes)
+2026-09-20 01:36:15,069 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (286 bytes)
+2026-09-20 01:36:15,495 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('quiero una heRRAMIENTA PA')"]
+  1: role=model parts=['functionCall(task_tracker)']
+  2: role=user parts=['functionResponse(task_tracker)']
+  3: role=model parts=['functionCall(codebase_search)']
+  4: role=user parts=['functionResponse(codebase_search)']
+  5: role=model parts=['functionCall(codebase_search)']
+  6: role=user parts=['functionResponse(codebase_search)']
+  7: role=model parts=['functionCall(task_tracker)']
+  8: role=user parts=['functionResponse(task_tracker)']
+  9: role=model parts=['functionCall(codebase_search)']
+  10: role=user parts=['functionResponse(codebase_search)']
+  11: role=model parts=['functionCall(codebase_search)']
+  12: role=user parts=['functionResponse(codebase_search)']
+  13: role=model parts=['functionCall(read_file)']
+  14: role=user parts=['functionResponse(read_file)']
+  15: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  16: role=user parts=['functionResponse(task_tracker)']
+  17: role=model parts=['functionCall(task_tracker)']
+  18: role=user parts=['functionResponse(task_tracker)']
+  19: role=model parts=['functionCall(read_file)']
+  20: role=user parts=['functionResponse(read_file)']
+  21: role=model parts=['functionCall(read_file)']
+  22: role=user parts=['functionResponse(read_file)']
+  23: role=model parts=['functionCall(read_file)']
+  24: role=user parts=['functionResponse(read_file)']
+  25: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  26: role=user parts=['functionResponse(task_tracker)']
+  27: role=model parts=['functionCall(task_tracker)']
+  28: role=user parts=['functionResponse(task_tracker)']
+  29: role=model parts=['functionCall(read_file)']
+  30: role=user parts=['functionResponse(read_file)']
+  31: role=model parts=['functionCall(read_file)']
+  32: role=user parts=['functionResponse(read_file)']
+  33: role=model parts=["text('Acciones completadas (tas')"]
+  34: role=user parts=["text('continua')"]
+  35: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  36: role=user parts=['functionResponse(task_tracker)']
+  37: role=model parts=['functionCall(task_tracker)']
+  38: role=user parts=['functionResponse(task_tracker)']
+  39: role=model parts=['functionCall(task_tracker)']
+  40: role=user parts=['functionResponse(task_tracker)']
+  41: role=model parts=['functionCall(edit_file)']
+  42: role=user parts=['functionResponse(edit_file)']
+  43: role=model parts=['functionCall(edit_file)']
+  44: role=user parts=['functionResponse(edit_file)']
+  45: role=model parts=['functionCall(edit_file)']
+  46: role=user parts=['functionResponse(edit_file)']
+  47: role=model parts=['functionCall(edit_file)']
+  48: role=user parts=['functionResponse(edit_file)']
+  49: role=model parts=['functionCall(edit_file)']
+  50: role=user parts=['functionResponse(edit_file)']
+  51: role=model parts=['functionCall(edit_file)']
+  52: role=user parts=['functionResponse(edit_file)']
+  53: role=model parts=['functionCall(task_tracker)']
+  54: role=user parts=['functionResponse(task_tracker)']
+  55: role=model parts=['functionCall(code_analysis)']
+  56: role=user parts=['functionResponse(code_analysis)']
+  57: role=model parts=["text('Listo. Añadí una herramie')"]
+  58: role=user parts=["text('da error al itnentar cone')"]
+  59: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)', 'functionCall(execute_command)']
+  60: role=user parts=['functionResponse(execute_command)']
+  61: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)']
+  62: role=user parts=['functionResponse(execute_command)']
+  63: role=model parts=["text('El bridge está corriendo,')"]
+  64: role=user parts=["text('es que al poner conectar ')"]
+  65: role=model parts=['functionCall(execute_command)']
+  66: role=user parts=['functionResponse(execute_command)']
+  67: role=model parts=['functionCall(execute_command)']
+  68: role=user parts=['functionResponse(execute_command)']
+  69: role=model parts=['functionCall(execute_command)']
+  70: role=user parts=['functionResponse(execute_command)']
+2026-09-20 01:36:15,498 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:36:21,476 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('quiero una heRRAMIENTA PA')"]
+  1: role=model parts=['functionCall(task_tracker)']
+  2: role=user parts=['functionResponse(task_tracker)']
+  3: role=model parts=['functionCall(codebase_search)']
+  4: role=user parts=['functionResponse(codebase_search)']
+  5: role=model parts=['functionCall(codebase_search)']
+  6: role=user parts=['functionResponse(codebase_search)']
+  7: role=model parts=['functionCall(task_tracker)']
+  8: role=user parts=['functionResponse(task_tracker)']
+  9: role=model parts=['functionCall(codebase_search)']
+  10: role=user parts=['functionResponse(codebase_search)']
+  11: role=model parts=['functionCall(codebase_search)']
+  12: role=user parts=['functionResponse(codebase_search)']
+  13: role=model parts=['functionCall(read_file)']
+  14: role=user parts=['functionResponse(read_file)']
+  15: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  16: role=user parts=['functionResponse(task_tracker)']
+  17: role=model parts=['functionCall(task_tracker)']
+  18: role=user parts=['functionResponse(task_tracker)']
+  19: role=model parts=['functionCall(read_file)']
+  20: role=user parts=['functionResponse(read_file)']
+  21: role=model parts=['functionCall(read_file)']
+  22: role=user parts=['functionResponse(read_file)']
+  23: role=model parts=['functionCall(read_file)']
+  24: role=user parts=['functionResponse(read_file)']
+  25: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  26: role=user parts=['functionResponse(task_tracker)']
+  27: role=model parts=['functionCall(task_tracker)']
+  28: role=user parts=['functionResponse(task_tracker)']
+  29: role=model parts=['functionCall(read_file)']
+  30: role=user parts=['functionResponse(read_file)']
+  31: role=model parts=['functionCall(read_file)']
+  32: role=user parts=['functionResponse(read_file)']
+  33: role=model parts=["text('Acciones completadas (tas')"]
+  34: role=user parts=["text('continua')"]
+  35: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  36: role=user parts=['functionResponse(task_tracker)']
+  37: role=model parts=['functionCall(task_tracker)']
+  38: role=user parts=['functionResponse(task_tracker)']
+  39: role=model parts=['functionCall(task_tracker)']
+  40: role=user parts=['functionResponse(task_tracker)']
+  41: role=model parts=['functionCall(edit_file)']
+  42: role=user parts=['functionResponse(edit_file)']
+  43: role=model parts=['functionCall(edit_file)']
+  44: role=user parts=['functionResponse(edit_file)']
+  45: role=model parts=['functionCall(edit_file)']
+  46: role=user parts=['functionResponse(edit_file)']
+  47: role=model parts=['functionCall(edit_file)']
+  48: role=user parts=['functionResponse(edit_file)']
+  49: role=model parts=['functionCall(edit_file)']
+  50: role=user parts=['functionResponse(edit_file)']
+  51: role=model parts=['functionCall(edit_file)']
+  52: role=user parts=['functionResponse(edit_file)']
+  53: role=model parts=['functionCall(task_tracker)']
+  54: role=user parts=['functionResponse(task_tracker)']
+  55: role=model parts=['functionCall(code_analysis)']
+  56: role=user parts=['functionResponse(code_analysis)']
+  57: role=model parts=["text('Listo. Añadí una herramie')"]
+  58: role=user parts=["text('da error al itnentar cone')"]
+  59: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)', 'functionCall(execute_command)']
+  60: role=user parts=['functionResponse(execute_command)']
+  61: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)']
+  62: role=user parts=['functionResponse(execute_command)']
+  63: role=model parts=["text('El bridge está corriendo,')"]
+  64: role=user parts=["text('es que al poner conectar ')"]
+  65: role=model parts=['functionCall(execute_command)']
+  66: role=user parts=['functionResponse(execute_command)']
+  67: role=model parts=['functionCall(execute_command)']
+  68: role=user parts=['functionResponse(execute_command)']
+  69: role=model parts=['functionCall(execute_command)']
+  70: role=user parts=['functionResponse(execute_command)']
+  71: role=model parts=['functionCall(edit_file)']
+  72: role=user parts=['functionResponse(edit_file)']
+2026-09-20 01:36:21,485 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:36:51,252 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:36:51,252 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-20 01:36:51,252 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:36:51,258 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (9 bytes)
+2026-09-20 01:36:51,348 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (242 bytes)
+2026-09-20 01:36:51,668 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (354 bytes)
+2026-09-20 01:36:52,061 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (171 bytes)
+2026-09-20 01:36:52,249 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (172 bytes)
+2026-09-20 01:36:52,904 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4030 bytes)
+2026-09-20 01:36:53,262 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (114 bytes)
+2026-09-20 01:36:53,701 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('quiero una heRRAMIENTA PA')"]
+  1: role=model parts=['functionCall(task_tracker)']
+  2: role=user parts=['functionResponse(task_tracker)']
+  3: role=model parts=['functionCall(codebase_search)']
+  4: role=user parts=['functionResponse(codebase_search)']
+  5: role=model parts=['functionCall(codebase_search)']
+  6: role=user parts=['functionResponse(codebase_search)']
+  7: role=model parts=['functionCall(task_tracker)']
+  8: role=user parts=['functionResponse(task_tracker)']
+  9: role=model parts=['functionCall(codebase_search)']
+  10: role=user parts=['functionResponse(codebase_search)']
+  11: role=model parts=['functionCall(codebase_search)']
+  12: role=user parts=['functionResponse(codebase_search)']
+  13: role=model parts=['functionCall(read_file)']
+  14: role=user parts=['functionResponse(read_file)']
+  15: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  16: role=user parts=['functionResponse(task_tracker)']
+  17: role=model parts=['functionCall(task_tracker)']
+  18: role=user parts=['functionResponse(task_tracker)']
+  19: role=model parts=['functionCall(read_file)']
+  20: role=user parts=['functionResponse(read_file)']
+  21: role=model parts=['functionCall(read_file)']
+  22: role=user parts=['functionResponse(read_file)']
+  23: role=model parts=['functionCall(read_file)']
+  24: role=user parts=['functionResponse(read_file)']
+  25: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  26: role=user parts=['functionResponse(task_tracker)']
+  27: role=model parts=['functionCall(task_tracker)']
+  28: role=user parts=['functionResponse(task_tracker)']
+  29: role=model parts=['functionCall(read_file)']
+  30: role=user parts=['functionResponse(read_file)']
+  31: role=model parts=['functionCall(read_file)']
+  32: role=user parts=['functionResponse(read_file)']
+  33: role=model parts=["text('Acciones completadas (tas')"]
+  34: role=user parts=["text('continua')"]
+  35: role=model parts=['functionCall(task_tracker)', 'functionCall(task_tracker)']
+  36: role=user parts=['functionResponse(task_tracker)']
+  37: role=model parts=['functionCall(task_tracker)']
+  38: role=user parts=['functionResponse(task_tracker)']
+  39: role=model parts=['functionCall(task_tracker)']
+  40: role=user parts=['functionResponse(task_tracker)']
+  41: role=model parts=['functionCall(edit_file)']
+  42: role=user parts=['functionResponse(edit_file)']
+  43: role=model parts=['functionCall(edit_file)']
+  44: role=user parts=['functionResponse(edit_file)']
+  45: role=model parts=['functionCall(edit_file)']
+  46: role=user parts=['functionResponse(edit_file)']
+  47: role=model parts=['functionCall(edit_file)']
+  48: role=user parts=['functionResponse(edit_file)']
+  49: role=model parts=['functionCall(edit_file)']
+  50: role=user parts=['functionResponse(edit_file)']
+  51: role=model parts=['functionCall(edit_file)']
+  52: role=user parts=['functionResponse(edit_file)']
+  53: role=model parts=['functionCall(task_tracker)']
+  54: role=user parts=['functionResponse(task_tracker)']
+  55: role=model parts=['functionCall(code_analysis)']
+  56: role=user parts=['functionResponse(code_analysis)']
+  57: role=model parts=["text('Listo. Añadí una herramie')"]
+  58: role=user parts=["text('da error al itnentar cone')"]
+  59: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)', 'functionCall(execute_command)']
+  60: role=user parts=['functionResponse(execute_command)']
+  61: role=model parts=['functionCall(execute_command)', 'functionCall(execute_command)']
+  62: role=user parts=['functionResponse(execute_command)']
+  63: role=model parts=["text('El bridge está corriendo,')"]
+  64: role=user parts=["text('es que al poner conectar ')"]
+  65: role=model parts=['functionCall(execute_command)']
+  66: role=user parts=['functionResponse(execute_command)']
+  67: role=model parts=['functionCall(execute_command)']
+  68: role=user parts=['functionResponse(execute_command)']
+  69: role=model parts=['functionCall(execute_command)']
+  70: role=user parts=['functionResponse(execute_command)']
+  71: role=model parts=['functionCall(edit_file)']
+  72: role=user parts=['functionResponse(edit_file)']
+  73: role=model parts=['functionCall(execute_command)']
+  74: role=user parts=['functionResponse(execute_command)']
+2026-09-20 01:36:53,703 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:37:11,748 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: antigravity
+2026-09-20 01:37:11,749 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('Analiza la siguiente conv')"]
+2026-09-20 01:37:11,749 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:37:11,750 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-20 01:37:11,751 - kogniterm.terminal.agent_interaction_manager - INFO - Ejecutando el grafo de aprendizaje posterior en segundo plano...
+2026-09-20 01:37:11,752 - kogniterm.core.multi_provider_manager - INFO - Usando proveedor: antigravity
+2026-09-20 01:37:11,752 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm', 'completed', 'result'], file_diff=None, tool_pend=None
+2026-09-20 01:37:11,753 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-20 01:37:11,754 - kogniterm.core.antigravity_client - INFO - Antigravity Request Contents Sequence:
+  0: role=user parts=["text('Analiza la siguiente conv')"]
+2026-09-20 01:37:11,755 - kogniterm.core.antigravity_client - INFO - Enabling thinkingConfig with includeThoughts=True and thinkingLevel MEDIUM for Gemini 3+ model gemini-3-flash
+2026-09-20 01:37:18,544 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con antigravity (6791.87ms)
+2026-09-20 01:37:31,889 - kogniterm.terminal.tui.command_processor - WARNING - Error conectando con servidor para actualizar proveedor: All connection attempts failed
+2026-09-20 01:37:31,891 - kogniterm.core.multi_provider_manager - INFO - Métricas reiniciadas para antigravity
+2026-09-20 01:37:31,891 - kogniterm.core.llm_service - INFO - 🚀 Cambiado a Antigravity: antigravity/gemini-3-flash
+2026-09-20 01:37:31,891 - kogniterm.core.llm_service - INFO - ✅ Estado de LiteLLM actualizado satisfactoriamente.
+2026-09-20 01:37:45,381 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con antigravity (33632.62ms)

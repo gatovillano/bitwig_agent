@@ -4,7 +4,7 @@
 [![MCP Server](https://img.shields.io/badge/MCP-Model_Context_Protocol-purple?style=flat-square)](https://modelcontextprotocol.io/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)](https://python.org/)
 [![Java 17+](https://img.shields.io/badge/Java-17%2B-red?style=flat-square&logo=openjdk)](https://openjdk.org/)
-[![Tests Passing](https://img.shields.io/badge/Tests-36%20Passing-brightgreen?style=flat-square)](https://github.com/gatovillano/bitwig_agent)
+[![Tests Passing](https://img.shields.io/badge/Tests-45%20Passing-brightgreen?style=flat-square)](https://github.com/gatovillano/bitwig_agent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
 **Bitwig MCP Server & AI Agent** es una plataforma integral que convierte a **Bitwig Studio 6.0+** en un entorno musical directamente accesible y programable para modelos de lenguaje avanzados (**LLMs**) a través del estándar abierto **Model Context Protocol (MCP)**.
@@ -16,7 +16,9 @@ Permite a asistentes como **Claude Desktop**, **Cursor**, **Antigravity**, **Win
 * Escribir secuencias melódicas o rítmicas personalizadas nota por nota con control quirúrgico.
 * Inspeccionar clips y visualizarlos mediante un **Piano Roll ASCII** en la respuesta de la IA.
 * Insertar pistas de instrumentos nativos de Bitwig (*Polymer*, *Polysynth*, *FM-4*, *Sampler*, *Drum Machine*, etc.) o presets `.bwpreset`.
-* Controlar el transporte de reproducción (play, stop, set tempo).
+* Insertar y gestionar **efectos de audio** nativos (Reverbs, Delays, Compresores, Ecualizadores, Saturadores, Modulaciones, etc.), controlar su bypass o navegar presets.
+* Controlar el transporte de reproducción (play, stop, set tempo, posición).
+* Grabar en tiempo real hacia la línea de tiempo del **Arranger** mediante lanzamiento sincronizado de escenas o control manual de grabación.
 
 ---
 
@@ -34,6 +36,11 @@ Permite a asistentes como **Claude Desktop**, **Cursor**, **Antigravity**, **Win
    - [7. `add_instrument_track`](#7-add_instrument_track)
    - [8. `control_transport`](#8-control_transport)
    - [9. `clear_clip`](#9-clear_clip)
+   - [10. `launch_scene`](#10-launch_scene)
+   - [11. `record_to_arranger`](#11-record_to_arranger)
+   - [12. `add_audio_effect`](#12-add_audio_effect)
+   - [13. `control_device`](#13-control_device)
+   - [14. `list_audio_effects`](#14-list_audio_effects)
 4. [Configuración en Clientes MCP](#-configuración-en-clientes-mcp)
    - [Claude Desktop](#claude-desktop)
    - [Antigravity / Gemini CLI](#antigravity--gemini-cli)
@@ -211,7 +218,7 @@ Permite al modelo "ver" la configuración completa de una pista.
 ---
 
 ### 6. `inspect_clip`
-Inspecciona el contenido interno de un clip y genera una representación visual gráfica en ASCII del Piano Roll.
+Inspecciona el contenido interno de un clip en el Clip Launcher y genera una representación visual gráfica en ASCII del Piano Roll.
 * **Argumentos**: `track` (`string`), `slot` (`integer`, default `0`).
 * **Visualización en Piano Roll ASCII**:
   ```text
@@ -222,6 +229,14 @@ Inspecciona el contenido interno de un clip y genera una representación visual 
         +---+---+---+---+---+---+---+---+---+---+---+
   Beat:   1       2       3       4       5       6
   ```
+
+---
+
+### 7. `inspect_arranger`
+Inspecciona el estado de la línea de tiempo del **Arranger**:
+* **Línea de tiempo**: Posición exacta del cabezal de reproducción (beats y compases), BPM, estado de grabación / overdub del Arranger, y límites/estado del loop del Arranger.
+* **Cue Markers (Estructura de la canción)**: Lista de marcadores de sección con nombre, color, número de compás y posición en beats (ej. Intro, Verso, Estribillo, Drop, Outro).
+* **Clip seleccionado en el Arranger**: Si hay un clip activo seleccionado en el timeline, muestra sus límites (`play_start`, `play_stop`, `loop_length`), pista perteneciente, notas detalladas y un **Piano Roll ASCII** completo.
 
 ---
 
@@ -238,10 +253,11 @@ Inserta una nueva pista de instrumento o añade un instrumento a una pista exist
 ---
 
 ### 8. `control_transport`
-Controla el motor de reproducción y el tempo de Bitwig Studio.
+Controla el motor de reproducción, transporte, grabación y posición temporal en Bitwig Studio.
 * **Argumentos**:
-  - `action`: `"play"`, `"stop"`, `"restart"` o `"set_tempo"`.
+  - `action`: `"play"`, `"stop"`, `"restart"`, `"set_tempo"`, `"record"` (activa grabación del Arranger y reproduce), `"stop_record"`, `"toggle_record"`, `"return_to_arrangement"` (devuelve las pistas al control del timeline), o `"set_position"`.
   - `tempo`: Valor en BPM (ej. `85.0`, `124.0`).
+  - `position`: Posición en beats (negras) de la línea de tiempo (ej. `0.0` = compás 1, `16.0` = compás 5).
 
 ---
 
@@ -251,6 +267,60 @@ Limpia el contenido de un clip slot.
   - `track`: Índice o nombre de la pista.
   - `slot`: Índice del clip slot (default `0`).
   - `action`: `"notes"` (vacía las notas manteniendo el clip) o `"delete"` (elimina el clip por completo).
+
+---
+
+### 10. `launch_scene`
+Dispara una escena completa en el Clip Launcher, lanzando en sincronía todos los clips de esa fila horizontal a través de todas las pistas.
+* **Argumentos**:
+  - `scene`: Índice de la escena (0-based, default: `0`).
+
+---
+
+### 11. `record_to_arranger`
+Permite al agente grabar ideas y estructuras directamente en la línea de tiempo del **Arranger** en tiempo real. Activa la grabación del Arranger de Bitwig y reproduce y lanza escenas con precisión rítmica.
+* **Argumentos**:
+  | Parámetro | Tipo | Por Defecto | Descripción |
+  |-----------|------|-------------|-------------|
+  | `sequence` | `array` | `null` | Lista de secciones ordenadas. Cada sección define `scene` (int) y duración en `bars` (compases) o `beats` (negras). Ejemplo: `[{"scene": 0, "bars": 4}, {"scene": 1, "bars": 8}]`. |
+  | `start_beat` | `number` | `0.0` | Posición en beats del Arranger donde comenzará la grabación. |
+  | `action` | `string` | `"record_sequence"` | Modo de operación: `"record_sequence"` (si se provee secuencia), `"start"`, `"stop"`, `"toggle"` o `"return_to_arrangement"`. |
+  | `scene` | `integer` | `null` | Escena a disparar inmediatamente si `action` es `"start"`. |
+  | `stop_on_finish` | `boolean` | `true` | Detiene el transporte al finalizar la grabación. |
+  | `return_to_arrangement` | `boolean` | `true` | Restaura las pistas a la reproducción del Arranger para escuchar el resultado grabado. |
+
+---
+
+### 12. `add_audio_effect`
+Inserta un efecto de audio nativo de Bitwig en una pista existente (en la posición deseada de la cadena de dispositivos) o crea una pista de retorno/efecto dedicada (`Effect Track`).
+* **Argumentos**:
+  | Parámetro | Tipo | Por Defecto | Descripción |
+  |-----------|------|-------------|-------------|
+  | `track` | `integer` | `0` | Índice de la pista donde insertar el efecto (ignorado si `create_effect_track` es `true`). |
+  | `effect` | `string` | **Requerido** | Nombre amigable del efecto nativo (ej. `"delay+"`, `"reverb"`, `"compressor"`, `"eq-plus"`, `"saturator"`, `"flanger"`, `"chorus"`), o ruta/nombre de preset `.bwpreset` / dispositivo `.bwdevice`. |
+  | `position` | `string` | `"end"` | Posición en la cadena: `"end"` (al final), `"start"` (al principio), o índice numérico como string (ej. `"0"`) para insertar después de dicho dispositivo. |
+  | `create_effect_track` | `boolean` | `false` | Si es `true`, crea una pista de efectos/retorno global (`Effect Track`) dedicada e inserta el efecto allí. |
+
+---
+
+### 13. `control_device`
+Controla el estado y presets de un dispositivo o efecto de audio en una pista de Bitwig Studio.
+* **Argumentos**:
+  | Parámetro | Tipo | Por Defecto | Descripción |
+  |-----------|------|-------------|-------------|
+  | `track` | `integer` | `0` | Índice de la pista que contiene el dispositivo. |
+  | `device` | `integer` | `0` | Índice del dispositivo o efecto dentro de la cadena (0 para el primero). |
+  | `action` | `string` | `"toggle"` | Acción a ejecutar: `"set_enabled"` (activa/desactiva según `enabled`), `"toggle"` (alterna bypass), `"delete"` (elimina el efecto), `"next_preset"` o `"previous_preset"`. |
+  | `enabled` | `boolean` | `null` | Valor booleano si la acción es `"set_enabled"`. |
+
+---
+
+### 14. `list_audio_effects`
+Devuelve el catálogo clasificado de efectos nativos de Bitwig Studio soportados por UUID, organizados por categoría musical (Reverb, Delay, Dynamics, EQ, Distortion, Modulation, Utility, etc.).
+* **Argumentos**:
+  | Parámetro | Tipo | Por Defecto | Descripción |
+  |-----------|------|-------------|-------------|
+  | `category` | `string` | `null` | Categoría opcional para filtrar: `"spatial"`, `"dynamics"`, `"eq_filter"`, `"distortion"`, `"modulation"` o `"utility"`. Si se omite, lista todo el catálogo. |
 
 ---
 
@@ -444,7 +514,7 @@ Además del servidor MCP, el paquete incluye una potente interfaz de línea de c
 
 ## 🧪 Suite de Pruebas
 
-El proyecto cuenta con una batería de **36 pruebas unitarias y de integración** que validan la robustez del sistema:
+El proyecto cuenta con una batería de **45 pruebas unitarias y de integración** que validan la robustez del sistema:
 
 ```bash
 cd python
@@ -453,8 +523,8 @@ pytest -v
 
 ### Qué se evalúa:
 * **`test_theory.py`**: Parsing de acordes complejos, inversiones, Voice Leading y cálculo de notas.
-* **`test_client.py`**: Modelos Pydantic, serialización de `NoteEvent` y conector HTTP REST.
-* **`test_llm_tools.py`**: Ejecución de las herramientas MCP y validación de parámetros de entrada.
+* **`test_client.py`**: Modelos Pydantic, serialización de `NoteEvent`, conector HTTP REST, grabación al Arranger y control de efectos/dispositivos.
+* **`test_llm_tools.py`**: Ejecución de las herramientas MCP (incluyendo `add_audio_effect`, `control_device`, `list_audio_effects` y `record_to_arranger`) y validación de parámetros.
 * **`test_visualization.py`**: Generador de Piano Roll ASCII y representación de clips.
 * **`test_completer.py` & `test_session.py`**: Menús interactivos y persistencia de sesiones.
 

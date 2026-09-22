@@ -1,7 +1,10 @@
 from __future__ import annotations
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Union
+import logging
 import httpx
 from pydantic import BaseModel, Field
+
+logger = logging.getLogger("bitwig_agent.client")
 
 class NoteEvent(BaseModel):
     step: int = Field(..., ge=0, description="Step index (usually in 16th notes: 0 = beat 1, 4 = beat 2, etc.)")
@@ -91,6 +94,8 @@ class TrackInfo(BaseModel):
 class ProjectState(BaseModel):
     tempo: float
     isPlaying: bool
+    isRecording: bool = False
+    position: float = 0.0
     tracks: List[TrackInfo] = Field(default_factory=list)
 
 class BitwigClient:
@@ -129,6 +134,18 @@ class BitwigClient:
 
     def restart(self) -> Dict[str, Any]:
         return self._post_transport({"action": "restart"})
+
+    def start_record(self) -> Dict[str, Any]:
+        return self._post_transport({"action": "record"})
+
+    def stop_record(self) -> Dict[str, Any]:
+        return self._post_transport({"action": "stop_record"})
+
+    def toggle_record(self) -> Dict[str, Any]:
+        return self._post_transport({"action": "toggle_record"})
+
+    def return_to_arrangement(self) -> Dict[str, Any]:
+        return self._post_transport({"action": "return_to_arrangement"})
 
     def set_tempo(self, bpm: float) -> Dict[str, Any]:
         return self._post_transport({"action": "set_tempo", "tempo": float(bpm)})
@@ -189,6 +206,15 @@ class BitwigClient:
             res.raise_for_status()
             return res.json()
 
+    def launch_scene(self, scene: int = 0) -> Dict[str, Any]:
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(
+                f"{self.base_url}/api/scene/launch",
+                json={"scene": int(scene)}
+            )
+            res.raise_for_status()
+            return res.json()
+
     def add_instrument(
         self,
         name: Optional[str] = None,
@@ -208,6 +234,81 @@ class BitwigClient:
             res.raise_for_status()
             return res.json()
 
+    def add_effect(
+        self,
+        track: Optional[int] = None,
+        effect: str = "reverb",
+        position: str | int = "end",
+        create_effect_track: bool = False
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "effect": effect,
+            "position": position,
+            "create_effect_track": create_effect_track
+        }
+        if track is not None:
+            payload["track"] = track
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(f"{self.base_url}/api/effect/add", json=payload)
+            res.raise_for_status()
+            return res.json()
+
+    def control_device(
+        self,
+        track: int,
+        device: str | int,
+        action: str,
+        enabled: Optional[bool] = None
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "track": track,
+            "device": device,
+            "action": action
+        }
+        if enabled is not None:
+            payload["enabled"] = enabled
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(f"{self.base_url}/api/device/control", json=payload)
+            res.raise_for_status()
+            return res.json()
+
+    def set_device_parameter(
+        self,
+        track: int,
+        device: str | int,
+        parameter: str | int,
+        value: float,
+        page: Optional[str] = None,
+        normalized: Optional[bool] = None
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "track": track,
+            "device": device,
+            "parameter": str(parameter),
+            "value": float(value)
+        }
+        if page:
+            payload["page"] = page
+        if normalized is not None:
+            payload["normalized"] = normalized
+        try:
+            with httpx.Client(timeout=self.timeout) as client:
+                res = client.post(f"{self.base_url}/api/device/parameter", json=payload)
+                if res.status_code != 200:
+                    logger.error(f"[set_device_parameter] Bitwig returned status {res.status_code}: {res.text}")
+                    return {
+                        "error": f"Bitwig HTTP {res.status_code}: {res.text.strip()}",
+                        "status_code": res.status_code,
+                        "payload": payload
+                    }
+                return res.json()
+        except Exception as e:
+            logger.exception(f"[set_device_parameter] Request failed: {e}")
+            return {
+                "error": f"Failed to connect to Bitwig on {self.base_url}: {str(e)}",
+                "payload": payload
+            }
+
     def inspect_track(self, track: int | str) -> Dict[str, Any]:
         with httpx.Client(timeout=self.timeout) as client:
             res = client.post(f"{self.base_url}/api/track/inspect", json={"track": track})
@@ -219,6 +320,62 @@ class BitwigClient:
             res = client.post(
                 f"{self.base_url}/api/clip/inspect",
                 json={"track": track, "slot": slot}
+            )
+            res.raise_for_status()
+            return res.json()
+
+    def inspect_arranger(self) -> Dict[str, Any]:
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.get(f"{self.base_url}/api/arranger/inspect")
+            res.raise_for_status()
+            return res.json()
+
+    def move_track(
+        self,
+        tracks: Union[int, str, List[Union[int, str]]],
+        target: Optional[Union[int, str]] = None,
+        position: str = "after"
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "tracks": tracks if isinstance(tracks, list) else [tracks],
+            "position": position
+        }
+        if target is not None:
+            payload["target"] = target
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(f"{self.base_url}/api/track/move", json=payload)
+            res.raise_for_status()
+            return res.json()
+
+    def group_tracks(
+        self,
+        tracks: List[Union[int, str]],
+        name: Optional[str] = None,
+        group: Optional[Union[int, str]] = None
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {
+            "tracks": tracks
+        }
+        if name:
+            payload["name"] = name
+        if group is not None:
+            payload["group"] = group
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(f"{self.base_url}/api/track/group", json=payload)
+            res.raise_for_status()
+            return res.json()
+
+    def ungroup_track(self, track: Union[int, str]) -> Dict[str, Any]:
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(f"{self.base_url}/api/track/ungroup", json={"track": track})
+            res.raise_for_status()
+            return res.json()
+
+    def rename_track(self, track: Union[int, str], name: str) -> Dict[str, Any]:
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(
+                f"{self.base_url}/api/track/rename",
+                json={"track": track, "name": name}
             )
             res.raise_for_status()
             return res.json()

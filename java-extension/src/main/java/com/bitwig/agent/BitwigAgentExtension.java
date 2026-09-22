@@ -13,12 +13,17 @@ public class BitwigAgentExtension extends ControllerExtension {
     private Transport transport;
     private TrackBank trackBank;
     private DeviceBank[] trackDeviceBanks;
+    private CursorRemoteControlsPage[][] trackRemotePages;
     private CursorTrack cursorTrack;
     private PinnableCursorClip cursorClip;
     private Application application;
+    private Arranger arranger;
+    private CueMarkerBank cueMarkerBank;
+    private Clip arrangerCursorClip;
     private BridgeHttpServer httpServer;
 
     public static final int GRID_STEPS = 1024;
+    public static final int CUE_MARKERS_CAPACITY = 32;
 
     protected BitwigAgentExtension(BitwigAgentExtensionDefinition definition, ControllerHost host) {
         super(definition, host);
@@ -31,10 +36,62 @@ public class BitwigAgentExtension extends ControllerExtension {
         transport = host.createTransport();
         transport.isPlaying().markInterested();
         transport.tempo().value().markInterested();
+        transport.isArrangerRecordEnabled().markInterested();
+        transport.isArrangerOverdubEnabled().markInterested();
+        transport.isArrangerLoopEnabled().markInterested();
+        transport.arrangerLoopStart().markInterested();
+        transport.arrangerLoopDuration().markInterested();
+        transport.getPosition().markInterested();
+
+        arranger = host.createArranger();
+        arranger.isPlaybackFollowEnabled().markInterested();
+        arranger.isTimelineVisible().markInterested();
+        arranger.isClipLauncherVisible().markInterested();
+        arranger.areCueMarkersVisible().markInterested();
+
+        cueMarkerBank = arranger.createCueMarkerBank(CUE_MARKERS_CAPACITY);
+        for (int m = 0; m < CUE_MARKERS_CAPACITY; m++) {
+            CueMarker marker = (CueMarker) cueMarkerBank.getItemAt(m);
+            marker.exists().markInterested();
+            marker.getName().markInterested();
+            marker.position().markInterested();
+            marker.getColor().markInterested();
+        }
+
+        arrangerCursorClip = host.createArrangerCursorClip(GRID_STEPS, 128);
+        arrangerCursorClip.exists().markInterested();
+        arrangerCursorClip.setStepSize(0.25);
+        arrangerCursorClip.scrollToStep(0);
+        arrangerCursorClip.getPlayStart().markInterested();
+        arrangerCursorClip.getPlayStop().markInterested();
+        arrangerCursorClip.isLoopEnabled().markInterested();
+        arrangerCursorClip.getLoopStart().markInterested();
+        arrangerCursorClip.getLoopLength().markInterested();
+        arrangerCursorClip.getShuffle().markInterested();
+        arrangerCursorClip.getAccent().markInterested();
+        arrangerCursorClip.playingStep().markInterested();
+
+        arrangerCursorClip.addNoteStepObserver(noteStep -> {
+            String key = noteStep.channel() + ":" + noteStep.x() + ":" + noteStep.y();
+            String stateName = noteStep.state() != null ? noteStep.state().name() : "";
+            if ("NoteOn".equals(stateName) || "NoteSustain".equals(stateName)) {
+                arrangerClipSteps.put(key, new StepSnapshot(
+                    noteStep.channel(),
+                    noteStep.x(),
+                    noteStep.y(),
+                    "NoteOn".equals(stateName) ? 1 : 2,
+                    noteStep.velocity(),
+                    noteStep.duration()
+                ));
+            } else {
+                arrangerClipSteps.remove(key);
+            }
+        });
 
         // Create a 32-track bank with 2 sends and 16 scene slots per track
         trackBank = host.createTrackBank(32, 2, 16);
         trackDeviceBanks = new DeviceBank[32];
+        trackRemotePages = new CursorRemoteControlsPage[32][16];
         for (int i = 0; i < 32; i++) {
             Track t = (Track) trackBank.getItemAt(i);
             t.name().markInterested();
@@ -69,6 +126,19 @@ public class BitwigAgentExtension extends ControllerExtension {
                 dev.deviceType().markInterested();
                 dev.presetName().markInterested();
                 dev.presetCategory().markInterested();
+
+                CursorRemoteControlsPage remotes = dev.createCursorRemoteControlsPage(8);
+                trackRemotePages[i][d] = remotes;
+                remotes.pageNames().markInterested();
+                remotes.pageCount().markInterested();
+                remotes.selectedPageIndex().markInterested();
+                remotes.getName().markInterested();
+                for (int p = 0; p < 8; p++) {
+                    RemoteControl rc = remotes.getParameter(p);
+                    rc.name().markInterested();
+                    rc.value().markInterested();
+                    rc.displayedValue().markInterested();
+                }
             }
         }
 
@@ -160,6 +230,27 @@ public class BitwigAgentExtension extends ControllerExtension {
         return null;
     }
 
+    public CursorRemoteControlsPage getRemoteControlsPage(int trackIndex, int deviceIndex) {
+        if (trackRemotePages != null && trackIndex >= 0 && trackIndex < trackRemotePages.length) {
+            if (deviceIndex >= 0 && deviceIndex < trackRemotePages[trackIndex].length) {
+                return trackRemotePages[trackIndex][deviceIndex];
+            }
+        }
+        return null;
+    }
+
+    public Arranger getArranger() {
+        return arranger;
+    }
+
+    public CueMarkerBank getCueMarkerBank() {
+        return cueMarkerBank;
+    }
+
+    public Clip getArrangerCursorClip() {
+        return arrangerCursorClip;
+    }
+
     public static class StepSnapshot {
         public final int channel;
         public final int x;
@@ -179,6 +270,7 @@ public class BitwigAgentExtension extends ControllerExtension {
     }
 
     private final java.util.Map<String, StepSnapshot> currentClipSteps = new java.util.concurrent.ConcurrentHashMap<>();
+    private final java.util.Map<String, StepSnapshot> arrangerClipSteps = new java.util.concurrent.ConcurrentHashMap<>();
 
     public java.util.Map<String, StepSnapshot> getCurrentClipSteps() {
         return currentClipSteps;
@@ -186,5 +278,13 @@ public class BitwigAgentExtension extends ControllerExtension {
 
     public void clearCurrentClipSteps() {
         currentClipSteps.clear();
+    }
+
+    public java.util.Map<String, StepSnapshot> getArrangerClipSteps() {
+        return arrangerClipSteps;
+    }
+
+    public void clearArrangerClipSteps() {
+        arrangerClipSteps.clear();
     }
 }

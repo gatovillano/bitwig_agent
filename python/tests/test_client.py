@@ -139,5 +139,107 @@ def test_inspect_clip_payload(monkeypatch):
     assert recorded["url"] == "http://127.0.0.1:8989/api/clip/inspect"
     assert recorded["json"] == {"track": 1, "slot": 2}
 
+def test_record_and_scene_payload(monkeypatch):
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    recorded = {}
 
+    class MockResponse:
+        status_code = 200
+        def raise_for_status(self): pass
+        def json(self): return {"status": "ok", "action": recorded.get("json", {}).get("action")}
+
+    monkeypatch.setattr(httpx.Client, "post", lambda self, url, json=None: (recorded.update({"url": url, "json": json}) or MockResponse()))
+
+    res = client.start_record()
+    assert recorded["url"] == "http://127.0.0.1:8989/api/transport"
+    assert recorded["json"] == {"action": "record"}
+
+    res = client.stop_record()
+    assert recorded["json"] == {"action": "stop_record"}
+
+    res = client.toggle_record()
+    assert recorded["json"] == {"action": "toggle_record"}
+
+    res = client.return_to_arrangement()
+    assert recorded["json"] == {"action": "return_to_arrangement"}
+
+    class MockSceneResponse:
+        status_code = 200
+        def raise_for_status(self): pass
+        def json(self): return {"status": "launched", "scene": recorded.get("json", {}).get("scene")}
+
+    monkeypatch.setattr(httpx.Client, "post", lambda self, url, json=None: (recorded.update({"url": url, "json": json}) or MockSceneResponse()))
+    res = client.launch_scene(scene=3)
+    assert res["status"] == "launched"
+    assert recorded["url"] == "http://127.0.0.1:8989/api/scene/launch"
+    assert recorded["json"] == {"scene": 3}
+
+def test_add_effect_and_control_device_payload(monkeypatch):
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    recorded = {}
+
+    class MockResponse:
+        status_code = 200
+        def raise_for_status(self): pass
+        def json(self): return {"status": "ok", "recorded": recorded.get("json")}
+
+    monkeypatch.setattr(httpx.Client, "post", lambda self, url, json=None: (recorded.update({"url": url, "json": json}) or MockResponse()))
+
+    res = client.add_effect(track=1, effect="delay+", position="end", create_effect_track=False)
+    assert recorded["url"] == "http://127.0.0.1:8989/api/effect/add"
+    assert recorded["json"] == {
+        "track": 1,
+        "effect": "delay+",
+        "position": "end",
+        "create_effect_track": False
+    }
+
+    res_fx = client.add_effect(effect="reverb", create_effect_track=True)
+    assert recorded["json"] == {
+        "effect": "reverb",
+        "position": "end",
+        "create_effect_track": True
+    }
+
+    res_ctrl = client.control_device(track=0, device="Reverb", action="set_enabled", enabled=False)
+    assert recorded["url"] == "http://127.0.0.1:8989/api/device/control"
+    assert recorded["json"] == {
+        "track": 0,
+        "device": "Reverb",
+        "action": "set_enabled",
+        "enabled": False
+    }
+
+def test_inspect_arranger_payload(monkeypatch):
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    recorded = {}
+
+    class MockResponse:
+        status_code = 200
+        def raise_for_status(self): pass
+        def json(self):
+            return {
+                "timeline": {
+                    "position_beats": 16.0,
+                    "tempo": 124.0,
+                    "is_playing": True,
+                    "is_recording": False,
+                    "loop_enabled": True,
+                    "loop_start_beat": 0.0,
+                    "loop_duration_beats": 32.0
+                },
+                "cue_markers": [
+                    {"index": 0, "name": "Intro", "position_beat": 0.0, "bar": 1},
+                    {"index": 1, "name": "Drop", "position_beat": 32.0, "bar": 9}
+                ],
+                "cue_markers_count": 2,
+                "selected_clip": None
+            }
+
+    monkeypatch.setattr(httpx.Client, "get", lambda self, url: (recorded.update({"url": url}) or MockResponse()))
+    res = client.inspect_arranger()
+    assert recorded["url"] == "http://127.0.0.1:8989/api/arranger/inspect"
+    assert res["timeline"]["tempo"] == 124.0
+    assert len(res["cue_markers"]) == 2
+    assert res["cue_markers"][1]["name"] == "Drop"
 
