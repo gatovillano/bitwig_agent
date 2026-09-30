@@ -14,6 +14,7 @@ from bitwig_agent.theory import (
     pitch_to_note_name,
     humanize_events
 )
+from bitwig_agent.devices import BitwigDeviceRecommender
 
 BITWIG_TOOLS: List[Dict[str, Any]] = [
     {
@@ -640,6 +641,136 @@ BITWIG_TOOLS: List[Dict[str, Any]] = [
                         "default": False
                     }
                 },
+                "required": []
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "control_track",
+            "description": "Controls track mixer settings: volume, pan, mute, solo, arm, or rename. Supports exact values (e.g. dB or normalized for volume, -1.0 to 1.0 for pan) or toggle actions.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "track": {
+                        "type": "string",
+                        "description": "Track index (e.g. '0', '1') or track name (e.g. 'Keys', 'Bass', 'Lead')."
+                    },
+                    "volume": {
+                        "type": "number",
+                        "description": "Volume fader level. Can be normalized (0.0 to 1.0, where 1.0 is max, ~0.8 is 0dB) or in negative dB (e.g. -6.0, -12.0)."
+                    },
+                    "pan": {
+                        "type": "number",
+                        "description": "Stereo pan position from -1.0 (hard Left) through 0.0 (Center) to +1.0 (hard Right)."
+                    },
+                    "mute": {
+                        "type": "boolean",
+                        "description": "Set mute status (true/false) or toggle."
+                    },
+                    "solo": {
+                        "type": "boolean",
+                        "description": "Set solo status (true/false) or toggle."
+                    },
+                    "arm": {
+                        "type": "boolean",
+                        "description": "Set arm for recording status (true/false) or toggle."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Optional new name to rename the track."
+                    }
+                },
+                "required": ["track"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "recommend_devices",
+            "description": "Intelligently recommends Bitwig Studio native instruments, audio effects, or containers based on a natural language description of an audio task, musical genre, or sound design goal.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "type": "string",
+                        "description": "Natural language description of what you want to achieve (e.g. 'warm vintage analog pad for synthwave', 'punchy 808 sub bass', 'vintage tape delay with ducking for lead vocals', 'clean optical compressor')."
+                    },
+                    "num_results": {
+                        "type": "integer",
+                        "description": "Number of recommendations to return (default: 5).",
+                        "default": 5
+                    },
+                    "category": {
+                        "type": "string",
+                        "description": "Optional category filter (e.g. 'Synth', 'Reverb', 'Delay', 'Dynamics', 'EQ', 'Distortion', 'Modulation')."
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Optional type filter ('Instrument', 'Audio Effect', 'Container')."
+                    }
+                },
+                "required": ["description"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_device_browser",
+            "description": "Searches the Bitwig device browser catalog for native instruments, effects, and utilities by name, category, or sound character tags.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "query": {
+                        "type": "string",
+                        "description": "Search term (e.g. 'reverb', 'ladder', 'wavetable', 'tape', 'fm', 'compressor')."
+                    },
+                    "category": {
+                        "type": "string",
+                        "description": "Optional category filter."
+                    },
+                    "type": {
+                        "type": "string",
+                        "description": "Optional device type filter ('Instrument', 'Audio Effect', 'Container')."
+                    },
+                    "limit": {
+                        "type": "integer",
+                        "description": "Maximum number of results to return (default: 10).",
+                        "default": 10
+                    }
+                },
+                "required": ["query"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_device_info",
+            "description": "Retrieves comprehensive information, parameters, sound design character, and usage tips for a specific Bitwig device.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "device_name": {
+                        "type": "string",
+                        "description": "Name of the Bitwig device (e.g. 'Polymer', 'Delay+', 'Compressor+', 'EQ+', 'Phase-4', 'Reverb')."
+                    }
+                },
+                "required": ["device_name"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_device_categories",
+            "description": "Lists all available Bitwig device categories and types with their constituent native devices.",
+            "parameters": {
+                "type": "object",
+                "properties": {},
                 "required": []
             }
         }
@@ -1282,6 +1413,72 @@ class ToolExecutor:
                 "details": results,
                 "project_tracks": final_tracks
             }
+
+        elif tool_name == "control_track":
+            track_ident = arguments.get("track")
+            if track_ident is None:
+                return {"error": "Missing required argument: track"}
+            track_idx = self._resolve_track_index(track_ident)
+
+            return self.client.control_track(
+                track=track_idx,
+                volume=arguments.get("volume"),
+                pan=arguments.get("pan"),
+                mute=arguments.get("mute"),
+                solo=arguments.get("solo"),
+                arm=arguments.get("arm"),
+                name=arguments.get("name")
+            )
+
+        elif tool_name == "recommend_devices":
+            description = arguments.get("description")
+            if not description:
+                return {"error": "Missing required argument: description"}
+            num_results = int(arguments.get("num_results", 5))
+            category = arguments.get("category")
+            device_type = arguments.get("type")
+
+            recs = BitwigDeviceRecommender.recommend(
+                task_description=description,
+                num_results=num_results,
+                category=category,
+                device_type=device_type
+            )
+            return {
+                "query": description,
+                "count": len(recs),
+                "recommendations": recs
+            }
+
+        elif tool_name == "search_device_browser":
+            query = arguments.get("query", "")
+            category = arguments.get("category")
+            device_type = arguments.get("type")
+            limit = int(arguments.get("limit", 10))
+
+            results = BitwigDeviceRecommender.search(
+                query=query,
+                category=category,
+                device_type=device_type,
+                limit=limit
+            )
+            return {
+                "query": query,
+                "count": len(results),
+                "results": results
+            }
+
+        elif tool_name == "get_device_info":
+            device_name = arguments.get("device_name")
+            if not device_name:
+                return {"error": "Missing required argument: device_name"}
+            info = BitwigDeviceRecommender.get_info(device_name)
+            if info:
+                return {"status": "success", "device": info}
+            return {"error": f"Device '{device_name}' not found in Bitwig catalog."}
+
+        elif tool_name == "get_device_categories":
+            return BitwigDeviceRecommender.get_categories()
 
         return {"error": f"Unknown tool: {tool_name}"}
 

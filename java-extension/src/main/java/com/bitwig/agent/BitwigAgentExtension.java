@@ -96,7 +96,9 @@ public class BitwigAgentExtension extends ControllerExtension {
             Track t = (Track) trackBank.getItemAt(i);
             t.name().markInterested();
             t.trackType().markInterested();
+            t.volume().markInterested();
             t.volume().displayedValue().markInterested();
+            t.pan().markInterested();
             t.pan().displayedValue().markInterested();
             t.isGroup().markInterested();
             t.arm().markInterested();
@@ -122,6 +124,7 @@ public class BitwigAgentExtension extends ControllerExtension {
                 dev.exists().markInterested();
                 dev.name().markInterested();
                 dev.isEnabled().markInterested();
+                dev.isWindowOpen().markInterested();
                 dev.isPlugin().markInterested();
                 dev.deviceType().markInterested();
                 dev.presetName().markInterested();

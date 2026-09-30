@@ -57,6 +57,7 @@ public class BridgeHttpServer {
         server.createContext("/api/track/group", new TrackGroupHandler());
         server.createContext("/api/track/ungroup", new TrackUngroupHandler());
         server.createContext("/api/track/rename", new TrackRenameHandler());
+        server.createContext("/api/track/control", new TrackControlHandler());
         server.createContext("/api/actions", new ActionsHandler());
 
         server.start();
@@ -985,6 +986,18 @@ public class BridgeHttpServer {
                     } else if ("previous_preset".equalsIgnoreCase(action)) {
                         targetDev.switchToPreviousPreset();
                         r.put("switched", "previous_preset");
+                    } else if ("toggle_window".equalsIgnoreCase(action) || "toggle_window_open".equalsIgnoreCase(action)) {
+                        targetDev.isWindowOpen().toggle();
+                        r.put("window_toggled", true);
+                    } else if ("open_window".equalsIgnoreCase(action)) {
+                        targetDev.isWindowOpen().set(true);
+                        r.put("window_open", true);
+                    } else if ("close_window".equalsIgnoreCase(action)) {
+                        targetDev.isWindowOpen().set(false);
+                        r.put("window_open", false);
+                    } else if ("select".equalsIgnoreCase(action)) {
+                        targetDev.selectInEditor();
+                        r.put("selected", true);
                     } else {
                         r.put("error", "Unknown device action: " + action);
                     }
@@ -2179,6 +2192,110 @@ public class BridgeHttpServer {
                     r.put("status", "renamed");
                     r.put("track_index", trackIdx);
                     r.put("name", name != null ? name.trim() : track.name().get());
+                    return r;
+                }).get(3, TimeUnit.SECONDS);
+
+                int status = res.containsKey("error") ? 400 : 200;
+                sendJson(exchange, status, res);
+            } catch (Exception e) {
+                Map<String, Object> err = new LinkedHashMap<>();
+                err.put("error", e.getMessage());
+                sendJson(exchange, 500, err);
+            }
+        }
+    }
+
+    private class TrackControlHandler implements HttpHandler {
+        @Override
+        public void handle(HttpExchange exchange) throws IOException {
+            if ("OPTIONS".equalsIgnoreCase(exchange.getRequestMethod())) {
+                handleCors(exchange);
+                exchange.sendResponseHeaders(204, -1);
+                return;
+            }
+            try {
+                String body = readBody(exchange);
+                Map<String, Object> params = JsonUtils.parseObject(body);
+                Object trackParam = params.get("track");
+                Object volumeObj = params.get("volume");
+                Object panObj = params.get("pan");
+                Object muteObj = params.get("mute");
+                Object soloObj = params.get("solo");
+                Object armObj = params.get("arm");
+                String nameObj = (String) params.get("name");
+
+                Map<String, Object> res = runOnBitwigThread(() -> {
+                    int trackIdx = resolveTrackIndex(trackParam);
+                    if (trackIdx < 0) {
+                        Map<String, Object> err = new LinkedHashMap<>();
+                        err.put("error", "Track not found: " + trackParam);
+                        return err;
+                    }
+                    Track track = (Track) extension.getTrackBank().getItemAt(trackIdx);
+                    Map<String, Object> r = new LinkedHashMap<>();
+                    r.put("status", "success");
+                    r.put("track_index", trackIdx);
+                    r.put("track_name", track.name().get());
+
+                    if (volumeObj instanceof Number) {
+                        double volVal = ((Number) volumeObj).doubleValue();
+                        double normVol;
+                        if (volVal < 0.0) {
+                            // If passed in negative dB (e.g. -6 dB)
+                            double linear = Math.pow(10.0, volVal / 20.0);
+                            normVol = Math.min(1.0, Math.max(0.0, linear * 0.8));
+                        } else {
+                            normVol = Math.min(1.0, Math.max(0.0, volVal));
+                        }
+                        track.volume().setImmediately(normVol);
+                        r.put("volume", normVol);
+                    }
+
+                    if (panObj instanceof Number) {
+                        double panVal = ((Number) panObj).doubleValue();
+                        double normPan;
+                        if (panVal >= -1.0 && panVal <= 1.0) {
+                            // Bipolar pan: -1.0 is hard Left (0.0), 0.0 is Center (0.5), +1.0 is hard Right (1.0)
+                            normPan = (panVal + 1.0) / 2.0;
+                        } else {
+                            normPan = Math.min(1.0, Math.max(0.0, panVal));
+                        }
+                        track.pan().setImmediately(normPan);
+                        r.put("pan", normPan);
+                    }
+
+                    if (muteObj instanceof Boolean) {
+                        boolean m = (Boolean) muteObj;
+                        track.mute().set(m);
+                        r.put("mute", m);
+                    } else if ("toggle".equals(muteObj)) {
+                        track.mute().toggle();
+                        r.put("mute_toggled", true);
+                    }
+
+                    if (soloObj instanceof Boolean) {
+                        boolean s = (Boolean) soloObj;
+                        track.solo().set(s);
+                        r.put("solo", s);
+                    } else if ("toggle".equals(soloObj)) {
+                        track.solo().toggle();
+                        r.put("solo_toggled", true);
+                    }
+
+                    if (armObj instanceof Boolean) {
+                        boolean a = (Boolean) armObj;
+                        track.arm().set(a);
+                        r.put("arm", a);
+                    } else if ("toggle".equals(armObj)) {
+                        track.arm().toggle();
+                        r.put("arm_toggled", true);
+                    }
+
+                    if (nameObj != null && !nameObj.trim().isEmpty()) {
+                        track.setName(nameObj.trim());
+                        r.put("name", nameObj.trim());
+                    }
+
                     return r;
                 }).get(3, TimeUnit.SECONDS);
 

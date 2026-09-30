@@ -1062,3 +1062,439 @@ LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
 2026-09-20 01:37:31,891 - kogniterm.core.llm_service - INFO - 🚀 Cambiado a Antigravity: antigravity/gemini-3-flash
 2026-09-20 01:37:31,891 - kogniterm.core.llm_service - INFO - ✅ Estado de LiteLLM actualizado satisfactoriamente.
 2026-09-20 01:37:45,381 - kogniterm.core.multi_provider_manager - INFO - ✅ Solicitud exitosa con antigravity (33632.62ms)
+2026-09-27 23:24:03,539 - kogniterm.core.multi_provider_manager - INFO - MultiProviderManager inicializado con 11 proveedores
+2026-09-27 23:24:04,601 - kogniterm.core.delegation.heartbeat_monitor - INFO - HeartbeatMonitor iniciado.
+2026-09-27 23:24:04,605 - kogniterm.core.skills.skill_manager - INFO - SkillManager inicializado. Bases: bundled=/home/gato/.kogniterm/repo/kogniterm/skills/bundled, global=/home/gato/.agents/skills, managed=/home/gato/.kogniterm/skills/managed, workspace=/home/gato/.kogniterm/repo/kogniterm/skills/workspace
+2026-09-27 23:24:04,605 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en bundled: /home/gato/.kogniterm/repo/kogniterm/skills/bundled
+2026-09-27 23:24:04,658 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en global: /home/gato/.agents/skills
+2026-09-27 23:24:04,799 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en managed: /home/gato/.kogniterm/skills/managed
+2026-09-27 23:24:04,802 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en workspace: /home/gato/.kogniterm/repo/kogniterm/skills/workspace
+2026-09-27 23:24:04,820 - kogniterm.core.skills.skill_manager - INFO - Buscando skills en external: /home/gato/.kogniterm/repo/kogniterm/skills/external
+2026-09-27 23:24:04,822 - kogniterm.core.skills.skill_manager - INFO - Discovery completado: 115 skills encontradas
+2026-09-27 23:24:04,824 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'plan-creation' cargada (1 herramientas)
+2026-09-27 23:24:04,993 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'web-tools' cargada (4 herramientas)
+2026-09-27 23:24:04,995 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'pc-interaction' cargada (1 herramientas)
+2026-09-27 23:24:04,995 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-append' cargada (1 herramientas)
+2026-09-27 23:24:04,998 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'call-agent' cargada (1 herramientas)
+2026-09-27 23:24:04,998 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'skill-factory' cargada (1 herramientas)
+2026-09-27 23:24:05,005 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'browser-navigation' cargada (1 herramientas)
+2026-09-27 23:24:05,006 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'execute-command' cargada (1 herramientas)
+2026-09-27 23:24:05,006 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-read' cargada (1 herramientas)
+2026-09-27 23:24:05,007 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-init' cargada (1 herramientas)
+2026-09-27 23:24:05,052 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'python-executor' cargada (1 herramientas)
+2026-09-27 23:24:05,053 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'task-tracker' cargada (1 herramientas)
+2026-09-27 23:24:05,054 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'code-tools' cargada (2 herramientas)
+2026-09-27 23:24:05,057 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'advanced-file-editor' cargada (1 herramientas)
+2026-09-27 23:24:05,062 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'file-operations' cargada (14 herramientas)
+2026-09-27 23:24:05,063 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'memory-summarize' cargada (1 herramientas)
+2026-09-27 23:24:05,064 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'call-agents-parallel' cargada (1 herramientas)
+2026-09-27 23:24:05,064 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'refresh-tools' cargada (1 herramientas)
+2026-09-27 23:24:05,067 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'file-update' cargada (1 herramientas)
+2026-09-27 23:24:05,067 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'agent-skills-adapter' cargada (1 herramientas)
+2026-09-27 23:24:05,068 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ask_question' cargada (1 herramientas)
+2026-09-27 23:24:05,069 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'set-llm-instructions' cargada (1 herramientas)
+2026-09-27 23:24:05,069 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'manage-background-task' cargada (1 herramientas)
+2026-09-27 23:24:05,070 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'file-read-directory' cargada (1 herramientas)
+2026-09-27 23:24:05,070 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'search-memory' cargada (1 herramientas)
+2026-09-27 23:24:05,071 - kogniterm.core.skills.skill_manager - INFO - Skill 'GRC & Compliance' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,071 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'GRC & Compliance' cargada (0 herramientas)
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - Skill 'onboarding' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'onboarding' cargada (0 herramientas)
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - Skill 'free-tools' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'free-tools' cargada (0 herramientas)
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - Skill 'site-architecture' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'site-architecture' cargada (0 herramientas)
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - Skill 'attribution' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'attribution' cargada (0 herramientas)
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - Skill 'prospecting' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'prospecting' cargada (0 herramientas)
+2026-09-27 23:24:05,072 - kogniterm.core.skills.skill_manager - INFO - Skill 'pricing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'pricing' cargada (0 herramientas)
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - Skill 'aso' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'aso' cargada (0 herramientas)
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - Skill 'analytics' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'analytics' cargada (0 herramientas)
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - Skill 'customer-research' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'customer-research' cargada (0 herramientas)
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - Skill 'directory-submissions' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,073 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'directory-submissions' cargada (0 herramientas)
+2026-09-27 23:24:05,075 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Cloud Security & Container Hardening' cargada (3 herramientas)
+2026-09-27 23:24:05,076 - kogniterm.core.skills.skill_manager - INFO - Skill 'Red Team Operations & Engagement Planning' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,076 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Red Team Operations & Engagement Planning' cargada (0 herramientas)
+2026-09-27 23:24:05,077 - kogniterm_dynamic_skills.Network_Security___Traffic_Analysis.scripts.pcap_analyzer - WARNING - scapy not available. Install: pip install scapy
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta PCAPAnalyzer: PCAPAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase PCAPAnalyzer: PCAPAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - INFO - Skill 'Network Security & Traffic Analysis' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Network Security & Traffic Analysis' cargada (0 herramientas)
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - INFO - Skill 'seo-audit' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'seo-audit' cargada (0 herramientas)
+2026-09-27 23:24:05,078 - kogniterm.core.skills.skill_manager - INFO - Skill 'Cryptographic Analysis & Assessment' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Cryptographic Analysis & Assessment' cargada (0 herramientas)
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - Skill 'co-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'co-marketing' cargada (0 herramientas)
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - Skill 'find-skills' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'find-skills' cargada (0 herramientas)
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - Skill 'content-strategy' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'content-strategy' cargada (0 herramientas)
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - Skill 'ads' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ads' cargada (0 herramientas)
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - Skill 'cro' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'cro' cargada (0 herramientas)
+2026-09-27 23:24:05,079 - kogniterm.core.skills.skill_manager - INFO - Skill 'competitors' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,080 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'competitors' cargada (0 herramientas)
+2026-09-27 23:24:05,080 - kogniterm.core.skills.skill_manager - INFO - Skill 'CSOC Operations & Playbook Automation' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,080 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'CSOC Operations & Playbook Automation' cargada (0 herramientas)
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - Skill 'schema' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'schema' cargada (0 herramientas)
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - Skill 'offers' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'offers' cargada (0 herramientas)
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - Skill 'paywalls' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'paywalls' cargada (0 herramientas)
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - Skill 'community-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'community-marketing' cargada (0 herramientas)
+2026-09-27 23:24:05,081 - kogniterm.core.skills.skill_manager - INFO - Skill 'Exploit Development & Payload Engineering' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,082 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Exploit Development & Payload Engineering' cargada (0 herramientas)
+2026-09-27 23:24:05,084 - kogniterm.core.skills.skill_manager - INFO - Skill 'Threat Hunting & IOC Analysis' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,084 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Threat Hunting & IOC Analysis' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'copywriting' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'copywriting' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'referrals' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'referrals' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'lead-magnets' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'lead-magnets' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'influencer-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'influencer-marketing' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'churn-prevention' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'churn-prevention' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'video' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'video' cargada (0 herramientas)
+2026-09-27 23:24:05,085 - kogniterm.core.skills.skill_manager - INFO - Skill 'jest-react-testing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,086 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'jest-react-testing' cargada (0 herramientas)
+2026-09-27 23:24:05,087 - kogniterm.core.skills.skill_manager - INFO - Skill 'AI & LLM Security' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,087 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'AI & LLM Security' cargada (0 herramientas)
+2026-09-27 23:24:05,087 - kogniterm.core.skills.skill_manager - INFO - Skill 'copy-editing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,087 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'copy-editing' cargada (0 herramientas)
+2026-09-27 23:24:05,088 - kogniterm.core.skills.skill_manager - INFO - Skill 'proactive-agent' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,088 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'proactive-agent' cargada (0 herramientas)
+2026-09-27 23:24:05,088 - kogniterm.core.skills.skill_manager - INFO - Skill 'competitor-profiling' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,088 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'competitor-profiling' cargada (0 herramientas)
+2026-09-27 23:24:05,088 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta APISecurityTester: APISecurityTester.__init__() missing 1 required positional argument: 'base_url'
+2026-09-27 23:24:05,088 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase APISecurityTester: APISecurityTester.__init__() missing 1 required positional argument: 'base_url'
+2026-09-27 23:24:05,089 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta OWASPScanner: OWASPScanner.__init__() missing 1 required positional argument: 'base_url'
+2026-09-27 23:24:05,089 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase OWASPScanner: OWASPScanner.__init__() missing 1 required positional argument: 'base_url'
+2026-09-27 23:24:05,089 - kogniterm.core.skills.skill_manager - INFO - Skill 'Web Application Security Testing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,089 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Web Application Security Testing' cargada (0 herramientas)
+2026-09-27 23:24:05,089 - kogniterm.core.skills.skill_manager - INFO - Skill 'agent-browser' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,089 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'agent-browser' cargada (0 herramientas)
+2026-09-27 23:24:05,090 - kogniterm.core.skills.skill_manager - INFO - Skill 'Vulnerability Scanning & Assessment' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,090 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Vulnerability Scanning & Assessment' cargada (0 herramientas)
+2026-09-27 23:24:05,090 - kogniterm.core.skills.skill_manager - INFO - Skill 'popups' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,090 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'popups' cargada (0 herramientas)
+2026-09-27 23:24:05,091 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta StaticAnalyzer: StaticAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-27 23:24:05,091 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase StaticAnalyzer: StaticAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-27 23:24:05,091 - kogniterm.core.skills.skill_manager - INFO - Skill 'Malware Analysis & Sandboxing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,091 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Malware Analysis & Sandboxing' cargada (0 herramientas)
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - Skill 'launch' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'launch' cargada (0 herramientas)
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - Skill 'emails' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'emails' cargada (0 herramientas)
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - Skill 'code-review' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'code-review' cargada (0 herramientas)
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - Skill 'social' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'social' cargada (0 herramientas)
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-loops' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-loops' cargada (0 herramientas)
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - Skill 'ab-testing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,092 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ab-testing' cargada (0 herramientas)
+2026-09-27 23:24:05,093 - kogniterm.core.skills.skill_manager - INFO - Skill 'product-marketing' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,093 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'product-marketing' cargada (0 herramientas)
+2026-09-27 23:24:05,093 - kogniterm.core.skills.skill_manager - INFO - Skill 'cold-email' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,093 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'cold-email' cargada (0 herramientas)
+2026-09-27 23:24:05,098 - kogniterm.core.skills.skill_manager - INFO - Skill 'email-imap-fetch' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,098 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'email-imap-fetch' cargada (0 herramientas)
+2026-09-27 23:24:05,099 - kogniterm.core.skills.skill_manager - INFO - Skill 'OT / ICS / SCADA Security' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,099 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'OT / ICS / SCADA Security' cargada (0 herramientas)
+2026-09-27 23:24:05,100 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta BinaryAnalyzer: BinaryAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-27 23:24:05,100 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase BinaryAnalyzer: BinaryAnalyzer.__init__() missing 1 required positional argument: 'filepath'
+2026-09-27 23:24:05,100 - kogniterm.core.skills.skill_manager - INFO - Skill 'Reverse Engineering & Binary Analysis' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,100 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Reverse Engineering & Binary Analysis' cargada (0 herramientas)
+2026-09-27 23:24:05,102 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Log Analysis & SIEM Integration' cargada (1 herramientas)
+2026-09-27 23:24:05,102 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-ideas' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,102 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-ideas' cargada (0 herramientas)
+2026-09-27 23:24:05,102 - kogniterm.core.skills.skill_manager - INFO - Skill 'docker-manager' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,102 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'docker-manager' cargada (0 herramientas)
+2026-09-27 23:24:05,102 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-psychology' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,103 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-psychology' cargada (0 herramientas)
+2026-09-27 23:24:05,103 - kogniterm.print - INFO - [!] 'dnspython' module required: pip install dnspython
+2026-09-27 23:24:05,103 - kogniterm.core.skills.skill_manager - ERROR - Error cargando módulo /home/gato/.agents/skills/reconnaissance-osint-automation/scripts/dns_recon.py: 1
+Traceback (most recent call last):
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/dns_recon.py", line 17, in <module>
+    import dns.resolver
+ModuleNotFoundError: No module named 'dns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 252, in load_tools_from_skill
+    module_tools = self._load_module_tools(script_file, skill.name)
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 277, in _load_module_tools
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/dns_recon.py", line 23, in <module>
+    sys.exit(1)
+    ~~~~~~~~^^^
+SystemExit: 1
+2026-09-27 23:24:05,106 - kogniterm.print - INFO - [!] 'dnspython' module required: pip install dnspython
+2026-09-27 23:24:05,106 - kogniterm.core.skills.skill_manager - ERROR - Error cargando módulo /home/gato/.agents/skills/reconnaissance-osint-automation/scripts/subdomain_enum.py: 1
+Traceback (most recent call last):
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/subdomain_enum.py", line 26, in <module>
+    import dns.resolver
+ModuleNotFoundError: No module named 'dns'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 252, in load_tools_from_skill
+    module_tools = self._load_module_tools(script_file, skill.name)
+  File "/home/gato/.kogniterm/repo/kogniterm/core/skills/skill_manager.py", line 277, in _load_module_tools
+    spec.loader.exec_module(module)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 759, in exec_module
+  File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+  File "/home/gato/.agents/skills/reconnaissance-osint-automation/scripts/subdomain_enum.py", line 31, in <module>
+    sys.exit(1)
+    ~~~~~~~~^^^
+SystemExit: 1
+2026-09-27 23:24:05,107 - kogniterm.core.skills.skill_manager - INFO - Skill 'Reconnaissance & OSINT Automation' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,107 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Reconnaissance & OSINT Automation' cargada (0 herramientas)
+2026-09-27 23:24:05,107 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-plan' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-plan' cargada (0 herramientas)
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - Skill 'public-relations' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'public-relations' cargada (0 herramientas)
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - Skill 'ad-creative' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ad-creative' cargada (0 herramientas)
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - Skill 'sms' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,108 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'sms' cargada (0 herramientas)
+2026-09-27 23:24:05,109 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Blue Team Defense & Hardening' cargada (1 herramientas)
+2026-09-27 23:24:05,109 - kogniterm.core.skills.skill_manager - INFO - Skill 'Mobile Application Security' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,109 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Mobile Application Security' cargada (0 herramientas)
+2026-09-27 23:24:05,109 - kogniterm.core.skills.skill_manager - INFO - Skill 'sales-enablement' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,110 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'sales-enablement' cargada (0 herramientas)
+2026-09-27 23:24:05,110 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase de herramienta EvidenceCollector: EvidenceCollector.__init__() missing 1 required positional argument: 'output_dir'
+2026-09-27 23:24:05,110 - kogniterm.core.skills.skill_manager - WARNING - No se pudo instanciar la clase EvidenceCollector: EvidenceCollector.__init__() missing 1 required positional argument: 'output_dir'
+2026-09-27 23:24:05,111 - kogniterm.core.skills.skill_manager - INFO - Skill 'Incident Response & Digital Forensics' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,111 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'Incident Response & Digital Forensics' cargada (0 herramientas)
+2026-09-27 23:24:05,111 - kogniterm.core.skills.skill_manager - INFO - Skill 'marketing-council' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'marketing-council' cargada (0 herramientas)
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'frontend-design' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'frontend-design' cargada (0 herramientas)
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'revops' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'revops' cargada (0 herramientas)
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'programmatic-seo' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'programmatic-seo' cargada (0 herramientas)
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'docker-audit' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'docker-audit' cargada (0 herramientas)
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'security-review' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'security-review' cargada (0 herramientas)
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - Skill 'image' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,112 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'image' cargada (0 herramientas)
+2026-09-27 23:24:05,113 - kogniterm.core.skills.skill_manager - INFO - Skill 'signup' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,113 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'signup' cargada (0 herramientas)
+2026-09-27 23:24:05,113 - kogniterm.core.skills.skill_manager - INFO - Skill 'ai-seo' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,113 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'ai-seo' cargada (0 herramientas)
+2026-09-27 23:24:05,113 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'brave_search' cargada (1 herramientas)
+2026-09-27 23:24:05,114 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'project-analyzer' cargada (1 herramientas)
+2026-09-27 23:24:05,114 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'native-photo-organizer' cargada (1 herramientas)
+2026-09-27 23:24:05,117 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'email-manager' cargada (1 herramientas)
+2026-09-27 23:24:05,118 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'photo-organizer' cargada (1 herramientas)
+2026-09-27 23:24:05,118 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'evolution-test-skill' cargada (1 herramientas)
+2026-09-27 23:24:05,118 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'safe-cleanup' cargada (1 herramientas)
+2026-09-27 23:24:05,119 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'photo-organizer-tool' cargada (1 herramientas)
+2026-09-27 23:24:05,119 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'parse-iso-mirrors-from-html' cargada (1 herramientas)
+2026-09-27 23:24:05,120 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'docker_auditor' cargada (1 herramientas)
+2026-09-27 23:24:05,120 - kogniterm.core.skills.skill_manager - INFO - Skill 'integrate-whatsapp' cargada como procedimental (solo instrucciones en SKILL.md, sin herramientas de código).
+2026-09-27 23:24:05,120 - kogniterm.core.skills.skill_manager - INFO - ✅ Skill 'integrate-whatsapp' cargada (0 herramientas)
+2026-09-27 23:24:05,138 - kogniterm.core.multi_provider_manager - INFO - Métricas reiniciadas para kilocode
+2026-09-27 23:24:05,139 - kogniterm.core.llm_service - INFO - 🤖 Cambiado a KiloCode: kilocode/stepfun/step-3.7-flash:free
+2026-09-27 23:24:05,139 - kogniterm.core.llm_service - INFO - ✅ Estado de LiteLLM actualizado satisfactoriamente.
+2026-09-27 23:24:05,293 - kogniterm.core.thread_manager - INFO - ThreadManager inicializado en /home/gato/Proyectos/bitwig_agent/.kogniterm/threads
+2026-09-27 23:24:05,305 - kogniterm.terminal.agent_interaction_manager - INFO - AgentInteractionManager init: terminal_ui class=<class 'kogniterm.terminal.tui.tui_app.TextualTerminalUI'>
+2026-09-27 23:24:05,309 - kogniterm.terminal.agent_interaction_manager - INFO - AgentInteractionManager: Usando SuperAgent como agente principal.
+2026-09-27 23:24:05,625 - kogniterm.core.mcp.mcp_manager - ERROR - Error al conectar con servidor MCP empc-tools: 'StderrRedirector' object has no attribute 'fileno'
+2026-09-27 23:24:05,626 - kogniterm.core.mcp.mcp_manager - ERROR - Error al conectar con servidor MCP bitwig-agent: 'StderrRedirector' object has no attribute 'fileno'
+2026-09-27 23:24:05,626 - kogniterm.core.mcp.mcp_manager - ERROR - Error al conectar con servidor MCP musescore-mcp: 'StderrRedirector' object has no attribute 'fileno'
+2026-09-27 23:24:05,626 - kogniterm.core.llm_service - INFO - Sincronizando herramientas en LLMService...
+2026-09-27 23:24:05,865 - kogniterm.terminal.tui.tui_app - INFO - [Híbrido] Servidor no disponible. Usando modo local.
+2026-09-27 23:24:05,927 - kogniterm.core.context.vector_db_manager - INFO - ChromaDB connection closed.
+2026-09-27 23:24:09,949 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-27 23:24:15,339 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-27 23:24:19,786 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-27 23:24:25,614 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-27 23:24:25,614 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-27 23:24:25,614 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-27 23:24:25,877 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (28 bytes)
+2026-09-27 23:24:25,981 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (1250 bytes)
+2026-09-27 23:24:26,413 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-27 23:24:33,513 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-27 23:24:41,477 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-27 23:24:41,478 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-27 23:24:41,478 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-27 23:24:41,486 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (9 bytes)
+2026-09-27 23:24:41,636 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (473 bytes)
+2026-09-27 23:24:41,925 - LiteLLM - INFO - 
+LiteLLM completion() model= stepfun/step-3.7-flash:free; provider = openai
+2026-09-27 23:24:48,988 - kogniterm.terminal.agent_interaction_manager - INFO - [DIAG] aim: final_state_dict has file_diff=False, tool_pend=None; agent_state.file_diff=False, agent_state.tool_pend=None
+2026-09-27 23:24:48,988 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: final_state keys=['messages', 'command_to_confirm', 'tool_call_id_to_confirm'], file_diff=None, tool_pend=None
+2026-09-27 23:24:48,988 - kogniterm.terminal.tui.tui_app - INFO - [DIAG] tui_app: after sync - agent_state.file_diff=None, agent_state.tool_pend=None
+2026-09-27 23:24:48,995 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (9 bytes)
+2026-09-27 23:24:49,135 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4025 bytes)
+2026-09-27 23:24:49,286 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4057 bytes)
+2026-09-27 23:24:49,382 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (3810 bytes)
+2026-09-27 23:24:49,503 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4028 bytes)
+2026-09-27 23:24:49,683 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4042 bytes)
+2026-09-27 23:24:49,819 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4054 bytes)
+2026-09-27 23:24:49,912 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4036 bytes)
+2026-09-27 23:24:50,006 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4084 bytes)
+2026-09-27 23:24:50,176 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4093 bytes)
+2026-09-27 23:24:50,269 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:50,445 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4093 bytes)
+2026-09-27 23:24:50,534 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4080 bytes)
+2026-09-27 23:24:50,824 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4093 bytes)
+2026-09-27 23:24:50,903 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4082 bytes)
+2026-09-27 23:24:50,986 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,082 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4080 bytes)
+2026-09-27 23:24:51,237 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4092 bytes)
+2026-09-27 23:24:51,318 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4083 bytes)
+2026-09-27 23:24:51,405 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,501 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,646 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,731 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,812 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,898 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:51,984 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,089 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,234 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,319 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,414 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,519 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,685 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,769 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,854 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:52,945 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:53,035 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:53,195 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:53,325 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:53,669 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:53,966 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:54,118 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:54,326 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4095 bytes)
+2026-09-27 23:24:54,448 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4089 bytes)
+2026-09-27 23:24:54,584 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:24:54,786 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:24:54,913 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:24:55,120 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:24:55,365 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:24:55,507 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:24:55,794 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:24:55,965 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4072 bytes)
+2026-09-27 23:24:56,150 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4073 bytes)
+2026-09-27 23:24:56,797 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:24:57,196 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4073 bytes)
+2026-09-27 23:24:57,629 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:24:58,048 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4074 bytes)
+2026-09-27 23:24:58,774 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4075 bytes)
+2026-09-27 23:24:59,262 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4074 bytes)
+2026-09-27 23:24:59,782 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4074 bytes)
+2026-09-27 23:25:00,249 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:25:01,006 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:25:01,501 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:01,776 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:02,078 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4067 bytes)
+2026-09-27 23:25:02,736 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4067 bytes)
+2026-09-27 23:25:03,319 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:04,109 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4067 bytes)
+2026-09-27 23:25:04,773 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:25:05,111 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:05,941 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:06,654 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4067 bytes)
+2026-09-27 23:25:07,187 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4067 bytes)
+2026-09-27 23:25:08,117 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:09,019 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:10,105 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:11,063 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4068 bytes)
+2026-09-27 23:25:12,002 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4075 bytes)
+2026-09-27 23:25:13,041 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4077 bytes)
+2026-09-27 23:25:13,960 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:15,112 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:25:16,086 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:17,220 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4069 bytes)
+2026-09-27 23:25:18,731 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:20,214 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4070 bytes)
+2026-09-27 23:25:21,697 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4074 bytes)
+2026-09-27 23:25:21,816 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4072 bytes)
+2026-09-27 23:25:22,130 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:23,455 - kogniterm.terminal.command_approval_handler - INFO - Chunk recibido (4071 bytes)
+2026-09-27 23:25:23,463 - kogniterm.terminal.tui.tui_app - ERROR - Error fatal en process_agent_request: App is not running
+Traceback (most recent call last):
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/command_approval_handler.py", line 829, in handle_command_approval
+    raise e # Re-lanzar la excepción
+    ^^^^^^^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/command_approval_handler.py", line 806, in handle_command_approval
+    self.terminal_ui.update_terminal_output(command_to_execute, full_command_output)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 364, in update_terminal_output
+    self._safe_call(
+    ~~~~~~~~~~~~~~~^
+        self.app.update_terminal_output, tool_name, output, command=command
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 260, in _safe_call
+    self.app.call_from_thread(func, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 1441, in call_from_thread
+    super().call_from_thread(callback, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gato/.kogniterm/venv/lib/python3.14/site-packages/textual/app.py", line 1819, in call_from_thread
+    raise RuntimeError("App is not running")
+RuntimeError: App is not running
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 2793, in process_agent_request
+    approval_result = self.command_approval_handler.handle_command_approval(
+        command_to_execute=command
+    )
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/command_approval_handler.py", line 832, in handle_command_approval
+    self.terminal_ui.set_terminal_cursor(False)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 489, in set_terminal_cursor
+    self._safe_call(self.app.set_terminal_cursor, active, executor)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 260, in _safe_call
+    self.app.call_from_thread(func, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gato/.kogniterm/repo/kogniterm/terminal/tui/tui_app.py", line 1441, in call_from_thread
+    super().call_from_thread(callback, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gato/.kogniterm/venv/lib/python3.14/site-packages/textual/app.py", line 1819, in call_from_thread
+    raise RuntimeError("App is not running")
+RuntimeError: App is not running
+
+2026-09-27 23:25:24,640 - kogniterm.core.delegation.heartbeat_monitor - INFO - HeartbeatMonitor detenido.
+2026-09-27 23:25:24,640 - kogniterm.core.llm_service - INFO - LLMService: HeartbeatMonitor detenido.
+2026-09-27 23:25:24,640 - kogniterm.core.context.vector_db_manager - INFO - ChromaDB connection closed.
+2026-09-27 23:25:24,640 - kogniterm.core.llm_service - INFO - LLMService: VectorDBManager cerrado.
+2026-09-27 23:25:24,641 - kogniterm.core.llm_service - INFO - LLMService: Executor de herramientas detenido.
+2026-09-27 23:25:24,641 - kogniterm.core.multi_provider_manager - INFO - MultiProviderManager cerrado
+2026-09-27 23:25:24,641 - kogniterm.core.llm_service - INFO - LLMService: ProviderManager cerrado.
+2026-09-27 23:25:24,641 - kogniterm.core.llm_service - INFO - LLMService: Autoguardado de historial detenido.
+2026-09-27 23:25:24,656 - kogniterm.terminal - WARNING - No se pudo notificar el cierre de sesión al servidor: [Errno 111] Connection refused

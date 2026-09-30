@@ -398,3 +398,78 @@ def test_executor_list_audio_effects():
     res_filtered = executor.execute("list_audio_effects", {"category": "delay"})
     assert "categories" in res_filtered
     assert "Delay" in res_filtered["categories"]
+
+def test_executor_control_track(monkeypatch):
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    called = {}
+
+    def mock_control_track(track, volume, pan, mute, solo, arm, name):
+        called["track"] = track
+        called["volume"] = volume
+        called["pan"] = pan
+        called["mute"] = mute
+        called["solo"] = solo
+        called["arm"] = arm
+        called["name"] = name
+        return {"status": "success", "track_index": track}
+
+    monkeypatch.setattr(client, "control_track", mock_control_track)
+    executor = ToolExecutor(client)
+
+    res = executor.execute("control_track", {
+        "track": 0,
+        "volume": 0.75,
+        "pan": -0.2,
+        "mute": False,
+        "solo": True,
+        "name": "Lead Synth"
+    })
+    assert res["status"] == "success"
+    assert called["track"] == 0
+    assert called["volume"] == 0.75
+    assert called["pan"] == -0.2
+    assert called["mute"] is False
+    assert called["solo"] is True
+    assert called["name"] == "Lead Synth"
+
+def test_executor_recommend_devices():
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    executor = ToolExecutor(client)
+
+    res = executor.execute("recommend_devices", {
+        "description": "warm analog synth for lush synthwave pads",
+        "num_results": 3
+    })
+    assert "recommendations" in res
+    assert res["count"] > 0
+    assert any(r["device"] in ["Polymer", "Polysynth"] for r in res["recommendations"])
+
+def test_executor_search_device_browser():
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    executor = ToolExecutor(client)
+
+    res = executor.execute("search_device_browser", {"query": "delay"})
+    assert "results" in res
+    assert res["count"] > 0
+    names = [r["name"] for r in res["results"]]
+    assert any("Delay" in n for n in names)
+
+def test_executor_get_device_info():
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    executor = ToolExecutor(client)
+
+    res = executor.execute("get_device_info", {"device_name": "Polymer"})
+    assert res["status"] == "success"
+    assert res["device"]["name"] == "Polymer"
+
+    err = executor.execute("get_device_info", {"device_name": "NonExistentThing"})
+    assert "error" in err
+
+def test_executor_get_device_categories():
+    client = BitwigClient(base_url="http://127.0.0.1:8989")
+    executor = ToolExecutor(client)
+
+    res = executor.execute("get_device_categories", {})
+    assert "categories" in res
+    assert "Synth" in res["categories"]
+

@@ -312,12 +312,12 @@ def control_device(
     enabled: Optional[bool] = None
 ) -> str:
     """
-    Controls a device or audio effect in a track's device chain: bypass/enable, toggle bypass, remove, or switch presets.
+    Controls a device or audio effect in a track's device chain: bypass/enable, toggle bypass, remove, switch presets, toggle window, or select in editor.
 
     Args:
         track: Track index (e.g. '0', '1') or track name (e.g. 'Keys', 'Bass').
         device: Device index (e.g. 0, 1) or device name (e.g. 'Reverb', 'Polymer', 'EQ+').
-        action: 'set_enabled', 'toggle', 'delete', 'next_preset', or 'previous_preset'.
+        action: 'set_enabled', 'toggle', 'delete', 'next_preset', 'previous_preset', 'toggle_window', 'open_window', 'close_window', or 'select'.
         enabled: Target state if action is 'set_enabled' (True = active, False = bypassed).
     """
     payload: Dict[str, Any] = {
@@ -469,6 +469,166 @@ def organize_tracks(
     if groups is not None:
         payload["groups"] = groups
     res = executor.execute("organize_tracks", payload)
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def control_track(
+    track: Union[str, int],
+    volume: Optional[float] = None,
+    pan: Optional[float] = None,
+    mute: Optional[bool] = None,
+    solo: Optional[bool] = None,
+    arm: Optional[bool] = None,
+    name: Optional[str] = None
+) -> str:
+    """
+    Controls track mixer settings in Bitwig Studio: volume, pan, mute, solo, arm, or track name.
+
+    Args:
+        track: Track index (e.g. 0, 1) or track name (e.g. 'Keys', 'Bass', 'Lead').
+        volume: Volume fader level. Can be normalized (0.0 to 1.0, where ~0.8 is 0dB) or negative dB (e.g. -6.0, -12.0).
+        pan: Stereo pan position from -1.0 (hard Left) through 0.0 (Center) to +1.0 (hard Right).
+        mute: Set mute state (True = muted, False = unmuted).
+        solo: Set solo state (True = soloed, False = unsoloed).
+        arm: Set record arm state (True = armed, False = disarmed).
+        name: Optional new name to rename the track.
+    """
+    payload: Dict[str, Any] = {"track": track}
+    if volume is not None:
+        payload["volume"] = volume
+    if pan is not None:
+        payload["pan"] = pan
+    if mute is not None:
+        payload["mute"] = mute
+    if solo is not None:
+        payload["solo"] = solo
+    if arm is not None:
+        payload["arm"] = arm
+    if name is not None:
+        payload["name"] = name
+
+    res = executor.execute("control_track", payload)
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def set_track_volume(track: Union[str, int], volume: float) -> str:
+    """
+    Sets the volume fader level for a track in Bitwig Studio.
+
+    Args:
+        track: Track index (e.g. 0, 1) or track name (e.g. 'Keys', 'Bass').
+        volume: Volume fader level (0.0 to 1.0 normalized, or negative dB such as -6.0, -12.0).
+    """
+    res = executor.execute("control_track", {"track": track, "volume": volume})
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def set_track_pan(track: Union[str, int], pan: float) -> str:
+    """
+    Sets the stereo pan position for a track in Bitwig Studio.
+
+    Args:
+        track: Track index (e.g. 0, 1) or track name (e.g. 'Keys', 'Bass').
+        pan: Pan position from -1.0 (hard Left) through 0.0 (Center) to +1.0 (hard Right).
+    """
+    res = executor.execute("control_track", {"track": track, "pan": pan})
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def toggle_track_mute(track: Union[str, int], mute: Optional[bool] = None) -> str:
+    """
+    Toggles or sets the mute status of a track in Bitwig Studio.
+
+    Args:
+        track: Track index (e.g. 0, 1) or track name (e.g. 'Keys', 'Bass').
+        mute: Optional explicit state. If omitted, toggles the current mute state.
+    """
+    action_val: Union[bool, str] = mute if mute is not None else "toggle"
+    res = executor.execute("control_track", {"track": track, "mute": action_val})
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def recommend_devices(
+    description: str,
+    num_results: int = 5,
+    category: Optional[str] = None,
+    type: Optional[str] = None
+) -> str:
+    """
+    Intelligently recommends Bitwig Studio native instruments, audio effects, or containers
+    based on a natural language description of an audio task, genre, or sound design objective.
+
+    Args:
+        description: Description of the sound or processing needed (e.g. 'warm vintage analog pad for synthwave', 'punchy 808 sub bass', 'tape delay with ducking for lead vocals').
+        num_results: Maximum number of recommendations to return (default: 5).
+        category: Optional category filter (e.g. 'Synth', 'Reverb', 'Delay', 'Dynamics', 'EQ', 'Distortion', 'Modulation').
+        type: Optional device type filter ('Instrument', 'Audio Effect', 'Container').
+    """
+    payload: Dict[str, Any] = {
+        "description": description,
+        "num_results": num_results
+    }
+    if category is not None:
+        payload["category"] = category
+    if type is not None:
+        payload["type"] = type
+
+    res = executor.execute("recommend_devices", payload)
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def search_device_browser(
+    query: str,
+    category: Optional[str] = None,
+    type: Optional[str] = None,
+    limit: int = 10
+) -> str:
+    """
+    Searches the Bitwig device catalog for instruments, effects, and utilities by name, category, or sound character tags.
+
+    Args:
+        query: Search term (e.g. 'reverb', 'ladder', 'wavetable', 'tape', 'fm', 'compressor').
+        category: Optional category filter.
+        type: Optional type filter ('Instrument', 'Audio Effect', 'Container').
+        limit: Maximum results (default: 10).
+    """
+    payload: Dict[str, Any] = {
+        "query": query,
+        "limit": limit
+    }
+    if category is not None:
+        payload["category"] = category
+    if type is not None:
+        payload["type"] = type
+
+    res = executor.execute("search_device_browser", payload)
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def get_device_info(device_name: str) -> str:
+    """
+    Retrieves comprehensive information, parameters, sound design character, and usage tips for a specific Bitwig device.
+
+    Args:
+        device_name: Name of the Bitwig device (e.g. 'Polymer', 'Delay+', 'Compressor+', 'EQ+', 'Phase-4', 'Reverb').
+    """
+    res = executor.execute("get_device_info", {"device_name": device_name})
+    import json
+    return json.dumps(res, indent=2)
+
+@mcp_server.tool()
+def get_device_categories() -> str:
+    """
+    Lists all available Bitwig device categories and types with their constituent native devices.
+    """
+    res = executor.execute("get_device_categories", {})
     import json
     return json.dumps(res, indent=2)
 

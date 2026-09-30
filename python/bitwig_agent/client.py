@@ -380,6 +380,49 @@ class BitwigClient:
             res.raise_for_status()
             return res.json()
 
+    def control_track(
+        self,
+        track: Union[int, str],
+        volume: Optional[float] = None,
+        pan: Optional[float] = None,
+        mute: Optional[Union[bool, str]] = None,
+        solo: Optional[Union[bool, str]] = None,
+        arm: Optional[Union[bool, str]] = None,
+        name: Optional[str] = None
+    ) -> Dict[str, Any]:
+        payload: Dict[str, Any] = {"track": track}
+        if volume is not None:
+            payload["volume"] = volume
+        if pan is not None:
+            payload["pan"] = pan
+        if mute is not None:
+            payload["mute"] = mute
+        if solo is not None:
+            payload["solo"] = solo
+        if arm is not None:
+            payload["arm"] = arm
+        if name is not None:
+            payload["name"] = name
+        with httpx.Client(timeout=self.timeout) as client:
+            res = client.post(f"{self.base_url}/api/track/control", json=payload)
+            res.raise_for_status()
+            return res.json()
+
+    def set_track_volume(self, track: Union[int, str], volume: float) -> Dict[str, Any]:
+        return self.control_track(track=track, volume=volume)
+
+    def set_track_pan(self, track: Union[int, str], pan: float) -> Dict[str, Any]:
+        return self.control_track(track=track, pan=pan)
+
+    def toggle_track_mute(self, track: Union[int, str], mute: Optional[bool] = None) -> Dict[str, Any]:
+        return self.control_track(track=track, mute="toggle" if mute is None else mute)
+
+    def toggle_track_solo(self, track: Union[int, str], solo: Optional[bool] = None) -> Dict[str, Any]:
+        return self.control_track(track=track, solo="toggle" if solo is None else solo)
+
+    def toggle_track_arm(self, track: Union[int, str], arm: Optional[bool] = None) -> Dict[str, Any]:
+        return self.control_track(track=track, arm="toggle" if arm is None else arm)
+
     def _post_transport(self, payload: Dict[str, Any]) -> Dict[str, Any]:
         with httpx.Client(timeout=self.timeout) as client:
             res = client.post(f"{self.base_url}/api/transport", json=payload)

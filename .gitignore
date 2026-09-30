@@ -44,6 +44,9 @@ java-extension/build/classes/
 # IDE & Editors
 .vscode/
 .idea/
+.codewhale/
+.kilo/
+.kilocode/
 *.swp
 *.swo
 *~

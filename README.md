@@ -4,126 +4,136 @@
 [![MCP Server](https://img.shields.io/badge/MCP-Model_Context_Protocol-purple?style=flat-square)](https://modelcontextprotocol.io/)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python)](https://python.org/)
 [![Java 17+](https://img.shields.io/badge/Java-17%2B-red?style=flat-square&logo=openjdk)](https://openjdk.org/)
-[![Tests Passing](https://img.shields.io/badge/Tests-45%20Passing-brightgreen?style=flat-square)](https://github.com/gatovillano/bitwig_agent)
+[![Tests Passing](https://img.shields.io/badge/Tests-69%20Passing-brightgreen?style=flat-square)](https://github.com/gatovillano/bitwig_agent)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 
-**Bitwig MCP Server & AI Agent** es una plataforma integral que convierte a **Bitwig Studio 6.0+** en un entorno musical directamente accesible y programable para modelos de lenguaje avanzados (**LLMs**) a través del estándar abierto **Model Context Protocol (MCP)**.
+**Bitwig MCP Server & AI Agent** is a comprehensive platform that turns **Bitwig Studio 6.0+** into an AI-controllable, directly programmable music production environment for advanced Large Language Models (**LLMs**) via the open standard **Model Context Protocol (MCP)**.
 
-Permite a asistentes como **Claude Desktop**, **Cursor**, **Antigravity**, **Windsurf** o cualquier agente autónomo:
-* Inspeccionar en tiempo real la sesión, pistas, instrumentos y plugins activos.
-* Componer progresiones de acordes complejas con algoritmos de **Voice Leading suave**, voicings de teclado avanzados y grooves humanizados.
-* Generar líneas de bajo adaptativas sincronizadas armónicamente.
-* Escribir secuencias melódicas o rítmicas personalizadas nota por nota con control quirúrgico.
-* Inspeccionar clips y visualizarlos mediante un **Piano Roll ASCII** en la respuesta de la IA.
-* Insertar pistas de instrumentos nativos de Bitwig (*Polymer*, *Polysynth*, *FM-4*, *Sampler*, *Drum Machine*, etc.) o presets `.bwpreset`.
-* Insertar y gestionar **efectos de audio** nativos (Reverbs, Delays, Compresores, Ecualizadores, Saturadores, Modulaciones, etc.), controlar su bypass o navegar presets.
-* Controlar el transporte de reproducción (play, stop, set tempo, posición).
-* Grabar en tiempo real hacia la línea de tiempo del **Arranger** mediante lanzamiento sincronizado de escenas o control manual de grabación.
+It empowers assistants such as **Claude Desktop**, **Cursor**, **Antigravity**, **Windsurf**, or any autonomous AI coding agent to:
+* Inspect the live session, tracks, instruments, and active plugins in real time.
+* Compose complex chord progressions with **smooth Voice Leading** algorithms, sophisticated keyboard voicings, and humanized grooves.
+* Generate adaptive basslines harmonically locked to chord changes.
+* Write custom melodic and rhythmic sequences note-by-note with surgical precision.
+* Inspect clips and visualize their musical content via an **ASCII Piano Roll** directly in the model's response.
+* Add native Bitwig instrument tracks (*Polymer*, *Polysynth*, *FM-4*, *Sampler*, *Drum Machine*, etc.) or load `.bwpreset` files.
+* Search and recommend synths and audio effects using a **semantic sound design engine** driven by natural language prompts.
+* Insert and manage **audio effects**, toggle bypass, open/close plugin GUI windows, and switch presets.
+* Control the mixer in real time: track volume (dB or normalized), stereo pan, mute, solo, and arm.
+* Control the transport engine (play, stop, set tempo, timeline seek).
+* Record live into the **Arranger timeline** using BPM-timed scene launch sequences or manual record controls.
+* Organize and automatically group tracks into instrumental families.
 
 ---
 
-## 📑 Tabla de Contenidos
+## 📑 Table of Contents
 
-1. [¿Por qué un Servidor MCP para Bitwig?](#-por-qué-un-servidor-mcp-para-bitwig)
-2. [Arquitectura del Sistema](#-arquitectura-del-sistema)
-3. [Herramientas MCP Expuestas (Tools Reference)](#-herramientas-mcp-expuestas-tools-reference)
+1. [Why an MCP Server for Bitwig Studio?](#-why-an-mcp-server-for-bitwig-studio)
+2. [System Architecture](#-system-architecture)
+3. [MCP Tools Reference](#-mcp-tools-reference)
    - [1. `get_project_context`](#1-get_project_context)
    - [2. `create_chord_progression`](#2-create_chord_progression)
    - [3. `create_bassline`](#3-create_bassline)
    - [4. `write_notes`](#4-write_notes)
    - [5. `inspect_track`](#5-inspect_track)
    - [6. `inspect_clip`](#6-inspect_clip)
-   - [7. `add_instrument_track`](#7-add_instrument_track)
-   - [8. `control_transport`](#8-control_transport)
-   - [9. `clear_clip`](#9-clear_clip)
-   - [10. `launch_scene`](#10-launch_scene)
-   - [11. `record_to_arranger`](#11-record_to_arranger)
-   - [12. `add_audio_effect`](#12-add_audio_effect)
-   - [13. `control_device`](#13-control_device)
-   - [14. `list_audio_effects`](#14-list_audio_effects)
-4. [Configuración en Clientes MCP](#-configuración-en-clientes-mcp)
+   - [7. `inspect_arranger`](#7-inspect_arranger)
+   - [8. `add_instrument_track`](#8-add_instrument_track)
+   - [9. `control_transport`](#9-control_transport)
+   - [10. `clear_clip`](#10-clear_clip)
+   - [11. `launch_scene`](#11-launch_scene)
+   - [12. `record_to_arranger`](#12-record_to_arranger)
+   - [13. `add_audio_effect`](#13-add_audio_effect)
+   - [14. `control_device`](#14-control_device)
+   - [15. `set_device_parameter`](#15-set_device_parameter)
+   - [16. `list_audio_effects`](#16-list_audio_effects)
+   - [17. `control_track` (Mixer: Volume, Pan, Mute, Solo, Arm)](#17-control_track)
+   - [18. `recommend_devices` (Semantic Sound Design Recommender)](#18-recommend_devices)
+   - [19. `search_device_browser` & `get_device_info`](#19-search_device_browser--get_device_info)
+   - [20. `organize_tracks` & Track Management](#20-organize_tracks)
+4. [MCP Client Setup](#-mcp-client-setup)
    - [Claude Desktop](#claude-desktop)
    - [Antigravity / Gemini CLI](#antigravity--gemini-cli)
    - [Cursor & Windsurf](#cursor--windsurf)
-5. [Instalación y Puesta en Marcha](#-instalación-y-puesta-en-marcha)
-   - [Paso 1: Instalar la Extensión en Bitwig Studio](#paso-1-instalar-la-extensión-en-bitwig-studio)
-   - [Paso 2: Activar el Controlador en Bitwig](#paso-2-activar-el-controlador-en-bitwig)
-   - [Paso 3: Instalar el Paquete Python](#paso-3-instalar-el-paquete-python)
-6. [Motor de Teoría Musical](#-motor-de-teoría-musical)
-7. [Modo Alternativo: CLI Interactivo (`bitwig-agent`)](#-modo-alternativo-cli-interactivo-bitwig-agent)
-8. [Suite de Pruebas](#-suite-de-pruebas)
-9. [Estructura del Proyecto](#-estructura-del-proyecto)
-10. [Licencia](#-licencia)
+5. [Installation & Getting Started](#-installation--getting-started)
+   - [Step 1: Install the Extension in Bitwig Studio](#step-1-install-the-extension-in-bitwig-studio)
+   - [Step 2: Activate the Controller in Bitwig](#step-2-activate-the-controller-in-bitwig)
+   - [Step 3: Install the Python Package](#step-3-install-the-python-package)
+6. [Music Theory Engine](#-music-theory-engine)
+7. [Alternative Mode: Interactive CLI (`bitwig-agent`)](#-alternative-mode-interactive-cli-bitwig-agent)
+8. [Test Suite](#-test-suite)
+9. [Project Structure](#-project-structure)
+10. [License](#-license)
 
 ---
 
-## ⚡ ¿Por qué un Servidor MCP para Bitwig?
+## ⚡ Why an MCP Server for Bitwig Studio?
 
-Hasta ahora, usar modelos de lenguaje para producir música requería copiar y pegar archivos MIDI o lidiar con fragmentos de código desconectados del DAW. 
+Until now, using Large Language Models to produce music required manually exporting MIDI files, copy-pasting notes, or wrestling with disconnected scripts outside the DAW.
 
-Gracias a **MCP (Model Context Protocol)**, el modelo tiene acceso directo a Bitwig como una extensión de su pensamiento:
+Thanks to the **Model Context Protocol (MCP)**, the LLM has direct, live access to Bitwig as a native extension of its reasoning:
 
 ```
                           ┌─────────────────────────────┐
-                          │   Cliente MCP (Claude,      │
+                          │   MCP Client (Claude,       │
                           │ Cursor, Antigravity, etc.)  │
                           └──────────────┬──────────────┘
                                          │ JSON-RPC (stdio)
                                          ▼
                           ┌─────────────────────────────┐
-                          │    Servidor MCP en Python   │
+                          │    Python MCP Server        │
                           │     (bitwig-agent-mcp)      │
                           └──────────────┬──────────────┘
-                                         │ Motor Musical / HTTP
+                                         │ Music Engine / HTTP REST
                                          ▼
                           ┌─────────────────────────────┐
-                          │ Java Controller Extension   │
+                          │  Java Controller Extension  │
                           │   (BitwigAgentBridge :8989) │
                           └──────────────┬──────────────┘
                                          │ Bitwig API Thread-Safe
                                          ▼
                           ┌─────────────────────────────┐
-                          │      BITWIG STUDIO 6.0+     │
-                          │ Clips, Pistas, Piano Roll   │
+                          │     BITWIG STUDIO 6.0+      │
+                          │  Clips, Tracks, Piano Roll  │
                           └─────────────────────────────┘
 ```
 
-* **Cero latencia de contexto**: La IA puede consultar qué pistas existen, si están sonando, qué instrumentos tienen cargados y qué notas hay escritas en cualquier clip slot.
-* **Creatividad musical algorítmica**: En lugar de notas aleatorias, cuenta con un motor que comprende tensiones de acordes (9as, 11as, 13as, dominantes alterados), resuelve el movimiento de las voces mediante saltos mínimos (*Voice Leading*) y aplica dinámicas humanas.
-* **Edición no destructiva**: Puede crear nuevos clips, sobreescribir, borrar o inspeccionar sin alterar el flujo de trabajo del productor.
+* **Zero-latency context**: The AI can query active tracks, check what synths/plugins are loaded, inspect mixer levels, and see exactly what notes are written in any clip slot.
+* **Algorithmic musical creativity**: Rather than random MIDI notes, it leverages a music theory engine that understands complex chord tensions (9ths, 11ths, 13ths, altered dominants), resolves voice movements with minimal semitone jumps (*smooth Voice Leading*), and applies humanized timing and velocity.
+* **Non-destructive editing**: Create new clips, overwrite, delete, or inspect without disrupting the producer's creative flow.
 
 ---
 
-## 🏗 Arquitectura del Sistema
+## 🏗 System Architecture
 
-El ecosistema se compone de tres capas desacopladas y de alto rendimiento:
+The ecosystem consists of three decoupled, high-performance layers:
 
-1. **Extensión Java (`BitwigAgentBridge.bwextension`)**:
-   - Implementa la API de Controladores de Bitwig Studio 6.0 (`com.bitwig.extension.controller.ControllerExtension`).
-   - Aloja un servidor HTTP REST ultraligero y seguro en `http://127.0.0.1:8989`.
-   - Utiliza `host.scheduleTask()` para garantizar que todas las modificaciones sobre clips, notas, pistas y transporte ocurran en el hilo de ejecución principal de Bitwig sin bloqueos de audio.
+1. **Java Controller Extension (`BitwigAgentBridge.bwextension`)**:
+   - Implements Bitwig Studio 6.0 Controller API (`com.bitwig.extension.controller.ControllerExtension`).
+   - Hosts an ultra-lightweight, embedded HTTP REST server on `http://127.0.0.1:8989`.
+   - Utilizes `host.scheduleTask()` to ensure all modifications to clips, notes, tracks, mixer faders, and transport happen safely on Bitwig's main controller thread without audio glitches.
 
-2. **Servidor MCP Python (`bitwig-agent-mcp`)**:
-   - Expone la especificación de herramientas MCP sobre transporte estándar `stdio`.
-   - Conecta el protocolo MCP con el motor de teoría musical y el cliente HTTP de Bitwig.
+2. **Python MCP Server (`bitwig-agent-mcp`)**:
+   - Exposes standard MCP tools over `stdio`.
+   - Bridges the protocol with the music theory engine, semantic device knowledge base, and the Bitwig HTTP client.
 
-3. **Motor Musical (`bitwig_agent.theory`)**:
-   - Parser armónico universal (soporta nomenclatura estándar de jazz y música moderna).
-   - Optimizador de Voice Leading basado en distancia euclidiana de semitonos entre acordes sucesivos.
-   - Generador de groove rítmico (estilos `sustained`, `lofi`, `syncopated`, `quarter_stabs`, `arpeggio`).
-   - Humanizador con fluctuación estocástica de micro-timing y velocidades de pulsación realistas.
+3. **Music Theory Engine (`bitwig_agent.theory`) & Device Intelligence (`bitwig_agent.devices`)**:
+   - Universal harmonic parser supporting standard modern jazz and pop notation.
+   - Euclidean Voice Leading optimizer that minimizes distance between successive chords.
+   - Dynamic rhythmic groove generator (`sustained`, `lofi`, `syncopated`, `quarter_stabs`, `arpeggio`).
+   - Gaussian humanizer with velocity contours and micro-timing jitter.
+   - Comprehensive Bitwig sound design knowledge base and semantic recommender.
 
 ---
 
-## 🛠 Herramientas MCP Expuestas (Tools Reference)
+## 🛠 MCP Tools Reference
 
-A continuación se detallan todas las herramientas disponibles a través del servidor MCP:
+Here is the complete reference of all tools exposed by the MCP server:
 
 ### 1. `get_project_context`
-Inspecciona el estado global del proyecto en Bitwig Studio.
-* **Argumentos**: Ninguno.
-* **Retorna**: JSON con tempo en BPM, estado de reproducción (`isPlaying`) y lista completa de pistas (índice, nombre, mute, solo, arm y slots con clips existentes).
-* **Ejemplo de respuesta**:
+Inspects the global state of the Bitwig Studio project.
+* **Arguments**: None.
+* **Returns**: JSON object with project tempo (BPM), playing state (`isPlaying`), playhead position, and a list of all tracks (index, name, type, mute, solo, arm, and occupied clip slots).
+* **Example response**:
   ```json
   {
     "tempo": 120.0,
@@ -152,75 +162,75 @@ Inspecciona el estado global del proyecto en Bitwig Studio.
 ---
 
 ### 2. `create_chord_progression`
-Genera y escribe una progresión de acordes armónicamente optimizada en un clip de la pista indicada.
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `track` | `string` | *(Requerido)* | Índice (ej. `"0"`) o nombre de la pista (ej. `"Keys"`, `"Rhodes"`). |
-  | `chords` | `List[string]` | *(Requerido)* | Lista de acordes, ej: `["Dm9", "G13", "Cmaj9", "A7alt"]`. |
-  | `slot` | `integer` | `0` | Índice del slot en el Clip Launcher. |
-  | `beats_per_chord` | `number` | `4.0` | Duración en pulsos (4.0 = 1 compás en 4/4). |
-  | `voicing_style` | `string` | `"keyboard"` | Estilo de distribución de voces: `"keyboard"`, `"rootless"` (voicings jazz sin tónica) o `"drop2"`. |
-  | `rhythm_pattern` | `string` | `"sustained"` | Patrón rítmico: `"sustained"`, `"lofi"`, `"syncopated"`, `"quarter_stabs"`, `"arpeggio"`. |
-  | `include_bass` | `boolean` | `true` | Si se debe incluir la nota tónica grave en el acorde. |
-  | `humanize` | `boolean` | `true` | Aplica variaciones orgánicas de velocidad y micro-timing. |
-  | `launch` | `boolean` | `false` | Inicia la reproducción del clip inmediatamente tras crearlo. |
+Generates and writes a harmonically voiced, humanized chord progression to a clip on the specified track.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `track` | `string` | *(Required)* | Track index (e.g. `"0"`) or name (e.g. `"Keys"`, `"Rhodes"`). |
+  | `chords` | `List[string]` | *(Required)* | List of chord symbols, e.g. `["Dm9", "G13", "Cmaj9", "A7alt"]`. |
+  | `slot` | `integer` | `0` | Clip Launcher slot index (0-based). |
+  | `beats_per_chord` | `number` | `4.0` | Duration in beats per chord (`4.0` = 1 bar in 4/4). |
+  | `voicing_style` | `string` | `"keyboard"` | Voicing algorithm: `"keyboard"`, `"rootless"` (modern jazz voicings omitting the root), or `"drop2"`. |
+  | `rhythm_pattern` | `string` | `"sustained"` | Groove pattern: `"sustained"`, `"lofi"`, `"syncopated"`, `"quarter_stabs"`, or `"arpeggio"`. |
+  | `include_bass` | `boolean` | `true` | Whether to include a low bass root note in the chord clip. |
+  | `humanize` | `boolean` | `true` | Applies organic velocity contours and micro-timing variations. |
+  | `launch` | `boolean` | `false` | Automatically triggers clip playback upon creation. |
 
-* **Ejemplo de prompt para el LLM**:
-  > *"Crea una progresión Neo-Soul en la pista 'Rhodes': Dm9 -> G13 -> Cmaj9 -> A7b9#11 con patrón rítmico lofi y voicings rootless, y ponla en reproducción."*
+* **Example prompt for the LLM**:
+  > *"Create a Neo-Soul progression on the 'Rhodes' track: Dm9 -> G13 -> Cmaj9 -> A7b9#11 with a lofi rhythm pattern, rootless voicings, and start playback."*
 
 ---
 
 ### 3. `create_bassline`
-Crea una línea de bajo dedicada que sigue armónicamente una progresión de acordes.
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `track` | `string` | *(Requerido)* | Índice o nombre de la pista de bajo (ej. `"Bass"`, `"1"`). |
-  | `chords` | `List[string]` | *(Requerido)* | Símbolos de acordes que el bajo debe acompañar. |
-  | `slot` | `integer` | `0` | Índice del slot del clip. |
-  | `beats_per_chord` | `number` | `4.0` | Duración por acorde. |
-  | `style` | `string` | `"syncopated"` | Estilo rítmico: `"root"` (tónica simple), `"syncopated"` (síncopa groove), `"walking"` (walking bass). |
-  | `launch` | `boolean` | `false` | Dispara el clip al terminar de escribirlo. |
+Generates a dedicated bassline matching a chord progression on the specified bass track.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `track` | `string` | *(Required)* | Track index or name (e.g. `"Bass"`, `"Sub"`). |
+  | `chords` | `List[string]` | *(Required)* | Chord symbols for the bassline to accompany. |
+  | `slot` | `integer` | `0` | Clip slot index. |
+  | `beats_per_chord` | `number` | `4.0` | Length in beats per chord. |
+  | `style` | `string` | `"syncopated"` | Rhythm style: `"root"` (simple root hits), `"syncopated"` (funky groove), or `"walking"` (jazz walking bass). |
+  | `launch` | `boolean` | `false` | Launches clip playback immediately. |
 
 ---
 
 ### 4. `write_notes`
-Permite escribir secuencias de notas arbitrarias nota por nota con control absoluto de tono, posición temporal, duración y velocidad.
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `track` | `string` | *(Requerido)* | Índice o nombre de la pista. |
-  | `notes` | `List[object]` | *(Requerido)* | Lista de eventos de nota a escribir. |
-  | `slot` | `integer` | `0` | Índice del slot del clip. |
-  | `beats` | `number` | `16.0` | Longitud total del clip en pulsos (auto-extensible si las notas lo superan). |
-  | `clear` | `boolean` | `true` | Si limpia el clip antes de insertar las notas. |
-  | `launch` | `boolean` | `false` | Inicia la reproducción inmediata. |
-  | `humanize` | `boolean` | `false` | Aplica humanización sutil a las notas escritas. |
+Writes arbitrary custom note sequences into a clip slot note-by-note with surgical control over pitch, timing, duration, velocity, and channel.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `track` | `string` | *(Required)* | Track index or name. |
+  | `notes` | `List[object]` | *(Required)* | List of note event dictionaries. |
+  | `slot` | `integer` | `0` | Clip slot index. |
+  | `beats` | `number` | `16.0` | Clip loop length in beats (auto-extends if notes exceed this length). |
+  | `clear` | `boolean` | `true` | Clears previous clip notes before writing. |
+  | `launch` | `boolean` | `false` | Immediately plays the clip. |
+  | `humanize` | `boolean` | `false` | Applies subtle humanization to velocities and timing. |
 
-* **Estructura de cada nota en `notes`**:
-  - `pitch`: Número MIDI (`0-127`) o nombre con octava (`"C4"`, `"F#3"`, `"Bb2"`, `"Db5"`).
-  - `step`: Posición en semicorcheas (0 = pulso 1, 4 = pulso 2, etc.) **o** `beat` (número flotante: `0.0`, `1.5`, `2.25`).
-  - `duration`: Duración en pulsos (`1.0` = negra, `0.25` = semicorchea, `0.5` = corchea).
-  - `velocity`: Velocidad MIDI de `1` a `127` (por defecto `100`).
-  - `channel`: Canal MIDI de `0` a `15` (por defecto `0`).
+* **Note event structure in `notes`**:
+  - `pitch`: MIDI note number (`0-127`) or note name with octave (`"C4"`, `"F#3"`, `"Bb2"`, `"Db5"`).
+  - `step`: 16th-note step index (`0` = beat 1, `4` = beat 2, etc.) **or** `beat` (float: `0.0`, `1.5`, `2.25`).
+  - `duration`: Length in beats (`1.0` = quarter note, `0.25` = 16th note, `0.5` = 8th note).
+  - `velocity`: MIDI velocity from `1` to `127` (default: `100`).
+  - `channel`: MIDI channel from `0` to `15` (default: `0`).
 
 ---
 
 ### 5. `inspect_track`
-Permite al modelo "ver" la configuración completa de una pista.
-* **Argumentos**: `track` (`string`, requerido): Índice o nombre de la pista.
-* **Información que devuelve**:
-  - Parámetros de mezcla: Volumen, panorama, mute, solo, arm.
-  - Cadena completa de dispositivos: Sintetizadores (*Polymer*, *Polysynth*), instrumentos externos, plugins VST/CLAP, efectos de audio y presets activos.
-  - Lista de clips presentes en la pista.
+Allows the AI to inspect a track's complete configuration.
+* **Arguments**: `track` (`string`, required): Track index or name.
+* **Returned details**:
+  - Mixer parameters: Volume, pan, mute, solo, arm.
+  - Complete device chain: Synths (*Polymer*, *Polysynth*), VST/CLAP plugins, audio effects, and loaded presets.
+  - List of clips present across all launcher slots.
 
 ---
 
 ### 6. `inspect_clip`
-Inspecciona el contenido interno de un clip en el Clip Launcher y genera una representación visual gráfica en ASCII del Piano Roll.
-* **Argumentos**: `track` (`string`), `slot` (`integer`, default `0`).
-* **Visualización en Piano Roll ASCII**:
+Inspects an individual clip in the Clip Launcher and returns an **ASCII Piano Roll** visual representation.
+* **Arguments**: `track` (`string`), `slot` (`integer`, default `0`).
+* **ASCII Piano Roll representation**:
   ```text
     G4  | · · · · · · · · [═══════] · · · · · · · · |
     E4  | · · · · · · · · [═══════] · · · · · · · · |
@@ -233,125 +243,180 @@ Inspecciona el contenido interno de un clip en el Clip Launcher y genera una rep
 ---
 
 ### 7. `inspect_arranger`
-Inspecciona el estado de la línea de tiempo del **Arranger**:
-* **Línea de tiempo**: Posición exacta del cabezal de reproducción (beats y compases), BPM, estado de grabación / overdub del Arranger, y límites/estado del loop del Arranger.
-* **Cue Markers (Estructura de la canción)**: Lista de marcadores de sección con nombre, color, número de compás y posición en beats (ej. Intro, Verso, Estribillo, Drop, Outro).
-* **Clip seleccionado en el Arranger**: Si hay un clip activo seleccionado en el timeline, muestra sus límites (`play_start`, `play_stop`, `loop_length`), pista perteneciente, notas detalladas y un **Piano Roll ASCII** completo.
+Inspects the state of the Bitwig **Arranger timeline**:
+* **Timeline state**: Playhead position (beats and bars), project tempo, recording/overdub status, and loop bounds.
+* **Cue Markers (Song Structure)**: List of section markers with name, color, bar number, and beat position (e.g. Intro, Verse, Chorus, Drop, Outro).
+* **Selected Arranger Clip**: If a clip is active in the arranger timeline, inspects bounds (`play_start`, `play_stop`, `loop_length`), parent track, notes details, and a full ASCII Piano Roll.
 
 ---
 
-### 7. `add_instrument_track`
-Inserta una nueva pista de instrumento o añade un instrumento a una pista existente.
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `name` | `string` | *(Requerido)* | Nombre de la pista (ej. `"Lead Synth"`, `"Drum Rack"`). |
-  | `instrument` | `string` | `"polymer"` | Instrumento: `"polymer"`, `"polysynth"`, `"fm-4"`, `"phase-4"`, `"sampler"`, `"drum_machine"`, `"organ"`, `"poly_grid"`, `"instrument_layer"` o ruta a un archivo `.bwpreset`. |
-  | `position` | `integer` | `-1` | Posición de inserción (`-1` para el final). |
-  | `track` | `string` | `null` | Si se especifica, carga el instrumento en una pista existente en lugar de crear una nueva. |
+### 8. `add_instrument_track`
+Creates a new instrument track or loads a native synth/drum machine/preset onto a track.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `name` | `string` | *(Required)* | Name for the track (e.g. `"Lead Synth"`, `"Drum Rack"`). |
+  | `instrument` | `string` | `"polymer"` | Instrument: `"polymer"`, `"polysynth"`, `"fm-4"`, `"phase-4"`, `"sampler"`, `"drum_machine"`, `"organ"`, `"poly_grid"`, `"instrument_layer"`, or path to a `.bwpreset`. |
+  | `position` | `integer` | `-1` | Position to insert track at (`-1` for end). |
+  | `track` | `string` | `null` | If specified, adds the instrument to an existing track instead of creating a new one. |
 
 ---
 
-### 8. `control_transport`
-Controla el motor de reproducción, transporte, grabación y posición temporal en Bitwig Studio.
-* **Argumentos**:
-  - `action`: `"play"`, `"stop"`, `"restart"`, `"set_tempo"`, `"record"` (activa grabación del Arranger y reproduce), `"stop_record"`, `"toggle_record"`, `"return_to_arrangement"` (devuelve las pistas al control del timeline), o `"set_position"`.
-  - `tempo`: Valor en BPM (ej. `85.0`, `124.0`).
-  - `position`: Posición en beats (negras) de la línea de tiempo (ej. `0.0` = compás 1, `16.0` = compás 5).
+### 9. `control_transport`
+Controls the Bitwig playback engine, recording, and timeline position.
+* **Arguments**:
+  - `action`: `"play"`, `"stop"`, `"restart"`, `"set_tempo"`, `"record"`, `"stop_record"`, `"toggle_record"`, `"return_to_arrangement"`, or `"set_position"`.
+  - `tempo`: New tempo in BPM (e.g. `85.0`, `124.0`).
+  - `position`: Timeline position in beats (e.g. `0.0` = bar 1, `16.0` = bar 5).
 
 ---
 
-### 9. `clear_clip`
-Limpia el contenido de un clip slot.
-* **Argumentos**:
-  - `track`: Índice o nombre de la pista.
-  - `slot`: Índice del clip slot (default `0`).
-  - `action`: `"notes"` (vacía las notas manteniendo el clip) o `"delete"` (elimina el clip por completo).
+### 10. `clear_clip`
+Clears notes from a clip slot or removes the clip completely.
+* **Arguments**:
+  - `track`: Track index or name.
+  - `slot`: Clip slot index (default: `0`).
+  - `action`: `"notes"` (clears note data while keeping clip) or `"delete"` (deletes the clip entirely).
 
 ---
 
-### 10. `launch_scene`
-Dispara una escena completa en el Clip Launcher, lanzando en sincronía todos los clips de esa fila horizontal a través de todas las pistas.
-* **Argumentos**:
-  - `scene`: Índice de la escena (0-based, default: `0`).
+### 11. `launch_scene`
+Launches an entire scene row in the Clip Launcher, triggering all clips in that row across all tracks simultaneously.
+* **Arguments**: `scene` (`integer`, default `0`).
 
 ---
 
-### 11. `record_to_arranger`
-Permite al agente grabar ideas y estructuras directamente en la línea de tiempo del **Arranger** en tiempo real. Activa la grabación del Arranger de Bitwig y reproduce y lanza escenas con precisión rítmica.
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `sequence` | `array` | `null` | Lista de secciones ordenadas. Cada sección define `scene` (int) y duración en `bars` (compases) o `beats` (negras). Ejemplo: `[{"scene": 0, "bars": 4}, {"scene": 1, "bars": 8}]`. |
-  | `start_beat` | `number` | `0.0` | Posición en beats del Arranger donde comenzará la grabación. |
-  | `action` | `string` | `"record_sequence"` | Modo de operación: `"record_sequence"` (si se provee secuencia), `"start"`, `"stop"`, `"toggle"` o `"return_to_arrangement"`. |
-  | `scene` | `integer` | `null` | Escena a disparar inmediatamente si `action` es `"start"`. |
-  | `stop_on_finish` | `boolean` | `true` | Detiene el transporte al finalizar la grabación. |
-  | `return_to_arrangement` | `boolean` | `true` | Restaura las pistas a la reproducción del Arranger para escuchar el resultado grabado. |
+### 12. `record_to_arranger`
+Enables the AI to record arrangements and clip sequences directly into the **Arranger timeline** in real time.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `sequence` | `array` | `null` | Ordered list of sections. Each section specifies `scene` (int) and length in `bars` or `beats`. Example: `[{"scene": 0, "bars": 4}, {"scene": 1, "bars": 8}]`. |
+  | `start_beat` | `number` | `0.0` | Timeline beat position where recording starts. |
+  | `action` | `string` | `"record_sequence"` | Operation mode: `"record_sequence"`, `"start"`, `"stop"`, `"toggle"`, or `"return_to_arrangement"`. |
+  | `scene` | `integer` | `null` | Scene index to launch immediately if action is `"start"`. |
+  | `stop_on_finish` | `boolean` | `true` | Stops playback when sequence recording finishes. |
+  | `return_to_arrangement` | `boolean` | `true` | Restores tracks to arrangement playback when recording finishes. |
 
 ---
 
-### 12. `add_audio_effect`
-Inserta un efecto de audio nativo de Bitwig en una pista existente (en la posición deseada de la cadena de dispositivos) o crea una pista de retorno/efecto dedicada (`Effect Track`).
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `track` | `integer` | `0` | Índice de la pista donde insertar el efecto (ignorado si `create_effect_track` es `true`). |
-  | `effect` | `string` | **Requerido** | Nombre amigable del efecto nativo (ej. `"delay+"`, `"reverb"`, `"compressor"`, `"eq-plus"`, `"saturator"`, `"flanger"`, `"chorus"`), o ruta/nombre de preset `.bwpreset` / dispositivo `.bwdevice`. |
-  | `position` | `string` | `"end"` | Posición en la cadena: `"end"` (al final), `"start"` (al principio), o índice numérico como string (ej. `"0"`) para insertar después de dicho dispositivo. |
-  | `create_effect_track` | `boolean` | `false` | Si es `true`, crea una pista de efectos/retorno global (`Effect Track`) dedicada e inserta el efecto allí. |
+### 13. `add_audio_effect`
+Inserts a native Bitwig audio effect into an existing track or creates a dedicated global Effect/Return track (`Effect Track`).
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `effect` | `string` | *(Required)* | Effect name (e.g. `"delay+"`, `"reverb"`, `"compressor"`, `"eq+"`, `"saturator"`, `"flanger"`, `"chorus"`) or `.bwpreset` path. |
+  | `track` | `string` | `null` | Track index or name where the effect should be added (not required if `create_effect_track` is true). |
+  | `position` | `string`/`int` | `"end"` | Position in chain: `"end"`, `"start"`, or integer index to insert after. |
+  | `create_effect_track` | `boolean` | `false` | If true, creates a new Effect/Return track and loads the effect there. |
 
 ---
 
-### 13. `control_device`
-Controla el estado y presets de un dispositivo o efecto de audio en una pista de Bitwig Studio.
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `track` | `integer` | `0` | Índice de la pista que contiene el dispositivo. |
-  | `device` | `integer` | `0` | Índice del dispositivo o efecto dentro de la cadena (0 para el primero). |
-  | `action` | `string` | `"toggle"` | Acción a ejecutar: `"set_enabled"` (activa/desactiva según `enabled`), `"toggle"` (alterna bypass), `"delete"` (elimina el efecto), `"next_preset"` o `"previous_preset"`. |
-  | `enabled` | `boolean` | `null` | Valor booleano si la acción es `"set_enabled"`. |
+### 14. `control_device`
+Controls a device or audio effect: bypass/enable, remove, open/close GUI window, or switch presets.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `track` | `string`/`int` | *(Required)* | Track index or name containing the device. |
+  | `device` | `string`/`int` | *(Required)* | Device index or name (e.g. `"Polymer"`, `"Reverb"`). |
+  | `action` | `string` | `"toggle"` | Action: `"set_enabled"`, `"toggle"`, `"delete"`, `"next_preset"`, `"previous_preset"`, `"toggle_window"` (opens/closes GUI window), `"open_window"`, `"close_window"`, or `"select"`. |
+  | `enabled` | `boolean` | `null` | Target state if action is `"set_enabled"`. |
 
 ---
 
-### 14. `list_audio_effects`
-Devuelve el catálogo clasificado de efectos nativos de Bitwig Studio soportados por UUID, organizados por categoría musical (Reverb, Delay, Dynamics, EQ, Distortion, Modulation, Utility, etc.).
-* **Argumentos**:
-  | Parámetro | Tipo | Por Defecto | Descripción |
-  |-----------|------|-------------|-------------|
-  | `category` | `string` | `null` | Categoría opcional para filtrar: `"spatial"`, `"dynamics"`, `"eq_filter"`, `"distortion"`, `"modulation"` o `"utility"`. Si se omite, lista todo el catálogo. |
+### 15. `set_device_parameter`
+Adjusts parameters on any device or effect (filter cutoff, resonance, EQ gain, reverb decay, etc.).
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `track` | `string`/`int` | *(Required)* | Track index or name. |
+  | `device` | `string`/`int` | *(Required)* | Device index or name. |
+  | `parameter` | `string`/`int` | *(Required)* | Parameter name (e.g. `"Cutoff"`, `"Gain"`, `"Q"`) or remote control index (0-7). |
+  | `value` | `number` | *(Required)* | Value in Hz for frequency, dB for gain, float for Q, or normalized (0.0 to 1.0). |
+  | `page` | `string` | `null` | Remote control page name (e.g. `"Main"`, `"EQ"`). |
+  | `normalized` | `boolean` | `null` | If true, treats value as normalized (0.0 to 1.0). |
 
 ---
 
-## 🔌 Configuración en Clientes MCP
+### 16. `list_audio_effects`
+Returns the categorized catalog of native Bitwig Studio audio effects (Reverb, Delay, Dynamics, EQ & Filters, Distortion, Modulation, Utility & Spatial).
+* **Arguments**: `category` (`string`, optional): Filter by category (e.g. `"reverb"`, `"delay"`, `"dynamics"`, `"eq"`, `"distortion"`, `"modulation"`).
+
+---
+
+### 17. `control_track`
+Controls track mixer faders and channel parameters in real time (volume, stereo pan, mute, solo, arm, and renaming).
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `track` | `string`/`int` | *(Required)* | Track index or name. |
+  | `volume` | `number` | `null` | Volume level: normalized (0.0 to 1.0, where ~0.8 is 0dB) or negative dB (e.g. `-6.0`, `-12.0`). |
+  | `pan` | `number` | `null` | Bipolar stereo pan from `-1.0` (Hard Left) through `0.0` (Center) to `+1.0` (Hard Right). |
+  | `mute` | `boolean`/`string` | `null` | Mute state (`true`, `false`) or `"toggle"`. |
+  | `solo` | `boolean`/`string` | `null` | Solo state (`true`, `false`) or `"toggle"`. |
+  | `arm` | `boolean`/`string` | `null` | Record arm state (`true`, `false`) or `"toggle"`. |
+  | `name` | `string` | `null` | Optional new name for the track. |
+
+*Direct convenience tools are also available: `set_track_volume`, `set_track_pan`, and `toggle_track_mute`.*
+
+---
+
+### 18. `recommend_devices`
+Intelligent semantic sound design recommender. Recommends native Bitwig instruments, audio effects, or containers based on a natural language description.
+* **Arguments**:
+  | Parameter | Type | Default | Description |
+  |---|---|---|---|
+  | `description` | `string` | *(Required)* | Natural language sound description (e.g. `"warm vintage analog pad for synthwave"`, `"punchy 808 sub bass"`, `"spacious hall reverb with pre-delay"`). |
+  | `num_results` | `integer` | `5` | Maximum number of recommendations to return. |
+  | `category` | `string` | `null` | Optional category filter (`"Synth"`, `"Reverb"`, `"Delay"`, `"Dynamics"`, `"EQ"`, etc.). |
+  | `type` | `string` | `null` | Optional device type filter (`"Instrument"`, `"Audio Effect"`, `"Container"`). |
+* **Returns**: Recommended devices ranked by relevance, contextual explanations, key parameters, and production tips.
+
+---
+
+### 19. `search_device_browser` & `get_device_info`
+* **`search_device_browser`**: Searches the Bitwig device catalog by name, sonic characteristics, or sound design tags.
+* **`get_device_info`**: Retrieves full technical specifications, synthesis methods (subtractive, FM, wavetable, granular), key parameters, and usage tips for any device.
+
+---
+
+### 20. `organize_tracks` & Track Management
+Advanced session organization tools:
+* **`move_track`**: Moves tracks before or after another track, or to the start/end of the project.
+* **`group_tracks`**: Creates a group track containing the specified tracks.
+* **`ungroup_track`**: Ungroups a group track, returning child tracks to the root level.
+* **`organize_tracks`**: Executes full session reorganizations or **automatic grouping** (`auto_group=true`) by instrument family (Drums, Bass, Synths, FX).
+
+---
+
+## 🔌 MCP Client Setup
 
 ### Claude Desktop
 
-Edita tu archivo de configuración de Claude Desktop:
+Edit your Claude Desktop configuration file:
 * **Linux**: `~/.config/Claude/claude_desktop_config.json`
 * **macOS**: `~/Library/Application Support/Claude/claude_desktop_config.json`
 * **Windows**: `%APPDATA%\Claude\claude_desktop_config.json`
 
-Añade el servidor `bitwig`:
+Add the `bitwig` server entry:
 
 ```json
 {
   "mcpServers": {
     "bitwig": {
-      "command": "/ruta/al/proyecto/bitwig_agent/python/.venv/bin/bitwig-agent-mcp"
+      "command": "/path/to/bitwig_agent/venv/bin/bitwig-agent-mcp"
     }
   }
 }
 ```
 
-> 💡 **Nota**: Sustituye `/ruta/al/proyecto` por la ruta absoluta a tu clon del repositorio.
+> 💡 **Note**: Replace `/path/to/bitwig_agent` with the absolute path to your repository clone.
 
 ---
 
 ### Antigravity / Gemini CLI
 
-Si utilizas Antigravity, el servidor se puede configurar mediante la carpeta de schemas MCP en `~/.gemini/antigravity/mcp/bitwig/` o agregando la definición en tus variables de configuración:
+If using Google Antigravity, add the server definition to your tool configuration or in your active workspace:
 
 ```json
 {
@@ -359,7 +424,7 @@ Si utilizas Antigravity, el servidor se puede configurar mediante la carpeta de 
     "bitwig": {
       "command": "python",
       "args": ["-m", "bitwig_agent.mcp.server"],
-      "cwd": "/ruta/al/proyecto/bitwig_agent/python"
+      "cwd": "/path/to/bitwig_agent/python"
     }
   }
 }
@@ -369,205 +434,205 @@ Si utilizas Antigravity, el servidor se puede configurar mediante la carpeta de 
 
 ### Cursor & Windsurf
 
-En Cursor (en `.cursor/mcp.json` o en `Settings -> Features -> MCP`):
+In Cursor (under `.cursor/mcp.json` or in `Settings -> Features -> MCP`):
 
 ```json
 {
   "mcpServers": {
     "bitwig": {
-      "command": "/ruta/al/proyecto/bitwig_agent/python/.venv/bin/bitwig-agent-mcp"
+      "command": "/path/to/bitwig_agent/venv/bin/bitwig-agent-mcp"
     }
   }
 }
 ```
 
-Una vez guardado, reinicia el cliente o recarga los servidores MCP. Verás disponibles las 8 herramientas nativas de Bitwig con el prefijo o símbolo correspondiente.
+Restart your client or reload MCP servers to see the full set of Bitwig tools available.
 
 ---
 
-## 🚀 Instalación y Puesta en Marcha
+## 🚀 Installation & Getting Started
 
-### Prerrequisitos
-* **Bitwig Studio 6.0 o superior** (Linux, macOS o Windows).
-* **Java 17 o superior** (OpenJDK 17 recomendada para compilar la extensión).
-* **Python 3.10 o superior**.
+### Prerequisites
+* **Bitwig Studio 6.0 or higher** (Linux, macOS, or Windows).
+* **Java 17 or higher** (OpenJDK 17 recommended).
+* **Python 3.10 or higher**.
 
 ---
 
-### Paso 1: Instalar la Extensión en Bitwig Studio
+### Step 1: Install the Extension in Bitwig Studio
 
-El repositorio incluye el binario precompilado listo para usar en:
+The repository includes a ready-to-use compiled extension at:
 `java-extension/build/BitwigAgentBridge.bwextension`
 
-Copia el archivo a tu carpeta de extensiones de Bitwig:
+Copy it to your Bitwig Extensions folder:
 * **Linux**: `~/Bitwig Studio/Extensions/`
 * **macOS**: `~/Documents/Bitwig Studio/Extensions/`
 * **Windows**: `%USERPROFILE%\Documents\Bitwig Studio\Extensions\`
 
-En Linux puedes copiarlo directamente ejecutando:
+On Linux, you can copy it directly:
 ```bash
 mkdir -p "$HOME/Bitwig Studio/Extensions"
 cp java-extension/build/BitwigAgentBridge.bwextension "$HOME/Bitwig Studio/Extensions/"
 ```
 
-*(Opcional) Si deseas recompilar la extensión Java desde el código fuente:*
+*(Optional) To recompile the Java extension from source:*
 ```bash
 ./java-extension/build.sh
 ```
 
 ---
 
-### Paso 2: Activar el Controlador en Bitwig
+### Step 2: Activate the Controller in Bitwig
 
-1. Abre **Bitwig Studio**.
-2. Abre la configuración con `Ctrl + ,` (o `Cmd + ,` en macOS).
-3. Selecciona la pestaña **Controllers**.
-4. Haz clic en **Add controller**.
-5. En la lista de fabricantes busca **BitwigAgent** y selecciona **Bitwig Agent Bridge**.
-6. Verás aparecer una notificación en Bitwig:
+1. Open **Bitwig Studio**.
+2. Open Settings via `Ctrl + ,` (or `Cmd + ,` on macOS).
+3. Click the **Controllers** tab.
+4. Click **Add controller**.
+5. Select **BitwigAgent** -> **Bitwig Agent Bridge**.
+6. A notification will appear in Bitwig:
    > *"Bitwig Agent Bridge Active (port 8989)"*
 
-Verifica la conexión ejecutando en tu terminal:
+Verify connection in your terminal:
 ```bash
 curl http://127.0.0.1:8989/api/status
 ```
-Debe devolver:
+It will return:
 ```json
 {"status":"ok","name":"Bitwig Agent Bridge","version":"1.0.0","bitwig_api":18}
 ```
 
 ---
 
-### Paso 3: Instalar el Paquete Python
+### Step 3: Install the Python Package
 
-1. Clona el repositorio e ingresa al subdirectorio `python`:
+1. Navigate to the `python` directory:
    ```bash
-   git clone https://github.com/gatovillano/bitwig_agent.git
-   cd bitwig_agent/python
+   cd python
    ```
 
-2. Crea y activa un entorno virtual:
+2. Create and activate a virtual environment:
    ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
+   python3 -m venv venv
+   source venv/bin/activate
    ```
 
-3. Instala el proyecto en modo editable con dependencias:
+3. Install in editable mode:
    ```bash
    pip install -e .
    ```
 
-¡Listo! Los comandos `bitwig-agent` y `bitwig-agent-mcp` quedarán instalados en tu entorno virtual.
+The `bitwig-agent` and `bitwig-agent-mcp` executables will now be available in your virtual environment.
 
 ---
 
-## 🎼 Motor de Teoría Musical
+## 🎼 Music Theory Engine
 
-El núcleo de teoría musical en `bitwig_agent.theory` resuelve uno de los problemas más difíciles en la composición asistida por IA: **que los acordes suenen musicales y naturales**.
+The music theory core in `bitwig_agent.theory` solves one of the hardest challenges in AI music composition: **making chords sound musical and natural**.
 
-### Características Destacadas:
-1. **Sintaxis Armónica Flexible**:
-   - Acordes mayores, menores, aumentados, disminuidos (`C`, `Am`, `Caug`, `Bdim`).
-   - Extensiones y tensiones: 7mas, 9nas, 11nas, 13vas (`Dm9`, `F#m11`, `G13`, `Cmaj9`).
-   - Acordes suspendidos (`Dsus4`, `Gsus2`).
-   - Dominantes alterados: `G7alt`, `A7b9#11`, `E7#9`, `C7b13`.
-   - Slash Chords: `F/G`, `Db/C`, `Ebmaj7/Bb`.
+### Key Features:
+1. **Flexible Harmonic Syntax**:
+   - Major, minor, augmented, diminished (`C`, `Am`, `Caug`, `Bdim`).
+   - Extensions & tensions: 7ths, 9ths, 11ths, 13ths (`Dm9`, `F#m11`, `G13`, `Cmaj9`).
+   - Suspended chords (`Dsus4`, `Gsus2`).
+   - Altered dominants: `G7alt`, `A7b9#11`, `E7#9`, `C7b13`.
+   - Slash chords: `F/G`, `Db/C`, `Ebmaj7/Bb`.
 
-2. **Voice Leading Suave**:
-   - Algoritmo que calcula la distancia de semitonos entre todas las inversiones posibles del siguiente acorde y elige aquella que minimiza el salto interválico de las voces intermedias.
+2. **Smooth Voice Leading**:
+   - Computes semitone distances across all inversions of the next chord and selects the one that minimizes inner-voice movement.
 
-3. **Estilos de Voicing**:
-   - `keyboard`: Distribución abierta balanceada a 4-5 voces para teclado.
-   - `rootless`: Voicings de jazz moderno (Bill Evans / Wynton Kelly) donde la tónica se omite para ser interpretada por el bajo, liberando espacio armónico para 3ra, 7ma, 9na y 11na/13va.
-   - `drop2`: Voicings Drop-2 donde la segunda voz más aguda desciende una octava, ideal para secciones de viento o pads amplios.
+3. **Voicing Styles**:
+   - `keyboard`: Balanced 4-to-5 voice open keyboard voicings.
+   - `rootless`: Modern jazz voicings (Bill Evans / Wynton Kelly) where the root is omitted so the bass plays it, leaving space for 3rd, 7th, 9th, and 11th/13th extensions.
+   - `drop2`: Drop-2 voicings where the second highest voice is lowered by one octave, ideal for horn sections and wide pads.
 
-4. **Grooves y Humanización**:
-   - Estilos rítmicos integrados: acordes sostenidos (`sustained`), groove sincopado (`syncopated`), síncopa relajada (`lofi`), golpes a negras (`quarter_stabs`) y arpegios fluidos (`arpeggio`).
-   - Humanización con variación gaussiana de velocidades y micro-timing de pulsación para evitar la sensación robótica o mecánica.
+4. **Grooves and Humanization**:
+   - Built-in rhythmic patterns: sustained chords (`sustained`), syncopated groove (`syncopated`), laid-back lofi syncopation (`lofi`), quarter note hits (`quarter_stabs`), and arpeggios (`arpeggio`).
+   - Gaussian humanization with velocity dynamics and micro-timing jitter to prevent a mechanical MIDI feel.
 
 ---
 
-## 💻 Modo Alternativo: CLI Interactivo (`bitwig-agent`)
+## 💻 Alternative Mode: Interactive CLI (`bitwig-agent`)
 
-Además del servidor MCP, el paquete incluye una potente interfaz de línea de comandos (**CLI**) con autocompletado y menús interactivos impulsada por **LiteLLM**:
+In addition to the MCP server, the package provides an interactive terminal command-line interface (**CLI**) with autocompletion powered by **LiteLLM**:
 
 ```bash
-./python/.venv/bin/bitwig-agent
+bitwig-agent
 ```
 
-### Características de la CLI:
-* **Compatibilidad Multi-Proveedor**:
+### CLI Features:
+* **Multi-Provider Support**:
   - **Google Gemini** (`gemini-2.5-flash`, `gemini-2.5-pro`).
   - **Anthropic Claude** (`claude-3-7-sonnet`, `claude-3-5-haiku`).
   - **OpenAI** (`gpt-4o`, `gpt-4o-mini`, `o3-mini`).
   - **Groq** (`llama-3.3-70b-versatile`, `mixtral-8x7b-32768`).
-  - **Ollama local** (modelos locales sin coste de API).
-  - **Antigravity OAuth2** (integración nativa con cuentas de Google Antigravity).
-* **Menús interactivos**:
-  - `/provider`: Cambia de proveedor de IA al vuelo.
-  - `/model`: Selector de modelos compatibles.
-  - `/keys`: Gestión segura de claves API almacenadas localmente.
-  - `/session` & `/resume`: Historial de conversaciones y sesiones persistentes.
-  - `/status`: Diagnóstico del estado del bridge de Bitwig y del modelo activo.
+  - **Local Ollama** (local offline models with zero API cost).
+  - **Antigravity OAuth2** (native integration with Google Antigravity accounts).
+* **Interactive Slash Commands**:
+  - `/provider`: Switch AI provider on the fly.
+  - `/model`: Choose model from available provider models.
+  - `/keys`: Securely manage locally stored API keys.
+  - `/session` & `/resume`: Conversation history and persistent session management.
+  - `/status`: Diagnostics of the Bitwig bridge and active model.
 
 ---
 
-## 🧪 Suite de Pruebas
+## 🧪 Test Suite
 
-El proyecto cuenta con una batería de **45 pruebas unitarias y de integración** que validan la robustez del sistema:
+The project includes an automated suite of **69 unit and integration tests**:
 
 ```bash
 cd python
 pytest -v
 ```
 
-### Qué se evalúa:
-* **`test_theory.py`**: Parsing de acordes complejos, inversiones, Voice Leading y cálculo de notas.
-* **`test_client.py`**: Modelos Pydantic, serialización de `NoteEvent`, conector HTTP REST, grabación al Arranger y control de efectos/dispositivos.
-* **`test_llm_tools.py`**: Ejecución de las herramientas MCP (incluyendo `add_audio_effect`, `control_device`, `list_audio_effects` y `record_to_arranger`) y validación de parámetros.
-* **`test_visualization.py`**: Generador de Piano Roll ASCII y representación de clips.
-* **`test_completer.py` & `test_session.py`**: Menús interactivos y persistencia de sesiones.
+### What is tested:
+* **`test_theory.py`**: Chord parsing, inversions, voice leading, and note generation.
+* **`test_devices.py`**: Sound design semantic recommender, browser search, device info, and category filters.
+* **`test_client.py`**: Pydantic models, `NoteEvent` serialization, HTTP connector, Arranger recording, and mixer controls.
+* **`test_llm_tools.py`**: Execution of all MCP tools (`control_track`, `recommend_devices`, `add_audio_effect`, `control_device`, `record_to_arranger`, etc.) and argument validation.
+* **`test_visualization.py`**: ASCII Piano Roll generation and clip visualizer.
+* **`test_completer.py` & `test_session.py`**: Interactive REPL menus, autocompletion, and session persistence.
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 bitwig_agent/
-├── README.md                      # Documentación principal con énfasis en MCP
-├── .gitignore                     # Configuración de exclusiones de git
-├── .env.example                   # Plantilla de variables de entorno y API keys
-├── java-extension/                # Extensión nativa de Bitwig Studio
-│   ├── build.sh                   # Script de compilación bash
+├── README.md                      # Main documentation & MCP reference
+├── .gitignore                     # Git ignore rules
+├── .env.example                   # Environment variables template
+├── java-extension/                # Native Bitwig Studio extension
+│   ├── build.sh                   # Compilation & packaging script
 │   ├── build/
-│   │   └── BitwigAgentBridge.bwextension  # Binario precompilado de la extensión
+│   │   └── BitwigAgentBridge.bwextension  # Compiled extension binary
 │   └── src/main/java/com/bitwig/agent/
-│       ├── BitwigAgentExtension.java      # Controlador de Bitwig
-│       ├── BridgeHttpServer.java          # Servidor REST HTTP embebido (:8989)
-│       └── JsonUtils.java                 # Serializador JSON ligero
-└── python/                        # Servidor MCP, CLI y Motor Musical
-    ├── pyproject.toml             # Configuración del paquete y dependencias
+│       ├── BitwigAgentExtension.java      # Bitwig controller extension
+│       ├── BridgeHttpServer.java          # Embedded REST server (:8989)
+│       └── JsonUtils.java                 # Lightweight JSON parser
+└── python/                        # MCP Server, CLI & Music Theory Engine
+    ├── pyproject.toml             # Package configuration & dependencies
     ├── bitwig_agent/
     │   ├── mcp/
-    │   │   └── server.py          # Servidor MCP stdio (bitwig-agent-mcp)
+    │   │   └── server.py          # Stdio MCP Server (bitwig-agent-mcp)
     │   ├── llm/
-    │   │   ├── agent.py           # Orquestador con LiteLLM
-    │   │   └── tools.py           # Definición y ejecución de herramientas
-    │   ├── theory/                # Motor de teoría musical y voice leading
-    │   ├── client.py              # Cliente HTTP REST tipado con Pydantic
-    │   ├── cli.py                 # Interfaz interactiva de terminal
-    │   └── config.py              # Configuración y gestión de credenciales
-    └── tests/                     # Suite completa de tests automatizados (pytest)
+    │   │   └── tools.py           # Tool definitions & execution dispatcher
+    │   ├── devices.py             # Sound design knowledge base & recommender
+    │   ├── theory/                # Music theory, voicings & rhythm engine
+    │   ├── client.py              # Typed Bitwig HTTP REST client (Pydantic)
+    │   ├── cli.py                 # Interactive terminal REPL
+    │   └── config.py              # Configuration & credential management
+    └── tests/                     # Automated test suite (pytest)
 ```
 
 ---
 
-## 📄 Licencia
+## 📄 License
 
-Distribuido bajo la Licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
+Distributed under the **MIT License**. See `LICENSE` for more information.
 
 ---
 
 <div align="center">
-  Hecho con ❤️ para la comunidad de productores y músicos de Bitwig Studio.
+  Built with ❤️ for the Bitwig Studio music production and AI agent community.
 </div>
