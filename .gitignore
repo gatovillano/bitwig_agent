@@ -54,3 +54,4 @@ java-extension/build/classes/
 
 # OS generated
 Thumbs.db
+.kogniterm/
