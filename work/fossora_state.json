@@ -1,0 +1,4592 @@
+{
+ "tempo": 110.0,
+ "tracks": {
+  "kick": {
+   "index": 8,
+   "volume": "-8.8 dB",
+   "pan": "0.00 %",
+   "devices": [
+    {
+     "index": 0,
+     "name": "Polymer",
+     "params": {
+      "Osc/Sub": 0.38499999999999984,
+      "Octave": 0.5,
+      "Waveform": 1.0,
+      "Oscs/Noise": 0.0,
+      "High-pass": 0.10852713178294573,
+      "Glide time": 0.0,
+      "Vel Sens.": 0.5,
+      "Output": 0.7942811755361399
+     },
+     "pages": [
+      "Main",
+      "Envelope",
+      "Union",
+      "Low-pass MG",
+      "ADSR",
+      "Filter EG",
+      "Vibrato"
+     ]
+    }
+   ],
+   "clips": {
+    "0": [
+     {
+      "step": 0,
+      "beat": 0.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 8,
+      "beat": 2.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 11,
+      "beat": 2.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 16,
+      "beat": 4.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 24,
+      "beat": 6.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 27,
+      "beat": 6.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 32,
+      "beat": 8.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 40,
+      "beat": 10.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 43,
+      "beat": 10.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 48,
+      "beat": 12.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 56,
+      "beat": 14.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 59,
+      "beat": 14.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 64,
+      "beat": 16.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 72,
+      "beat": 18.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 75,
+      "beat": 18.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 80,
+      "beat": 20.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 88,
+      "beat": 22.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 91,
+      "beat": 22.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 96,
+      "beat": 24.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 104,
+      "beat": 26.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 107,
+      "beat": 26.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 112,
+      "beat": 28.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 120,
+      "beat": 30.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 123,
+      "beat": 30.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 90,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ],
+    "1": [
+     {
+      "step": 0,
+      "beat": 0.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 7,
+      "beat": 1.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 11,
+      "beat": 2.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 12,
+      "beat": 3.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 16,
+      "beat": 4.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 23,
+      "beat": 5.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 27,
+      "beat": 6.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 28,
+      "beat": 7.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 32,
+      "beat": 8.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 39,
+      "beat": 9.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 43,
+      "beat": 10.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 44,
+      "beat": 11.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 48,
+      "beat": 12.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 55,
+      "beat": 13.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 59,
+      "beat": 14.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 60,
+      "beat": 15.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 64,
+      "beat": 16.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 71,
+      "beat": 17.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 75,
+      "beat": 18.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 76,
+      "beat": 19.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 80,
+      "beat": 20.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 87,
+      "beat": 21.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 91,
+      "beat": 22.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 92,
+      "beat": 23.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 96,
+      "beat": 24.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 103,
+      "beat": 25.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 107,
+      "beat": 26.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 108,
+      "beat": 27.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 112,
+      "beat": 28.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 122,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 119,
+      "beat": 29.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 123,
+      "beat": 30.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 124,
+      "beat": 31.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ],
+    "2": [
+     {
+      "step": 0,
+      "beat": 0.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 3,
+      "beat": 0.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 6,
+      "beat": 1.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 8,
+      "beat": 2.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 11,
+      "beat": 2.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 15,
+      "beat": 3.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 16,
+      "beat": 4.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 19,
+      "beat": 4.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 22,
+      "beat": 5.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 24,
+      "beat": 6.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 27,
+      "beat": 6.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 31,
+      "beat": 7.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 32,
+      "beat": 8.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 35,
+      "beat": 8.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 38,
+      "beat": 9.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 40,
+      "beat": 10.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 43,
+      "beat": 10.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 47,
+      "beat": 11.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 48,
+      "beat": 12.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 51,
+      "beat": 12.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 54,
+      "beat": 13.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 56,
+      "beat": 14.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 59,
+      "beat": 14.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 63,
+      "beat": 15.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 64,
+      "beat": 16.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 67,
+      "beat": 16.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 70,
+      "beat": 17.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 72,
+      "beat": 18.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 75,
+      "beat": 18.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 79,
+      "beat": 19.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 80,
+      "beat": 20.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 83,
+      "beat": 20.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 86,
+      "beat": 21.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 88,
+      "beat": 22.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 91,
+      "beat": 22.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 95,
+      "beat": 23.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 96,
+      "beat": 24.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 99,
+      "beat": 24.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 102,
+      "beat": 25.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 104,
+      "beat": 26.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 107,
+      "beat": 26.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 111,
+      "beat": 27.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 112,
+      "beat": 28.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 124,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 115,
+      "beat": 28.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 118,
+      "beat": 29.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 120,
+      "beat": 30.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 118,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 123,
+      "beat": 30.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 127,
+      "beat": 31.75,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 92,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ],
+    "3": [
+     {
+      "step": 0,
+      "beat": 0.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 2,
+      "beat": 0.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 4,
+      "beat": 1.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 6,
+      "beat": 1.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 8,
+      "beat": 2.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 10,
+      "beat": 2.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 12,
+      "beat": 3.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 16,
+      "beat": 4.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 18,
+      "beat": 4.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 20,
+      "beat": 5.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 22,
+      "beat": 5.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 24,
+      "beat": 6.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 26,
+      "beat": 6.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 28,
+      "beat": 7.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 32,
+      "beat": 8.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 34,
+      "beat": 8.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 36,
+      "beat": 9.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 38,
+      "beat": 9.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 40,
+      "beat": 10.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 42,
+      "beat": 10.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 44,
+      "beat": 11.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 48,
+      "beat": 12.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 50,
+      "beat": 12.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 52,
+      "beat": 13.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 54,
+      "beat": 13.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 56,
+      "beat": 14.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 58,
+      "beat": 14.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 60,
+      "beat": 15.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 64,
+      "beat": 16.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 66,
+      "beat": 16.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 68,
+      "beat": 17.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 70,
+      "beat": 17.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 72,
+      "beat": 18.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 74,
+      "beat": 18.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 76,
+      "beat": 19.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 80,
+      "beat": 20.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 82,
+      "beat": 20.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 84,
+      "beat": 21.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 86,
+      "beat": 21.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 88,
+      "beat": 22.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 90,
+      "beat": 22.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 92,
+      "beat": 23.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 96,
+      "beat": 24.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 98,
+      "beat": 24.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 100,
+      "beat": 25.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 102,
+      "beat": 25.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 104,
+      "beat": 26.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 106,
+      "beat": 26.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 108,
+      "beat": 27.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 112,
+      "beat": 28.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 126,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 114,
+      "beat": 28.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 116,
+      "beat": 29.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 118,
+      "beat": 29.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 120,
+      "beat": 30.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 120,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 122,
+      "beat": 30.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 124,
+      "beat": 31.0,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 29,
+      "name": "F1",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ]
+   }
+  },
+  "perc": {
+   "index": 9,
+   "volume": "-5.8 dB",
+   "pan": "0.00 %",
+   "devices": [
+    {
+     "index": 0,
+     "name": "FM-4",
+     "params": {
+      "OP1 Mod": 0.9599999999999991,
+      "OP1 On": 1.0,
+      "OP2 Mod": 1.0,
+      "OP2 On": 1.0,
+      "OP3 Mod": 1.0,
+      "OP3 On": 1.0,
+      "OP4 Mod": 1.0,
+      "OP4 On": 1.0
+     },
+     "pages": [
+      "Operators",
+      "Mix/Global",
+      "Noise",
+      "Common",
+      "Envelope",
+      "Vibrato"
+     ]
+    }
+   ],
+   "clips": {
+    "1": [
+     {
+      "step": 2,
+      "beat": 0.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 4,
+      "beat": 1.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 6,
+      "beat": 1.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 10,
+      "beat": 2.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 13,
+      "beat": 3.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 15,
+      "beat": 3.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 18,
+      "beat": 4.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 20,
+      "beat": 5.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 22,
+      "beat": 5.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 26,
+      "beat": 6.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 29,
+      "beat": 7.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 31,
+      "beat": 7.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 34,
+      "beat": 8.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 36,
+      "beat": 9.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 38,
+      "beat": 9.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 42,
+      "beat": 10.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 45,
+      "beat": 11.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 47,
+      "beat": 11.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 50,
+      "beat": 12.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 52,
+      "beat": 13.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 54,
+      "beat": 13.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 58,
+      "beat": 14.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 61,
+      "beat": 15.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 63,
+      "beat": 15.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 66,
+      "beat": 16.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 68,
+      "beat": 17.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 70,
+      "beat": 17.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 74,
+      "beat": 18.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 77,
+      "beat": 19.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 79,
+      "beat": 19.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 82,
+      "beat": 20.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 84,
+      "beat": 21.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 86,
+      "beat": 21.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 90,
+      "beat": 22.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 93,
+      "beat": 23.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 95,
+      "beat": 23.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 98,
+      "beat": 24.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 100,
+      "beat": 25.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 102,
+      "beat": 25.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 106,
+      "beat": 26.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 109,
+      "beat": 27.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 111,
+      "beat": 27.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 114,
+      "beat": 28.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 116,
+      "beat": 29.0,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 118,
+      "beat": 29.5,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 122,
+      "beat": 30.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 125,
+      "beat": 31.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 127,
+      "beat": 31.75,
+      "pitch": 72,
+      "name": "C5",
+      "velocity": 66,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ],
+    "2": [
+     {
+      "step": 1,
+      "beat": 0.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 2,
+      "beat": 0.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 3,
+      "beat": 0.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 5,
+      "beat": 1.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 6,
+      "beat": 1.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 7,
+      "beat": 1.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 9,
+      "beat": 2.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 10,
+      "beat": 2.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 11,
+      "beat": 2.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 13,
+      "beat": 3.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 15,
+      "beat": 3.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 17,
+      "beat": 4.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 18,
+      "beat": 4.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 19,
+      "beat": 4.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 21,
+      "beat": 5.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 22,
+      "beat": 5.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 23,
+      "beat": 5.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 25,
+      "beat": 6.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 26,
+      "beat": 6.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 27,
+      "beat": 6.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 29,
+      "beat": 7.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 31,
+      "beat": 7.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 33,
+      "beat": 8.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 34,
+      "beat": 8.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 35,
+      "beat": 8.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 37,
+      "beat": 9.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 38,
+      "beat": 9.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 39,
+      "beat": 9.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 41,
+      "beat": 10.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 42,
+      "beat": 10.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 43,
+      "beat": 10.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 45,
+      "beat": 11.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 47,
+      "beat": 11.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 49,
+      "beat": 12.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 50,
+      "beat": 12.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 51,
+      "beat": 12.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 53,
+      "beat": 13.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 54,
+      "beat": 13.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 55,
+      "beat": 13.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 57,
+      "beat": 14.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 58,
+      "beat": 14.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 59,
+      "beat": 14.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 61,
+      "beat": 15.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 63,
+      "beat": 15.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 65,
+      "beat": 16.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 66,
+      "beat": 16.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 67,
+      "beat": 16.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 69,
+      "beat": 17.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 70,
+      "beat": 17.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 71,
+      "beat": 17.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 73,
+      "beat": 18.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 74,
+      "beat": 18.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 75,
+      "beat": 18.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 77,
+      "beat": 19.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 79,
+      "beat": 19.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 81,
+      "beat": 20.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 82,
+      "beat": 20.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 83,
+      "beat": 20.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 85,
+      "beat": 21.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 86,
+      "beat": 21.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 87,
+      "beat": 21.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 89,
+      "beat": 22.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 90,
+      "beat": 22.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 91,
+      "beat": 22.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 93,
+      "beat": 23.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 95,
+      "beat": 23.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 97,
+      "beat": 24.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 98,
+      "beat": 24.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 99,
+      "beat": 24.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 101,
+      "beat": 25.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 102,
+      "beat": 25.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 103,
+      "beat": 25.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 105,
+      "beat": 26.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 106,
+      "beat": 26.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 107,
+      "beat": 26.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 109,
+      "beat": 27.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 111,
+      "beat": 27.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 113,
+      "beat": 28.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 114,
+      "beat": 28.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 115,
+      "beat": 28.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 108,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 117,
+      "beat": 29.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 118,
+      "beat": 29.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 119,
+      "beat": 29.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 96,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 121,
+      "beat": 30.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 104,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 122,
+      "beat": 30.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 123,
+      "beat": 30.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 125,
+      "beat": 31.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 127,
+      "beat": 31.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ],
+    "3": [
+     {
+      "step": 1,
+      "beat": 0.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 2,
+      "beat": 0.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 3,
+      "beat": 0.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 5,
+      "beat": 1.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 6,
+      "beat": 1.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 7,
+      "beat": 1.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 9,
+      "beat": 2.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 10,
+      "beat": 2.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 11,
+      "beat": 2.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 13,
+      "beat": 3.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 15,
+      "beat": 3.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 17,
+      "beat": 4.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 18,
+      "beat": 4.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 19,
+      "beat": 4.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 21,
+      "beat": 5.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 22,
+      "beat": 5.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 23,
+      "beat": 5.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 25,
+      "beat": 6.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 26,
+      "beat": 6.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 27,
+      "beat": 6.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 29,
+      "beat": 7.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 31,
+      "beat": 7.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 33,
+      "beat": 8.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 34,
+      "beat": 8.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 35,
+      "beat": 8.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 37,
+      "beat": 9.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 38,
+      "beat": 9.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 39,
+      "beat": 9.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 41,
+      "beat": 10.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 42,
+      "beat": 10.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 43,
+      "beat": 10.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 45,
+      "beat": 11.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 47,
+      "beat": 11.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 49,
+      "beat": 12.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 50,
+      "beat": 12.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 51,
+      "beat": 12.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 53,
+      "beat": 13.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 54,
+      "beat": 13.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 55,
+      "beat": 13.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 57,
+      "beat": 14.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 58,
+      "beat": 14.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 59,
+      "beat": 14.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 61,
+      "beat": 15.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 63,
+      "beat": 15.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 65,
+      "beat": 16.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 66,
+      "beat": 16.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 67,
+      "beat": 16.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 69,
+      "beat": 17.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 70,
+      "beat": 17.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 71,
+      "beat": 17.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 73,
+      "beat": 18.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 74,
+      "beat": 18.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 75,
+      "beat": 18.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 77,
+      "beat": 19.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 79,
+      "beat": 19.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 81,
+      "beat": 20.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 82,
+      "beat": 20.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 83,
+      "beat": 20.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 85,
+      "beat": 21.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 86,
+      "beat": 21.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 87,
+      "beat": 21.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 89,
+      "beat": 22.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 90,
+      "beat": 22.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 91,
+      "beat": 22.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 93,
+      "beat": 23.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 95,
+      "beat": 23.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 97,
+      "beat": 24.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 98,
+      "beat": 24.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 99,
+      "beat": 24.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 101,
+      "beat": 25.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 102,
+      "beat": 25.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 103,
+      "beat": 25.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 105,
+      "beat": 26.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 106,
+      "beat": 26.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 107,
+      "beat": 26.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 109,
+      "beat": 27.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 111,
+      "beat": 27.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 113,
+      "beat": 28.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 102,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 114,
+      "beat": 28.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 72,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 115,
+      "beat": 28.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 110,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 117,
+      "beat": 29.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 86,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 118,
+      "beat": 29.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 74,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 119,
+      "beat": 29.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 98,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 121,
+      "beat": 30.25,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 106,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 122,
+      "beat": 30.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 70,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 123,
+      "beat": 30.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 112,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 125,
+      "beat": 31.25,
+      "pitch": 67,
+      "name": "G4",
+      "velocity": 88,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 64,
+      "name": "E4",
+      "velocity": 76,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 127,
+      "beat": 31.75,
+      "pitch": 60,
+      "name": "C4",
+      "velocity": 100,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ]
+   }
+  },
+  "sh": {
+   "index": 10,
+   "volume": "-38.8 dB",
+   "pan": "18.0 %",
+   "devices": [
+    {
+     "index": 0,
+     "name": "Phase-4",
+     "params": {
+      "Shape": 1.0,
+      "Mod.": 1.0,
+      "Filt Freq": 0.9493219129193438,
+      "Filt Reso": 0.0,
+      "F. Env": 0.5,
+      "Gain": 0.5409054805401113,
+      "Pan": 0.5,
+      "Output": 0.6306592533756951
+     },
+     "pages": [
+      "Main",
+      "Filter",
+      "Filter FM",
+      "Mix",
+      "Tune - R",
+      "Tune - B",
+      "Tune - Y",
+      "Tune - M",
+      "SM - R",
+      "SM - B",
+      "SM - Y",
+      "SM - M",
+      "ADSR",
+      "XY",
+      "Vibrato"
+     ]
+    }
+   ],
+   "clips": {
+    "0": [],
+    "1": [],
+    "2": [
+     {
+      "step": 1,
+      "beat": 0.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 11,
+      "beat": 2.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 14,
+      "beat": 3.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 17,
+      "beat": 4.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 27,
+      "beat": 6.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 30,
+      "beat": 7.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 33,
+      "beat": 8.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 43,
+      "beat": 10.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 46,
+      "beat": 11.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 49,
+      "beat": 12.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 59,
+      "beat": 14.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 62,
+      "beat": 15.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 65,
+      "beat": 16.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 75,
+      "beat": 18.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 78,
+      "beat": 19.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 81,
+      "beat": 20.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 91,
+      "beat": 22.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 94,
+      "beat": 23.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 97,
+      "beat": 24.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 107,
+      "beat": 26.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 110,
+      "beat": 27.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 113,
+      "beat": 28.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 123,
+      "beat": 30.75,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 54,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 126,
+      "beat": 31.5,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 48,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ],
+    "3": [
+     {
+      "step": 1,
+      "beat": 0.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 5,
+      "beat": 1.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 9,
+      "beat": 2.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 13,
+      "beat": 3.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 15,
+      "beat": 3.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 17,
+      "beat": 4.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 21,
+      "beat": 5.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 25,
+      "beat": 6.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 29,
+      "beat": 7.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 31,
+      "beat": 7.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 33,
+      "beat": 8.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 37,
+      "beat": 9.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 41,
+      "beat": 10.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 45,
+      "beat": 11.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 47,
+      "beat": 11.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 49,
+      "beat": 12.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 53,
+      "beat": 13.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 57,
+      "beat": 14.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 61,
+      "beat": 15.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 63,
+      "beat": 15.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 65,
+      "beat": 16.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 69,
+      "beat": 17.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 73,
+      "beat": 18.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 77,
+      "beat": 19.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 79,
+      "beat": 19.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 81,
+      "beat": 20.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 85,
+      "beat": 21.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 89,
+      "beat": 22.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 93,
+      "beat": 23.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 95,
+      "beat": 23.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 97,
+      "beat": 24.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 101,
+      "beat": 25.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 105,
+      "beat": 26.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 109,
+      "beat": 27.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 111,
+      "beat": 27.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 113,
+      "beat": 28.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 60,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 117,
+      "beat": 29.25,
+      "pitch": 88,
+      "name": "E6",
+      "velocity": 52,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 121,
+      "beat": 30.25,
+      "pitch": 86,
+      "name": "D6",
+      "velocity": 58,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 125,
+      "beat": 31.25,
+      "pitch": 84,
+      "name": "C6",
+      "velocity": 64,
+      "duration": 0.25,
+      "channel": 0
+     },
+     {
+      "step": 127,
+      "beat": 31.75,
+      "pitch": 90,
+      "name": "F#6",
+      "velocity": 50,
+      "duration": 0.25,
+      "channel": 0
+     }
+    ]
+   }
+  }
+ }
+}

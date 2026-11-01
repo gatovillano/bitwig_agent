@@ -1,0 +1,1798 @@
+INFO:     Started server process [708318]
+INFO:     Waiting for application startup.
+2026-10-30 20:53:00,683 [INFO] [mcp.server.streamable_http_manager] StreamableHTTP session manager started
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-10-30 20:53:03,739 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: a9b377495d5f499cbc575ca0e66d8478
+INFO:     201.188.136.31:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-30 20:53:04,630 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: b4249a2b323046b59ec887eaac8bbb18
+INFO:     201.188.136.31:0 - "POST /mcp HTTP/1.1" 200 OK
+2026-10-30 20:53:32,712 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: bee59d6701954af683f20f8ef0addaa8
+INFO:     108.177.68.41:0 - "HEAD /sse HTTP/1.1" 405 Method Not Allowed
+2026-10-30 20:53:32,715 [INFO] [mcp.server.streamable_http] Terminating session: bee59d6701954af683f20f8ef0addaa8
+2026-10-30 20:53:33,375 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 11d241cd497140f4838735c46607b277
+INFO:     108.177.68.34:0 - "GET /sse HTTP/1.1" 406 Not Acceptable
+2026-10-30 20:53:33,377 [INFO] [mcp.server.streamable_http] Terminating session: 11d241cd497140f4838735c46607b277
+INFO:     108.177.68.41:0 - "GET /.well-known/oauth-protected-resource/sse HTTP/1.1" 404 Not Found
+INFO:     108.177.68.41:0 - "GET /.well-known/oauth-protected-resource HTTP/1.1" 404 Not Found
+2026-10-30 20:53:34,771 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 52bb7a399fc5439dab7f0322b7087e7a
+INFO:     192.179.0.162:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-30 20:53:35,338 [INFO] [mcp.server.streamable_http] Terminating session: 52bb7a399fc5439dab7f0322b7087e7a
+INFO:     192.179.0.166:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-30 20:53:35,536 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 90400b76eb00496e8e981ac2b3de051b
+INFO:     66.249.83.132:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     66.249.83.132:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     66.249.83.134:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     66.249.83.132:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-30 20:53:37,524 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: f1004ca43814435182566c17fff37c66
+INFO:     192.178.20.36:0 - "HEAD /sse HTTP/1.1" 405 Method Not Allowed
+2026-10-30 20:53:37,526 [INFO] [mcp.server.streamable_http] Terminating session: f1004ca43814435182566c17fff37c66
+2026-10-30 20:53:38,098 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 3f30dfc6ff5e4b80a83707d3840f0425
+INFO:     192.178.20.37:0 - "GET /sse HTTP/1.1" 406 Not Acceptable
+2026-10-30 20:53:38,101 [INFO] [mcp.server.streamable_http] Terminating session: 3f30dfc6ff5e4b80a83707d3840f0425
+INFO:     192.178.20.35:0 - "GET /.well-known/oauth-protected-resource/sse HTTP/1.1" 404 Not Found
+INFO:     192.178.20.36:0 - "GET /.well-known/oauth-protected-resource HTTP/1.1" 404 Not Found
+2026-10-30 20:53:44,966 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: bf14c112de6540068d76c4320c3f9d6b
+INFO:     108.177.68.36:0 - "HEAD /sse HTTP/1.1" 405 Method Not Allowed
+2026-10-30 20:53:44,968 [INFO] [mcp.server.streamable_http] Terminating session: bf14c112de6540068d76c4320c3f9d6b
+2026-10-30 20:53:45,282 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 25ba4864aa724b15887a70480bea4079
+INFO:     108.177.68.41:0 - "GET /sse HTTP/1.1" 406 Not Acceptable
+2026-10-30 20:53:45,284 [INFO] [mcp.server.streamable_http] Terminating session: 25ba4864aa724b15887a70480bea4079
+INFO:     108.177.68.36:0 - "GET /.well-known/oauth-protected-resource/sse HTTP/1.1" 404 Not Found
+INFO:     108.177.68.34:0 - "GET /.well-known/oauth-protected-resource HTTP/1.1" 404 Not Found
+INFO:     66.249.83.133:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     66.249.83.131:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-30 21:16:07,528 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 23202b7b9612416183a92f6e642c9cb7
+INFO:     192.179.1.37:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-30 21:16:08,086 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: c62fe2eedeb24eebb260bb38a6e2c097
+INFO:     192.179.1.38:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-30 21:23:03,752 [INFO] [mcp.server.streamable_http_manager] Session a9b377495d5f499cbc575ca0e66d8478 idle timeout
+2026-10-30 21:23:03,752 [INFO] [mcp.server.streamable_http] Terminating session: a9b377495d5f499cbc575ca0e66d8478
+2026-10-30 21:23:04,640 [INFO] [mcp.server.streamable_http_manager] Session b4249a2b323046b59ec887eaac8bbb18 idle timeout
+2026-10-30 21:23:04,640 [INFO] [mcp.server.streamable_http] Terminating session: b4249a2b323046b59ec887eaac8bbb18
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-30 21:28:35,394 [INFO] [mcp.server.streamable_http_manager] Session 90400b76eb00496e8e981ac2b3de051b idle timeout
+2026-10-30 21:28:35,395 [INFO] [mcp.server.streamable_http] Terminating session: 90400b76eb00496e8e981ac2b3de051b
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-30 21:52:57,174 [INFO] [mcp.server.streamable_http_manager] Session 23202b7b9612416183a92f6e642c9cb7 idle timeout
+2026-10-30 21:52:57,174 [INFO] [mcp.server.streamable_http] Terminating session: 23202b7b9612416183a92f6e642c9cb7
+2026-10-30 21:58:28,506 [INFO] [mcp.server.streamable_http_manager] Rejected request with unknown or expired session ID: 90400b76eb00496e8e981ac2b3de051b
+INFO:     66.249.83.132:0 - "DELETE /sse HTTP/1.1" 404 Not Found
+2026-10-30 22:04:00,981 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 9c06a70a8e694af4aed61f5107500d06
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-30 22:04:01,538 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: f8fb139d7de3462383ab38989b21ea31
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-30 22:11:10,794 [INFO] [mcp.server.streamable_http_manager] Session c62fe2eedeb24eebb260bb38a6e2c097 idle timeout
+2026-10-30 22:11:10,794 [INFO] [mcp.server.streamable_http] Terminating session: c62fe2eedeb24eebb260bb38a6e2c097
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-30 22:34:01,600 [INFO] [mcp.server.streamable_http] Terminating session: 9c06a70a8e694af4aed61f5107500d06
+INFO:     192.179.1.38:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-30 22:34:02,168 [INFO] [mcp.server.streamable_http] Terminating session: f8fb139d7de3462383ab38989b21ea31
+INFO:     192.179.1.36:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-30 23:13:20,007 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: f11f9638a3de4e97bad6458527a6f9e6
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-30 23:13:20,588 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 328211c6730d4dccb35ec5960fcb251b
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57876 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59490 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40012 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42480 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57410 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57776 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33178 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59660 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59256 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44102 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55058 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41738 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58016 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41094 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40046 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41924 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44594 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51192 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33242 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48270 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57958 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36048 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49018 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32870 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40338 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43334 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58478 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37178 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38694 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-30 23:43:20,706 [INFO] [mcp.server.streamable_http] Terminating session: f11f9638a3de4e97bad6458527a6f9e6
+INFO:     192.179.1.36:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-30 23:43:21,525 [INFO] [mcp.server.streamable_http] Terminating session: 328211c6730d4dccb35ec5960fcb251b
+INFO:     192.179.1.37:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46894 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38930 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36296 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48486 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41818 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48818 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60566 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52816 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33924 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53666 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37402 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58144 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60294 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35598 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46286 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39150 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43302 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49638 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43312 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59500 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51182 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60536 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40134 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45490 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59940 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45108 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50676 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36002 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38820 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45792 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45396 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58582 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48954 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47126 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53200 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41176 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36784 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47368 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46506 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47018 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50840 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50292 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41458 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42758 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58206 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53100 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49052 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43624 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51420 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53302 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38168 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57852 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53002 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40124 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50574 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53108 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53456 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40216 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58160 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34800 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37540 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36686 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53404 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40420 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33036 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54634 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54940 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46230 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47226 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51062 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36138 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40176 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50444 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44824 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57486 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56120 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44210 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37432 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49528 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58058 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40888 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40482 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41760 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43778 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48592 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41988 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 01:03:52,293 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: cc10414e8d9a4b53a7490127c56007f1
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 01:03:52,868 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: a5db321d37c8403599f4a2f623a00d8f
+INFO:     192.179.1.38:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 01:33:52,910 [INFO] [mcp.server.streamable_http] Terminating session: cc10414e8d9a4b53a7490127c56007f1
+INFO:     192.179.1.38:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 01:33:53,536 [INFO] [mcp.server.streamable_http] Terminating session: a5db321d37c8403599f4a2f623a00d8f
+INFO:     192.179.1.34:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 03:40:29,025 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 27922650556847a583c35972f5a787ed
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 03:40:29,306 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: c9f01433ce95459e8dab779acbe8b46d
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 04:10:29,604 [INFO] [mcp.server.streamable_http] Terminating session: 27922650556847a583c35972f5a787ed
+INFO:     192.179.0.165:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 04:10:30,009 [INFO] [mcp.server.streamable_http] Terminating session: c9f01433ce95459e8dab779acbe8b46d
+INFO:     192.179.0.164:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 05:02:40,479 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: bfc4b0304f46448693ff43d95d71803e
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-31 05:02:41,078 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 0a9d45b9acd34011bfe3084d96a5a999
+INFO:     192.179.0.163:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 05:07:34,511 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: cf2a75f69b1c42cfb87a0117a2c4ce51
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-31 05:07:35,128 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: d5bbcf0ce0ec4dd38badd96ff17cace5
+INFO:     192.179.1.37:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:11:27,677 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: e7c5f8bde3f94032a707782a2927289e
+INFO:     192.179.1.37:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:26:06,687 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: bae7871bc0b448a4beda2645f36fdc1b
+INFO:     192.179.0.163:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:26:07,245 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 9ced5d84a5c64ca6be735db4e085f162
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:29:08,918 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 96dfdc7fde9d473282bf01566106f669
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:29:09,427 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 768fa1da7332409eb212390bbdcbe434
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:34:14,649 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: c66e1e32a66748d7a13e19e91148e6fd
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:34:14,921 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 9636c785f194489a84bea13b863a4bf5
+INFO:     192.179.0.162:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:37:15,261 [INFO] [mcp.server.streamable_http_manager] Session 0a9d45b9acd34011bfe3084d96a5a999 idle timeout
+2026-10-31 05:37:15,261 [INFO] [mcp.server.streamable_http] Terminating session: 0a9d45b9acd34011bfe3084d96a5a999
+2026-10-31 05:37:35,729 [INFO] [mcp.server.streamable_http] Terminating session: d5bbcf0ce0ec4dd38badd96ff17cace5
+INFO:     192.179.1.38:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:41:28,335 [INFO] [mcp.server.streamable_http] Terminating session: cf2a75f69b1c42cfb87a0117a2c4ce51
+INFO:     192.179.1.35:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 05:41:28,396 [INFO] [mcp.server.streamable_http] Terminating session: e7c5f8bde3f94032a707782a2927289e
+INFO:     192.179.1.36:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 05:56:07,581 [INFO] [mcp.server.streamable_http] Terminating session: 9ced5d84a5c64ca6be735db4e085f162
+INFO:     192.179.0.166:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 05:56:33,790 [INFO] [mcp.server.streamable_http_manager] Session bfc4b0304f46448693ff43d95d71803e idle timeout
+2026-10-31 05:56:33,791 [INFO] [mcp.server.streamable_http] Terminating session: bfc4b0304f46448693ff43d95d71803e
+2026-10-31 05:59:09,475 [INFO] [mcp.server.streamable_http] Terminating session: 96dfdc7fde9d473282bf01566106f669
+INFO:     192.179.0.162:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 05:59:09,981 [INFO] [mcp.server.streamable_http] Terminating session: 768fa1da7332409eb212390bbdcbe434
+INFO:     192.179.0.162:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 06:04:15,495 [INFO] [mcp.server.streamable_http] Terminating session: 9636c785f194489a84bea13b863a4bf5
+INFO:     192.179.0.162:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 06:07:40,864 [INFO] [mcp.server.streamable_http_manager] Session c66e1e32a66748d7a13e19e91148e6fd idle timeout
+2026-10-31 06:07:40,865 [INFO] [mcp.server.streamable_http] Terminating session: c66e1e32a66748d7a13e19e91148e6fd
+2026-10-31 06:09:52,545 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 2d7e36068c6740a58a72e2d6de29ab23
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-31 06:09:53,167 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: c82a04ecce57426bb2866306711e11a5
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 06:12:15,652 [INFO] [mcp.server.streamable_http_manager] Session bae7871bc0b448a4beda2645f36fdc1b idle timeout
+2026-10-31 06:12:15,652 [INFO] [mcp.server.streamable_http] Terminating session: bae7871bc0b448a4beda2645f36fdc1b
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 06:25:12,523 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 35e963f5bd89482a9470f878a2df0fe2
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 06:39:53,270 [INFO] [mcp.server.streamable_http] Terminating session: 2d7e36068c6740a58a72e2d6de29ab23
+INFO:     192.179.0.162:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 06:52:16,656 [INFO] [mcp.server.streamable_http_manager] Session c82a04ecce57426bb2866306711e11a5 idle timeout
+2026-10-31 06:52:16,656 [INFO] [mcp.server.streamable_http] Terminating session: c82a04ecce57426bb2866306711e11a5
+2026-10-31 06:55:13,117 [INFO] [mcp.server.streamable_http] Terminating session: 35e963f5bd89482a9470f878a2df0fe2
+INFO:     192.179.1.37:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 07:23:22,269 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 9776f2d07e8b4cc88c336a5e4a2f6176
+INFO:     192.179.0.162:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-31 07:23:23,071 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 41af741e47fd44bdac7a9baedd99a4c4
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 07:53:23,073 [INFO] [mcp.server.streamable_http] Terminating session: 9776f2d07e8b4cc88c336a5e4a2f6176
+INFO:     192.179.0.162:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 07:53:23,700 [INFO] [mcp.server.streamable_http] Terminating session: 41af741e47fd44bdac7a9baedd99a4c4
+INFO:     192.179.0.163:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 08:27:45,235 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: dff8a1315ce948c89c3d7552164bb4bc
+INFO:     66.249.83.132:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     66.249.83.133:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     66.249.83.131:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     66.249.83.133:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 09:02:45,140 [INFO] [mcp.server.streamable_http_manager] Session dff8a1315ce948c89c3d7552164bb4bc idle timeout
+2026-10-31 09:02:45,142 [INFO] [mcp.server.streamable_http] Terminating session: dff8a1315ce948c89c3d7552164bb4bc
+2026-10-31 09:27:58,190 [INFO] [mcp.server.streamable_http_manager] Rejected request with unknown or expired session ID: dff8a1315ce948c89c3d7552164bb4bc
+INFO:     66.249.83.133:0 - "DELETE /sse HTTP/1.1" 404 Not Found
+2026-10-31 10:57:58,416 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 22886638e7de4531952f49e12c91f220
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 10:57:59,896 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: cdf89558e28c447c84554c2d54738663
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 10:58:14,503 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: b53473a9b5114b8f9f2c537768824e15
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 10:58:15,010 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 851822119f8940008dc0dfbebe1eccf3
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.163:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.166:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 11:28:00,069 [INFO] [mcp.server.streamable_http] Terminating session: 22886638e7de4531952f49e12c91f220
+INFO:     192.179.1.34:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 11:28:00,578 [INFO] [mcp.server.streamable_http] Terminating session: cdf89558e28c447c84554c2d54738663
+INFO:     192.179.1.35:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 11:28:16,041 [INFO] [mcp.server.streamable_http] Terminating session: 851822119f8940008dc0dfbebe1eccf3
+INFO:     192.179.0.164:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42004 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40816 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50710 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45572 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51022 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59734 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40852 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53298 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55426 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55160 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44544 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33974 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45254 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56030 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59640 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39086 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33810 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56474 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57018 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54496 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38758 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55334 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39060 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 11:56:51,400 [INFO] [mcp.server.streamable_http_manager] Session b53473a9b5114b8f9f2c537768824e15 idle timeout
+2026-10-31 11:56:51,400 [INFO] [mcp.server.streamable_http] Terminating session: b53473a9b5114b8f9f2c537768824e15
+INFO:     127.0.0.1:55268 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40246 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54228 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47874 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59632 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51000 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60774 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53204 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48670 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49872 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39802 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42334 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49598 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57914 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34814 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46708 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49896 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43936 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44080 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35906 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47454 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51988 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36014 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38212 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33942 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47192 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39968 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36718 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44348 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49488 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43024 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34264 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43436 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50478 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44326 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33462 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55928 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33952 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41138 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43212 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47688 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59332 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48064 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38358 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58632 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54226 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47870 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59056 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38426 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35918 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50132 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60350 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36072 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51030 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59124 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57994 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44218 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39052 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38384 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45276 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54578 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43794 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53868 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42674 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43376 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33068 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42598 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57550 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40970 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44376 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45356 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54828 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40700 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50694 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48346 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57914 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55236 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42370 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33716 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49820 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58902 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54346 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40292 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34970 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41378 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41268 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35438 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49072 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51124 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37672 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32926 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57186 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36728 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50322 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54400 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50674 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46556 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40158 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44452 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56024 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37730 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42962 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39110 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60084 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37286 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51206 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49432 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50570 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33822 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42738 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54838 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57778 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33680 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47534 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47796 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43740 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35218 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47490 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44452 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47434 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52796 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38306 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40754 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48626 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35684 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40254 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47054 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39008 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60378 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57180 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34008 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37344 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41204 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49970 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57914 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41428 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42642 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60130 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40592 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48514 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56050 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34210 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37592 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38904 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56568 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48048 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53604 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42708 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58544 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54676 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35022 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51940 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43786 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35900 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41830 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48756 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44634 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46258 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33378 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57872 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42004 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45586 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35964 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38684 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39886 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60358 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37216 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45846 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58138 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58976 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38480 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59292 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43948 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33634 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51328 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56954 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44750 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58130 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60924 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60754 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38920 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60472 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51922 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42962 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35822 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52172 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54522 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54182 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45746 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43070 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40602 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36090 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55834 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59120 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50948 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44434 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45612 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51106 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47872 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57880 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37254 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44384 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40496 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57288 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41592 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32952 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39324 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33244 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42802 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52758 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40534 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53454 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40440 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60686 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53712 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49392 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50222 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38996 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33408 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36022 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38566 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38888 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56892 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55724 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44384 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55596 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37366 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46206 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58796 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33352 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60122 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55150 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43908 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59740 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52000 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41222 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45366 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56082 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47450 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57010 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57796 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43940 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44680 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35226 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51932 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36444 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42486 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60866 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38282 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45230 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52794 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52324 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48182 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38388 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37246 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37640 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34164 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49806 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41500 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59818 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34930 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50780 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35136 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53650 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43510 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59272 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39894 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53816 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47534 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46448 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37962 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59228 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56730 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37692 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33434 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40788 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59894 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33484 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50114 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45556 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51824 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58894 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57578 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32960 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51984 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36358 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42842 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58918 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35010 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47310 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36848 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41568 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53390 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38466 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50830 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47408 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43088 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46630 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52976 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52940 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48178 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39648 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58164 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51872 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45726 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35724 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56874 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38562 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44580 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36578 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46388 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41480 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60654 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43264 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47900 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43548 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44450 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34120 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44666 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57034 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46220 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56132 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55998 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37528 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41728 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47776 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57554 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54186 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57522 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49996 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44166 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45952 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57246 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58662 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59532 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45424 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40908 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51706 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41058 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59868 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52364 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42112 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33348 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59712 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54692 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41170 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46928 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45124 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45706 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32976 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56870 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60302 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48700 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39490 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56684 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35164 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55812 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55018 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49050 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45146 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57092 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46874 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36878 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55488 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38642 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41284 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47414 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43846 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56874 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35652 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38926 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46964 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33626 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54764 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55116 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60430 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57402 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39242 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57134 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33484 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44994 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53044 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48208 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57178 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37066 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54448 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53682 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59386 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51954 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60444 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37914 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33840 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33284 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52160 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37742 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56698 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60122 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59818 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35758 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32898 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46834 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57562 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32804 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57358 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57800 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48494 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34800 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53888 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34596 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46846 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35002 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38334 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56046 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33232 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33918 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54976 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33102 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49504 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46192 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33088 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52938 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52478 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60866 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55812 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54884 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51808 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55132 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56344 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54436 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60264 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57700 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57734 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41194 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49272 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56750 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33862 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60126 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45142 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33802 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43746 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42564 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39936 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47626 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56736 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43126 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34858 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39972 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57180 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36994 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34302 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47754 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42620 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50004 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39510 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58804 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53848 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59622 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36094 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42550 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60538 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40386 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54584 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58842 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41428 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52520 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53514 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43590 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45442 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45732 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54234 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49740 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42878 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46150 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55964 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53164 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56448 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57990 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37334 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51778 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40490 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59282 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36474 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58470 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51006 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36762 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48766 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47434 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33774 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54802 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56504 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43840 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59414 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58386 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55016 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35848 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48044 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57084 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38388 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44444 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57210 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37204 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54836 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33708 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51288 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51008 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60998 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57246 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41070 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58924 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57144 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45856 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52972 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37626 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53246 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44696 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47916 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59650 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59578 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50326 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42634 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43114 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56416 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57060 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44960 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37262 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35012 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43240 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40476 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56046 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53176 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37700 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51300 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35096 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45854 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59026 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44674 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59066 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49774 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44484 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39184 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46578 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46368 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47652 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48772 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49316 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37618 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47418 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39416 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56514 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57446 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43980 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34622 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50658 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60306 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49646 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57876 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34774 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43222 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41688 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33270 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48684 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45114 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57624 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55506 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54642 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52236 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50944 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34102 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33596 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52582 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51526 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56464 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59436 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51352 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58892 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37002 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34324 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38104 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54886 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44224 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48734 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42378 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38058 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34382 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38904 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40580 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54934 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59784 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59030 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43022 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53466 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44700 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44790 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59250 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59322 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50576 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46640 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41758 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49042 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38304 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49654 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37344 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55696 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50036 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58218 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54292 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46820 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57632 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57314 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59644 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42668 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34598 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36330 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36898 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54756 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37378 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37920 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 17:30:53,163 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 5d27aa58a33749d68906586f4fb559dd
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "POST /sse HTTP/1.1" 202 Accepted
+2026-10-31 17:30:53,727 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: d357021564814d038abe426befbe8070
+INFO:     192.179.1.38:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.38:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47792 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38984 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 17:31:54,956 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: 998463ff8eef472bb1bfdc5aa19ce5bf
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+2026-10-31 17:31:55,200 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: eff156412e9a4362ac5baa2e11505252
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.35:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.1.36:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35946 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60950 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43340 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56322 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47904 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32876 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46190 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42998 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50426 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35388 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33890 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50258 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53658 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40664 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39220 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36182 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42094 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47218 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.35:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49964 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41734 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52172 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56656 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36722 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37010 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45326 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58364 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41884 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37568 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34418 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45118 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57534 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58590 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50316 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56728 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59392 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:36832 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39054 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.36:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45990 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35486 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58056 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50124 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48556 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60252 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47874 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44494 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.38:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.37:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:42266 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33654 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.1.34:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51810 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40542 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41576 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51776 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60762 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46260 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46228 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52960 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 18:00:53,760 [INFO] [mcp.server.streamable_http] Terminating session: 5d27aa58a33749d68906586f4fb559dd
+INFO:     192.179.1.34:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 18:00:54,272 [INFO] [mcp.server.streamable_http] Terminating session: d357021564814d038abe426befbe8070
+INFO:     192.179.1.35:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41500 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38738 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 18:01:55,508 [INFO] [mcp.server.streamable_http] Terminating session: 998463ff8eef472bb1bfdc5aa19ce5bf
+INFO:     192.179.1.36:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 18:01:55,712 [INFO] [mcp.server.streamable_http] Terminating session: eff156412e9a4362ac5baa2e11505252
+INFO:     192.179.1.36:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45092 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34814 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52748 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59108 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50150 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58172 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49486 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58620 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59360 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46402 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48452 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37822 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57314 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40598 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42550 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34554 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49328 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60118 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47744 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53524 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55104 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47668 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49814 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47164 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58014 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58566 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33042 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46650 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60220 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43222 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44862 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33408 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37828 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41690 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57100 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50216 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54436 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53192 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37752 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41732 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55770 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58794 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54138 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45542 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54578 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49474 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45508 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40084 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43302 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54464 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50774 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42368 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54102 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56648 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38618 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49832 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47008 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58864 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50014 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49530 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42492 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55072 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41054 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46024 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32840 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39622 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41382 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35524 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37772 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49660 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58602 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39198 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53396 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59886 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36450 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39476 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37598 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51830 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34074 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41836 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48662 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43220 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39144 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51732 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39956 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59534 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45548 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39948 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54736 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49996 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38608 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46122 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49624 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56854 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36444 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33582 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48608 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58246 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58002 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54264 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56662 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46968 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52914 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36642 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38810 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36250 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49974 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48928 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47518 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35496 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50040 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35998 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47518 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58692 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60980 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41036 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47792 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45872 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42280 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50680 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55086 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44158 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39986 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46474 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40418 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 19:10:03,095 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: cba78a2917cf4ff1a0439fe2f0c92c8e
+INFO:     192.179.0.166:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+2026-10-31 19:10:03,761 [INFO] [mcp.server.streamable_http_manager] Created new transport with session ID: e0f89e076d3449ee98f0f5cb42646270
+INFO:     192.179.0.163:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "POST /sse HTTP/1.1" 202 Accepted
+INFO:     192.179.0.163:0 - "POST /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38132 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55854 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56170 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51950 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42018 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46900 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:32818 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50950 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56138 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53010 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49236 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60798 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50780 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46490 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52864 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40314 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36068 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45542 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60460 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35100 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46140 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36048 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34118 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38314 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51420 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43948 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.165:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35760 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34996 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58272 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46268 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36938 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55242 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45654 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56212 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54864 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52090 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47558 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41784 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42768 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39044 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43852 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35254 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44992 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     192.179.0.162:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     192.179.0.164:0 - "GET /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60834 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54498 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57562 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58632 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46052 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46434 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40112 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49220 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57578 - "GET /health HTTP/1.1" 404 Not Found
+2026-10-31 19:40:03,781 [INFO] [mcp.server.streamable_http] Terminating session: cba78a2917cf4ff1a0439fe2f0c92c8e
+INFO:     192.179.0.162:0 - "DELETE /sse HTTP/1.1" 200 OK
+2026-10-31 19:40:04,418 [INFO] [mcp.server.streamable_http] Terminating session: e0f89e076d3449ee98f0f5cb42646270
+INFO:     192.179.0.166:0 - "DELETE /sse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50964 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34936 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50922 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46270 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42604 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52906 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42060 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56004 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43412 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41632 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44644 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46020 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39120 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50206 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59398 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43220 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41622 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53436 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43104 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46754 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41514 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35272 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55632 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38456 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47310 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40904 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48542 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56794 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44522 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37042 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53906 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54634 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49734 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33500 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33530 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57044 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48750 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53052 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38092 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46014 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34786 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52844 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56136 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33780 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44696 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58946 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46162 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58746 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39222 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48916 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48728 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55994 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37326 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34428 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51898 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41650 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45850 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49560 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37510 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55280 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52518 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55692 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49932 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36408 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41850 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55356 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56228 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41106 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42102 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38414 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45070 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60494 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41968 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45906 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43412 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60720 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57898 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42104 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60398 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34800 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46188 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54986 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47236 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58304 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44830 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47996 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53554 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51038 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46674 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51586 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57234 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46160 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41878 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45928 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45394 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54848 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45796 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57126 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42340 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39570 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36862 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38650 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60202 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38772 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36020 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57818 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42590 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52014 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40244 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41228 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39002 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53810 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50878 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38528 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46536 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47208 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:40038 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51014 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55644 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47414 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52130 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56380 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59590 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56860 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36358 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51298 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60022 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46522 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44116 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47930 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54322 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50458 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44996 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38276 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43636 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36258 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38854 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51158 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54804 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55502 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36268 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60980 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44174 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57636 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60214 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54506 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59772 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42226 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60088 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44900 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56562 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44422 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46156 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42656 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48074 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55710 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33240 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51552 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55558 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38790 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44546 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44940 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34750 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58336 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41698 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34376 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51906 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60382 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42144 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37584 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49616 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48594 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39860 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48008 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54712 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41930 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35312 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45698 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37738 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51320 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41884 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60716 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43404 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58200 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57090 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55478 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44412 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54934 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45466 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44830 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59356 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36204 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37042 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55948 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:44078 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:43448 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50886 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57268 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52484 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41394 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49056 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34094 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47434 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36750 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49038 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39372 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47714 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58930 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35208 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33280 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47776 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47032 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47674 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52656 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48594 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38908 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56258 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:56262 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45742 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35402 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:52328 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:38198 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35038 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60656 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33028 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42262 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37124 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:48702 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59880 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49826 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54932 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35274 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35484 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42170 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:47642 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:60512 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57298 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36908 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42610 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41868 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55890 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50112 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39658 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54268 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37520 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:37546 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51706 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45424 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:33944 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39580 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:59398 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57652 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39440 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:46266 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41526 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51516 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:42812 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:39842 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:45882 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:49588 - "GET /health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:41064 - "GET /health HTTP/1.1" 404 Not Found
